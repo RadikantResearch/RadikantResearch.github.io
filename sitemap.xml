@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url>
+	<loc>radikant.nl</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>1.0</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-02%20at%2004.42.36.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-02%20at%2004.42.36.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-02%20at%2004.43.25.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-02%20at%2004.43.25.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/libraries/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/products/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Super%20Render%20C.jpg</image:loc>
+	<image:title>Super Render C</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Super%20Render%20C.webp</image:loc>
+	<image:title>Super Render C</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/SuperRender%201.jpg</image:loc>
+	<image:title>SuperRender 1</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/SuperRender%201.webp</image:loc>
+	<image:title>SuperRender 1</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/untitled.31.png</image:loc>
+	<image:title>untitled.31</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/untitled.31.webp</image:loc>
+	<image:title>untitled.31</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/electronics/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>radikant.nl/engineering/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>radikant.nl/event/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-11-29%20at%2021.47.29.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-11-29%20at%2021.47.29.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/jwt/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-01%20at%2020.21.25.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-01%20at%2020.21.25.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/crypto/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-02%20at%2004.01.56.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-02%20at%2004.01.56.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/firebase/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Firebase_Logo.svg.png</image:loc>
+	<image:title>Firebase_Logo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Firebase_Logo.svg.webp</image:loc>
+	<image:title>Firebase_Logo</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/printer/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>radikant.nl/log/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-11-30%20at%2023.01.45.png</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-11-30%20at%2023.01.45.webp</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/tls/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-01%20at%2004.16.06.png</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-01%20at%2004.16.06.webp</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/socket/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Untitled.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Untitled.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/ble/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>radikant.nl/mysql/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-01%20at%2019.27.54.png</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/Screenshot%202025-12-01%20at%2019.27.54.webp</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/asn1/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>radikant.nl/url/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>radikant.nl/json/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>radikant.nl/img/mbp-screen.jpg</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>radikant.nl/img/mbp-screen.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>radikant.nl/about/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>radikant.nl/curicilum-vitea/</loc>
+	<lastmod>2025-12-04</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+</urlset>
