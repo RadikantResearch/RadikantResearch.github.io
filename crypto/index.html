@@ -17,12 +17,12 @@
 	<meta property="og:url" content="https://radikant.nl/crypto/"> 
     <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
     
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?151">
-	<link rel="stylesheet" type="text/css" href="../style.css?5728">
-	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?6914">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?6719">
+	<link rel="stylesheet" type="text/css" href="../style.css?5470">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?1455">
 	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
 	
-    <title>Event-1</title>
+    <title>Crypto C</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
@@ -48,13 +48,13 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc l-bloc " id="bloc-0">
+<div class="bloc l-bloc" id="bloc-0">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col">
 				<nav class="navbar navbar-light row navbar-expand-md" role="navigation">
 					<div class="container-fluid ">
-						<a class="navbar-brand" href="../">Company</a>
+						<a class="navbar-brand" href="../"><picture><source type="image/webp" srcset="../img/160545421.webp"><img src="../img/160545421.jpeg" alt="logo" width="30" height="30"></picture></a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 ms-auto" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-12779">
 							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
 						</button>
@@ -64,10 +64,10 @@
 										<a href="../" class="nav-link">Home</a>
 									</li>
 									<li class="nav-item">
-										<a href="../" class="nav-link">Software</a>
+										<a href="../libraries/" class="nav-link">Libraries</a>
 									</li>
 									<li class="nav-item">
-										<a href="../libraries/" class="nav-link">Libraries</a>
+										<a href="../manufacturing/" class="nav-link a-btn">Engineering</a>
 									</li>
 									<li class="nav-item">
 										<a href="../products/" class="nav-link">Products</a>
@@ -105,7 +105,7 @@
 					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202025-12-02%20at%2004.01.56.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202025-12-02%20at%2004.01.56.png" class="img-fluid lazyload" alt="Device Screen" width="602" height="389"></picture>
 				</div>
 				<p class="mb-3 text-lg-center">
-					Radikant Crypto is a cryptolibrary providing cryptograhpic primivitves such as ECC, Hash and various ciphers and written in C and has no external libraries.
+					Radikant Crypto is a cryptolibrary providing cryptograhpic primivitves such as ECC, Hash and various ciphers and mac’s. &nbsp;Written in C with no external dependencies.
 				</p>
 			</div>
 		</div>
@@ -116,33 +116,158 @@
 <!-- bloc-18 -->
 <div class="bloc l-bloc animated fadeIn" id="bloc-18" data-appear-anim-style="fadeIn">
 	<div class="container bloc-lg bloc-no-padding-lg">
-		<div class="row">
+		<div class="row ms-lg-5 me-lg-5">
 			<div class="col-md-12">
 				<h1 class="mb-4">
 					Introduction
 				</h1>
 				<p class="mb-3 text-justify">
-					Radikant Crypto is a research project and software reference implementation primarily designed for macOS. While primitives are portable to microcontrollers and amenable to hardware optimization (SIMD/NEON), this library is not intended for production use without thorough security auditing. While there are alot of libraries providing the same functionality like openSLL, WolfSLL, EmbedTLS and many more these libraries often have a high level of internal abstractions and are often tightly coupled with some type of internal core native to the library it can become difficult for the reader to focus on the code that does the work. This library is therefore kept simple and internally decoupled wherever possible so its easy just to take coponents and integrate them elsewhere.<br><br>This library is used in other appliction level code such as Radikant-TLS-C and Radikant-SQL-C<br>
+					Radikant Crypto is a eductional implementation supporting common primitives. The cryptograhic core is seperated and decoupled. Currently works on arm64 hardware (apple silicon) and in software mode on 64 bit architecture, but can be easliy modified to run on other platforms or architectures aswell. <br><br>This library is an infamous example of “<i>don’t roll your own crypto</i>” it is incredibly insecure, its branchy, it leaks memory, information and secrets and is not constant time, &nbsp;lacks data validating api’s that are hardened against malicious input. Testing against RFC vectors has proven that the library is capable to produce the correct bit output and is further proven as it used as dependency inside <a href="../tls/">Radikant TLS.</a> There is only handfull of situations where it would be acceptable to use this in production. In general i highly recommend against it.<br><br>Cryptography is incredibly complex and it's suprisingly easy to get wrong. Don’t use this library for any other purposes other than research unless you are very confident about what you are doing.<br>
 				</p>
-				<div class=" ">
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-18 END -->
+
+<!-- bloc-15 -->
+<div class="bloc tc-5275 l-bloc" id="bloc-15">
+	<div class="container bloc-lg bloc-no-padding-lg">
+		<div class="row ms-lg-5 me-lg-5">
+			<div class="col-lg-12 col-md-12">
+				<div class="divider-h">
+				</div>
+				<h2 class="mg-md text-center feat-header text-lg-start">
+					Ciphers
+				</h2>
+				<p class="mg-lg text-center feat-sub-header text-lg-start">
+					Symmetric, Asysmetic, Block and Stream ciphers
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid feat-icon-trans float-lg-none img-bloc-15-style flash-hvr lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					AES
+				</h4>
+				<p class="text-center text-lg-start">
+					Advances Encryption Standard for arm64 supporting cbc, ccm, ctr, ecb and gcm modes.&nbsp;
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					ChaCha20
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					ChaCha with support for Poly1305 mac. Some arm64 support, by design for software mode.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Salsa20
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software only support for Salsa20 &nbsp;stream ciphers.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					RSA
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Bit accurate implementation of RSA for 2048 bit encryption.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-41-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Kuznyechik
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software only implementation of &nbsp;from 3th party source.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-42-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					SM4
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software only implementation of &nbsp;SM4 cipher.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-43-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					TwoFish
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software only implementation of TwoFish cipher from 3th party source.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-44-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Serpent
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software only implementation of TwoFish.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-15 END -->
+
+<!-- bloc-16 -->
+<div class="bloc l-bloc" id="bloc-16">
+	<div class="container bloc-lg bloc-sm-lg">
+		<div class="row">
+			<div class="col text-start">
+				<h5 class="mb-4 tc-6810 ms-lg-5">
+					<i>Example&nbsp;AES gcm</i>
+				</h5>
+				<div class="  ms-lg-5 me-lg-5">
 					<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
     <pre><code class="language-c">
-int main() {
-    char *msg = "Mission Critical: Launch sequence alpha-7.";
-    char *aad = "Protocol:v2";
-    roc_gcm_encrypt(&schedule, iv, ROC_GCM_IV_SIZE,(uint8_t*)aad, aad_len,(uint8_t*)msg, pt_len,ciphertext,tag);
-    roc_gcm_decrypt(&schedule,iv, ROC_GCM_IV_SIZE,(uint8_t*)aad, aad_len,ciphertext, pt_len,tag,decrypted);
-    return 0;
-}
+    uint8_t key[32] = {
+        0x00, 0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07,
+        0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F,
+        0x10, 0x11, 0x12, 0x13, 0x14, 0x15, 0x16, 0x17,
+        0x18, 0x19, 0x1A, 0x1B, 0x1C, 0x1D, 0x1E, 0x1F
+    };
+    uint8_t iv[12] = {
+        0xCA, 0xFE, 0xBA, 0xBE, 0xFA, 0xCE, 0xDB, 0xAD,
+        0xDE, 0xCA, 0xF8, 0x88
+    };
+    const char *aad_str = "Metadata: Header info";
+    const char *pt_str = "Secret Message: The eagle has landed.";
+    
+    uint8_t *aad = (uint8_t*)aad_str;     uint8_t *pt = (uint8_t*)pt_str;
+    size_t aad_len = strlen(aad_str);     size_t pt_len = strlen(pt_str);
+
+    // 3. Prepare Output Buffers
+    uint8_t ct[pt_len];
+    uint8_t tag[16]; // 128-bit tag
+    uint8_t decrypted[pt_len + 1];
+
+    // 4. Initialize AES Context
+    aes_context_t ctx;
+    aes_key_setup(&ctx, key, sizeof(key));
+    aes_gcm_encrypt(&ctx, iv, sizeof(iv), aad, aad_len, pt, pt_len, ct, tag, sizeof(tag));
+    int res = aes_gcm_decrypt(&ctx, iv, sizeof(iv), aad, aad_len, ct, pt_len, tag, sizeof(tag), decrypted);
+
     </code></pre>
 </div>
 					
 				</div>
-				<div class=" ">
+				<div class="  ms-lg-5 me-lg-5">
 						<style>
   /* --- MAIN CONTAINER --- */
   .rlog-terminal {
-    background-color: #0d1117; /* GitHub Dark Dimmed background */
+    background-color: #0d1117; 
     color: #c9d1d9;
     font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
     font-size: 13px;
@@ -150,12 +275,10 @@ int main() {
     border-radius: 8px;
     box-shadow: 0 12px 40px rgba(0,0,0,0.6);
     border: 1px solid #30363d;
-    
-    /* WIDTH FIX: Fills container completely */
     width: 100%; 
     margin: 20px 0; 
-    
     overflow: hidden;
+    text-align: left;
   }
 
   /* --- HEADER (Mac Style) --- */
@@ -176,45 +299,673 @@ int main() {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    gap: 4px; /* Space between rows */
+    gap: 6px; 
   }
 
-  /* Each Row is a Grid */
   .log-row {
     display: grid;
-    /* Columns: Timestamp (auto width), Label (fixed 100px), Message (rest) */
-    grid-template-columns: auto 120px 1fr; 
+    grid-template-columns: 80px 100px 1fr; 
     gap: 15px;
     align-items: baseline;
   }
 
   /* --- TYPOGRAPHY --- */
-  .r-time { 
-    color: #6e7681; 
-    user-select: none; /* Prevents selecting timestamp when copying text */
-    white-space: nowrap;
-  }
-
-  .r-msg {
-    color: #e6edf3;
-    word-break: break-all; /* CRITICAL: Wraps long HEX strings */
-  }
-
-  /* --- LABELS & STATUS COLORS --- */
+  .r-time { color: #6e7681; user-select: none; white-space: nowrap; }
+  .r-msg { color: #e6edf3; word-break: break-all; }
   .r-label { font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
 
-  /* Color Definitions */
-  .lbl-info { color: #58a6ff; } /* Blue/Cyan */
-  .lbl-succ { color: #3fb950; } /* Green */
-  .lbl-err  { color: #f85149; } /* Red */
-  .lbl-warn { color: #d29922; } /* Yellow */
-  .lbl-mag  { color: #db6d28; } /* Orange/Magenta accent */
+  /* --- STATUS COLORS --- */
+  .lbl-info { color: #58a6ff !important; }
+  .lbl-succ { color: #3fb950 !important; }
+  .lbl-err  { color: #f85149 !important; }
+  .lbl-warn { color: #d29922 !important; }
+  .lbl-mag  { color: #db6d28 !important; }
   
-  .txt-cyan { color: #38dbe6; text-shadow: 0 0 10px rgba(56, 219, 230, 0.3); } /* Glowing Cyan */
-
+  .txt-cyan { 
+    color: #38dbe6 !important; 
+    text-shadow: 0 0 8px rgba(56, 219, 230, 0.4); 
+  }
 </style>
 
 <div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+    <div class="log-row">
+      <span class="r-time">11:05:12</span>
+      <span class="r-label lbl-info">System</span>
+      <span class="r-msg">--- AES-GCM Encryption ---</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">11:05:12</span>
+      <span class="r-label lbl-succ">Plaintext</span>
+      <span class="r-msg">Secret Message: The eagle has landed.</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">11:05:12</span>
+      <span class="r-label lbl-err">Cipher</span>
+      <span class="r-msg">D9C6C354CF0E6F5623782EBC1C78B31F5948A571BA780D182BFF6C10CDA9099EC334A422EF</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">11:05:12</span>
+      <span class="r-label lbl-mag">Tag</span>
+      <span class="r-msg">8AA1C657B41B034526775E0CBED5A5DF</span>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #30363d; margin: 8px 0;">
+
+    <div class="log-row">
+      <span class="r-time">11:05:13</span>
+      <span class="r-label lbl-info">System</span>
+      <span class="r-msg">--- AES-GCM Decryption ---</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">11:05:13</span>
+      <span class="r-label lbl-succ">Decrypted</span>
+      <span class="r-msg txt-cyan">Secret Message: The eagle has landed.</span>
+    </div>
+  </div>
+</div>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-16 END -->
+
+<!-- bloc-16 -->
+<div class="bloc tc-5275 l-bloc" id="bloc-16">
+	<div class="container bloc-lg bloc-no-padding-lg">
+		<div class="row ms-lg-5 me-lg-5">
+			<div class="col-lg-12 col-md-12">
+				<div class="divider-h divider-style">
+				</div>
+				<h2 class="mg-md text-center feat-header text-lg-start">
+					Hash
+				</h2>
+				<p class="mg-lg text-center feat-sub-header text-lg-start">
+					Hashing algorithms
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid feat-icon-trans float-lg-none animated flash-hvr img-bloc-15-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					BLAKE3
+				</h4>
+				<p class="text-center text-lg-start">
+					Implementation of Blake3
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Keccak
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Keccak that powers SHA3
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Md5
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Basic MD5 implementation
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					SM3
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Chinese Hash
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-41-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					SHA1
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					SHA1 software implementation.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-42-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					SHA2
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					SHA2 software implementation.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-43-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					SHA3
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					SHA3 software implementation.
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-44-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					SHAKE
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					SHAKE software implementation
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-16 END -->
+
+<!-- bloc-18 -->
+<div class="bloc l-bloc" id="bloc-18">
+	<div class="container bloc-lg bloc-sm-lg">
+		<div class="row">
+			<div class="col text-start">
+				<h5 class="mb-4 ms-lg-5">
+					<i>Example shake</i>
+				</h5>
+				<div class=" ms-lg-5 me-lg-5 ">
+					<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
+    <pre><code class="language-c">
+	int main() {
+	    printf("\n--- SHAKE256 Example ---\n");
+	    const char *shake_input = "Seychelles and Bonaire have beautiful beaches.";
+	    uint8_t shake_output[64]; // 512 bits output
+	    
+	    shake256(shake_output, sizeof(shake_output), shake_input, strlen(shake_input));
+	    printf("Input: %s\n", shake_input);
+	    print_hex("SHAKE256 Output (64 bytes)", shake_output, sizeof(shake_output));
+	    return 0;
+	}
+    </code></pre>
+</div>
+					
+				</div>
+				<div class=" ms-lg-5 me-lg-5 ">
+						<style>
+  /* --- MAIN CONTAINER --- */
+  .rlog-terminal {
+    background-color: #0d1117; 
+    color: #c9d1d9;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    border: 1px solid #30363d;
+    width: 100%; 
+    margin: 20px 0; 
+    overflow: hidden;
+    text-align: left;
+  }
+
+  /* --- HEADER (Mac Style) --- */
+  .rlog-header {
+    background-color: #161b22;
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #30363d;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red-dot { background-color: #ff5f56; }
+  .ylw-dot { background-color: #ffbd2e; }
+  .grn-dot { background-color: #27c93f; }
+
+  /* --- BODY & GRID SYSTEM --- */
+  .rlog-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
+  }
+
+  .log-row {
+    display: grid;
+    grid-template-columns: 80px 100px 1fr; 
+    gap: 15px;
+    align-items: baseline;
+  }
+
+  /* --- TYPOGRAPHY --- */
+  .r-time { color: #6e7681; user-select: none; white-space: nowrap; }
+  .r-msg { color: #e6edf3; word-break: break-all; }
+  .r-label { font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* --- STATUS COLORS --- */
+  .lbl-info { color: #58a6ff !important; }
+  .lbl-succ { color: #3fb950 !important; }
+  .lbl-err  { color: #f85149 !important; }
+  .lbl-warn { color: #d29922 !important; }
+  .lbl-mag  { color: #db6d28 !important; }
+  
+  .txt-cyan { 
+    color: #38dbe6 !important; 
+    text-shadow: 0 0 8px rgba(56, 219, 230, 0.4); 
+  }
+</style>
+
+<div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+    <div class="log-row">
+      <span class="r-time">07:45:12</span>
+      <span class="r-label lbl-info">System</span>
+      <span class="r-msg">--- SHAKE256 XOF Hashing ---</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">07:45:12</span>
+      <span class="r-label lbl-warn">Input</span>
+      <span class="r-msg">Seychelles has beautiful beaches.</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">07:45:12</span>
+      <span class="r-label lbl-mag">Params</span>
+      <span class="r-msg">Length: 64 bytes (512 bits)</span>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #30363d; margin: 8px 0;">
+
+    <div class="log-row">
+      <span class="r-time">07:45:13</span>
+      <span class="r-label lbl-succ">Hash</span>
+      <span class="r-msg txt-cyan">B3A073A5658357FFCE7F5C2DF42D778642A90FF194DB1E2EEEF19BD433C59199AF608704BAC673CDF9A4422A57DEEDCBF2B9AF2753762FE8B7589B0A938DF07E</span>
+    </div>
+  </div>
+</div>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-18 END -->
+
+<!-- bloc-17 -->
+<div class="bloc tc-5275 l-bloc" id="bloc-17">
+	<div class="container bloc-lg bloc-no-padding-lg">
+		<div class="row ms-lg-5 me-lg-5">
+			<div class="col-lg-12 col-md-12">
+				<div class="divider-h">
+				</div>
+				<h2 class="mg-md text-center feat-header text-lg-start">
+					ECC
+				</h2>
+				<p class="mg-lg text-center feat-sub-header text-lg-start">
+					Eliptic curve cryptography
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none animated flash-hvr img-bloc-17-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					P224
+				</h4>
+				<p class="text-center text-lg-start">
+					NIST secp224r1<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					P256
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					NIST secp256r1<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					P384
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					NIST secp384r1<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					P521
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					NIST secp521r1<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-41-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Curve25519
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software Implementation of DJB curve
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-42-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					ED/X25519
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					ECDH &&nbsp;EdDSA for Curve 25519
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-43-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Curve448
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software Implementation of MH Curve
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bolt-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-44-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					ED/X448
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					ECDH &&nbsp;EdDSA for Curve 448
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-17 END -->
+
+<!-- bloc-20 -->
+<div class="bloc l-bloc" id="bloc-20">
+	<div class="container bloc-lg bloc-sm-lg">
+		<div class="row">
+			<div class="col text-start">
+				<h5 class="mb-4 ms-lg-5">
+					<i>Example&nbsp;secp381r1</i>
+				</h5>
+				<div class="  ms-lg-5 me-lg-5">
+					<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
+    <pre><code class="language-c">
+    uint8_t private_key[48];
+    uint8_t public_key[96];
+    uint8_t signature[96];
+    uint8_t msg_hash[48];
+    p384_generate_random(msg_hash, sizeof(msg_hash));
+    p384_gen_keypair(private_key, public_key)
+    p384_ecdsa_sign(signature, private_key, msg_hash, sizeof(msg_hash)
+    p384_ecdsa_verify(signature, public_key, msg_hash, sizeof(msg_hash)
+    </code></pre>
+</div>
+					
+				</div>
+				<div class="  me-lg-5 ms-lg-5">
+						<style>
+  /* --- MAIN CONTAINER --- */
+  .rlog-terminal {
+    background-color: #0d1117; 
+    color: #c9d1d9;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    border: 1px solid #30363d;
+    width: 100%; 
+    margin: 20px 0; 
+    overflow: hidden;
+    text-align: left;
+  }
+
+  /* --- HEADER (Mac Style) --- */
+  .rlog-header {
+    background-color: #161b22;
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #30363d;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red-dot { background-color: #ff5f56; }
+  .ylw-dot { background-color: #ffbd2e; }
+  .grn-dot { background-color: #27c93f; }
+
+  /* --- BODY & GRID SYSTEM --- */
+  .rlog-body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
+  }
+
+  .log-row {
+    display: grid;
+    grid-template-columns: 80px 100px 1fr; 
+    gap: 15px;
+    align-items: baseline;
+  }
+
+  /* --- TYPOGRAPHY --- */
+  .r-time { color: #6e7681; user-select: none; white-space: nowrap; }
+  .r-msg { color: #e6edf3; word-break: break-all; }
+  .r-label { font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  /* --- STATUS COLORS --- */
+  .lbl-info { color: #58a6ff !important; } /* Blue */
+  .lbl-succ { color: #3fb950 !important; } /* Green */
+  .lbl-err  { color: #f85149 !important; } /* Red */
+  .lbl-warn { color: #d29922 !important; } /* Yellow */
+  .lbl-mag  { color: #db6d28 !important; } /* Orange */
+  
+  .txt-cyan { 
+    color: #38dbe6 !important; 
+    text-shadow: 0 0 8px rgba(56, 219, 230, 0.4); 
+  }
+</style>
+
+<div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+    <div class="log-row">
+      <span class="r-time">10:04:12</span>
+      <span class="r-label lbl-info">System</span>
+      <span class="r-msg">--- P-384 Minimal Example ---</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">10:04:12</span>
+      <span class="r-label lbl-succ">ECDSA</span>
+      <span class="r-msg">Keypair generated.</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">10:04:12</span>
+      <span class="r-label lbl-err">Private</span>
+      <span class="r-msg">7ec46c166d556bd65f4f20955a53293e2cdc4788813f6045f61c18fb4d562fc7ab5d0d53a0a9c6e2b8d9bdf124077015</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">10:04:12</span>
+      <span class="r-label lbl-warn">Public</span>
+      <span class="r-msg">234ccf2e85387e087d5e87b20f0001292ceca6c3aa983a9d05783386baa0c442deb61a6d018713b14d403146a34fdf478d0226917626b316de9997b6de19de5d2a9c8163e41187804e47c556c5bfdfe6ab300deac35fa7f72f88d32b18a51a5b</span>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #30363d; margin: 5px 0; width: 100%;">
+
+    <div class="log-row">
+      <span class="r-time">10:04:13</span>
+      <span class="r-label lbl-mag">Sign</span>
+      <span class="r-msg">Signature created.</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">10:04:13</span>
+      <span class="r-label lbl-info">Hash</span>
+      <span class="r-msg">081ae5c1da33e90284964b11b42b5965224ab781f1226c63a343fce98ec06d7000300f0445294b5616a2d7090cde6a4d</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">10:04:13</span>
+      <span class="r-label lbl-succ">Verify</span>
+      <span class="r-msg txt-cyan">Signature verified.</span>
+    </div>
+  </div>
+</div>
+						
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-20 END -->
+
+<!-- bloc-18 -->
+<div class="bloc tc-5275 l-bloc" id="bloc-18">
+	<div class="container bloc-lg bloc-no-padding-lg">
+		<div class="row ms-lg-5 me-lg-5">
+			<div class="col-lg-12 col-md-12">
+				<div class="divider-h animated pulse-hvr">
+				</div>
+				<h2 class="mg-md text-center feat-header text-lg-start">
+					MAC
+				</h2>
+				<p class="mg-lg text-center feat-sub-header text-lg-start">
+					Message Authentication Code
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bookmark-square-minimalistic-svgrepo-com.svg" class="img-fluid feat-icon-trans float-lg-none animated flash-hvr img-bloc-15-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					GHASH
+				</h4>
+				<p class="text-center text-lg-start">
+					achieved 2x improvcement over openSSL using Kurdi &nbsp;& Möller 2025 paper on arm64.<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bookmark-square-minimalistic-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					HMAC
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Support for SHA1, SHA2-256, SHA2-384, SHA2-512,&nbsp;
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bookmark-square-minimalistic-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					POLY
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Software implementation of Poly1305 only.<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/bookmark-square-minimalistic-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					VMAC
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Fast software implementation of VMAC.<br>
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-18 END -->
+
+<!-- bloc-22 -->
+<div class="bloc l-bloc" id="bloc-22">
+	<div class="container bloc-lg bloc-sm-lg">
+		<div class="row">
+			<div class="col text-start ms-lg-5 me-lg-5">
+				<h5 class="mb-4 tc-6810">
+					<i>Example&nbsp;HMAC-SHA512</i>
+				</h5>
+				<div class=" ">
+					
+<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
+    <pre><code class="language-c">
+	int main()
+	{
+	    const char *key = "secret-key";
+	    const char *msg = "Hello, world!";
+	    uint8_t mac[SHA512_DIGEST_SIZE];
+	    hmac_sha512(key, strlen(key), msg, strlen(msg), mac);
+	    return 0;
+	}
+    </code></pre>
+</div>
+					
+				</div>
+				<div class=" ">
+						<div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+    <div class="log-row">
+      <span class="r-time">12:45:01</span>
+      <span class="r-label lbl-mag">Module</span>
+      <span class="r-msg">--- HMAC-SHA512 Example ---</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">12:45:01</span>
+      <span class="r-label lbl-err" style="color: #f85149 !important;">Secret</span>
+      <span class="r-msg">Key: secret-key</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">12:45:01</span>
+      <span class="r-label lbl-info" style="color: #58a6ff !important;">Input</span>
+      <span class="r-msg">Msg: Hello, world!</span>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #30363d; margin: 5px 0; width: 100%;">
+
+    <div class="log-row">
+      <span class="r-time">12:45:02</span>
+      <span class="r-label lbl-succ" style="color: #3fb950 !important;">Output</span>
+      <span class="r-msg txt-cyan" style="color: #38dbe6 !important;">HMAC: 748647ebeeeaebede1f627e0137c314c58f387e52f4336581c749dcd34888f60c790c8e1669493dd171aaf898c7e68ffebb774d06e60ef30c3ab482eafe984f2</span>
+    </div>
+  </div>
+</div>
+						
+					</div>
+				<h5 class="mb-4 tc-6810">
+							<i>Ghash</i> <i>performance :&nbsp;</i>Kurdi &nbsp;& Möller November 2025
+						</h5>
+				<div class=" ">
+							<div class="rlog-terminal">
   
   <div class="rlog-header">
     <div class="dot red-dot"></div>
@@ -225,755 +976,255 @@ int main() {
   <div class="rlog-body">
 
     <div class="log-row">
-      <span class="r-time">23:32:00</span>
-      <span class="r-label lbl-info">Plaintext</span>
-      <span class="r-msg">Mission Critical: Launch sequence alpha-7.</span>
+      <span class="r-time">BENCH</span>
+      <span class="r-label lbl-mag">Config</span>
+      <span class="r-msg">GHASH | Buffer: 256 MB | Iterations: 200 | Total: 50.00 GB</span>
+    </div>
+
+    <hr style="border: 0; border-top: 1px solid #30363d; margin: 5px 0; width: 100%;">
+
+    <div class="log-row">
+      <span class="r-time">14:20:01</span>
+      <span class="r-label lbl-succ">Radikant</span>
+      <span class="r-msg txt-cyan">Time: 3.6511s | Throughput: 13.69 GB/s</span>
     </div>
 
     <div class="log-row">
-      <span class="r-time">23:32:00</span>
-      <span class="r-label lbl-succ">AAD</span>
-      <span class="r-msg">Protocol:v2</span>
-    </div>
-
-    <div class="log-row">
-      <span class="r-time">23:32:00</span>
-      <span class="r-label lbl-err">Ciphertext</span>
-      <span class="r-msg">A0E6453E636F6E217A8A0F866863AF96D7AF7A2C7E6E6369198B03837465A09988AF57217F68612C0ED6</span>
-    </div>
-
-    <div class="log-row">
-        <span class="r-time">23:32:01</span>
-        <span class="r-label lbl-warn">System</span>
-        <span class="r-msg">Decrypting payload...</span>
-    </div>
-
-    <div class="log-row">
-      <span class="r-time">23:32:01</span>
-      <span class="r-label lbl-mag">Success</span>
-      <span class="r-msg txt-cyan">Success! Decrypted text: Mission Critical: Launch sequence alpha-7.</span>
+      <span class="r-time">14:20:05</span>
+      <span class="r-label lbl-info">OpenSSL</span>
+      <span class="r-msg txt-cyan">Time: 6.7905s | Throughput: 7.36 GB/s</span>
     </div>
 
   </div>
 </div>
-						
-					</div>
-				<h2 class="text-center mb-4">
-							Ciphers<br>
-						</h2>
-				<p class="mb-3 mx-auto d-block text-lg-center">
-							Symmetric, Asysmetic, Block and Stream ciphers
-						</p>
-			</div>
-			<div class="col-md-6">
-						<div class="row voffset">
-							<div class="col order-1">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									AES
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
+							
 						</div>
-						<div class="row voffset">
-							<div class="col order-2">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									ChaCha20
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
-						</div>
-						<div class="row voffset">
-							<div class="col order-2">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									Salsa20
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
-						</div>
-						<div class="row voffset">
-							<div class="col order-2">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									Twofish
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
-						</div>
-					</div>
-			<div class="col-md-6">
-						<div class="row">
-							<div class="col-12">
-								<div class="row voffset">
-									<div class="col">
-										<h4 class="text-center mt-2 mb-2 text-lg-start">
-											Kuznyechik
-										</h4>
-										<p class="text-center mb-3 text-lg-start">
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-										</p>
-									</div>
-								</div>
-								<div class="row voffset">
-									<div class="col">
-										<h4 class="text-center mt-2 mb-2 text-lg-start">
-											SM4
-										</h4>
-										<p class="text-center mb-3 text-lg-start">
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-										</p>
-									</div>
-								</div>
-								<div class="row voffset">
-									<div class="col">
-										<h4 class="text-center mt-2 mb-2 text-lg-start">
-											Serpent
-										</h4>
-										<p class="text-center mb-3 text-lg-start">
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-										</p>
-									</div>
-								</div>
-								<div class="row voffset">
-									<div class="col">
-										<h4 class="text-center mt-2 mb-2 text-lg-start">
-											RSA
-										</h4>
-										<p class="text-center mb-3 text-lg-start">
-											Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-										</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-18 END -->
-
-<!-- bloc-19 -->
-<div class="bloc l-bloc" id="bloc-19">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-md-6">
-				<div class="mx-auto d-block blocsapp-device blocsapp-device-ipad-pro ipad-pro-portrait ipad-pro-silver">
-					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202025-12-02%20at%2004.43.25.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202025-12-02%20at%2004.43.25.png" class="img-fluid lazyload" alt="Device Screen" width="458" height="633"></picture>
-				</div>
-			</div>
-			<div class="align-self-center col-md-6">
-				<h2 class="mb-4">
-					Feature Title
-				</h2>
-				<h3 class="mb-3">
-					A more descriptive sub heading.
-				</h3>
-				<p class="mb-3">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				</p><a href="../" class="btn btn-d btn-lg">More Info</a>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-19 END -->
-
-<!-- bloc-19 -->
-<div class="bloc l-bloc animated fadeIn" data-appear-anim-style="fadeIn" id="bloc-19">
-	<div class="container bloc-lg bloc-no-padding-lg">
-		<div class="row">
-			<div class="col-md-12">
-				<h1 class="mb-4">
-					Introduction
-				</h1>
-				<h2 class="text-center mb-4">
-					Ciphers<br>
-				</h2>
-				<p class="mb-3 mx-auto d-block text-lg-center">
-					Symmetric, Asysmetic, Block and Stream ciphers
-				</p>
-			</div>
-			<div class="col-md-6">
-				<div class="row voffset">
-					<div class="col order-1">
-						<h4 class="text-center mt-2 mb-2 text-lg-end">
-							AES
-						</h4>
-						<p class="text-center mb-3 text-lg-end">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-						</p>
-					</div>
-					<div class="col-lg-3 order-lg-1">
-						<div class="text-center">
-							<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-						</div>
-					</div>
-				</div>
-				<div class="row voffset">
-						<div class="col order-2">
-							<h4 class="text-center mt-2 mb-2 text-lg-end">
-								ChaCha20
-							</h4>
-							<p class="text-center mb-3 text-lg-end">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-							</p>
-						</div>
-						<div class="col-lg-3 order-lg-2">
-							<div class="text-center">
-								<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-							</div>
-						</div>
-					</div>
-				<div class="row voffset">
-							<div class="col order-2">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									Salsa20
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
-							<div class="col-lg-3 order-lg-2">
-								<div class="text-center">
-									<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-								</div>
-							</div>
-						</div>
-				<div class="row voffset">
-								<div class="col order-2">
-									<h4 class="text-center mt-2 mb-2 text-lg-end">
-										Twofish
-									</h4>
-									<p class="text-center mb-3 text-lg-end">
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-									</p>
-								</div>
-								<div class="col-lg-3 order-lg-2">
-									<div class="text-center">
-										<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-									</div>
-								</div>
-							</div>
-			</div>
-			<div class="col-md-6">
-								<div class="row">
-									<div class="col-12">
-										<div class="row voffset">
-											<div class="col-lg-3">
-												<div class="text-center">
-													<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-												</div>
-											</div>
-											<div class="col">
-													<h4 class="text-center mt-2 mb-2 text-lg-start">
-														Kuznyechik
-													</h4>
-													<p class="text-center mb-3 text-lg-start">
-														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-													</p>
-												</div>
-										</div>
-										<div class="row voffset">
-												<div class="col-lg-3">
-													<div class="text-center">
-														<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-													</div>
-												</div>
-												<div class="col">
-														<h4 class="text-center mt-2 mb-2 text-lg-start">
-															SM4
-														</h4>
-														<p class="text-center mb-3 text-lg-start">
-															Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-														</p>
-													</div>
-											</div>
-										<div class="row voffset">
-													<div class="col-lg-3">
-														<div class="text-center">
-															<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-														</div>
-													</div>
-													<div class="col">
-															<h4 class="text-center mt-2 mb-2 text-lg-start">
-																Serpent
-															</h4>
-															<p class="text-center mb-3 text-lg-start">
-																Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-															</p>
-														</div>
-												</div>
-										<div class="row voffset">
-														<div class="col-lg-3">
-															<div class="text-center">
-																<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-															</div>
-														</div>
-														<div class="col">
-																<h4 class="text-center mt-2 mb-2 text-lg-start">
-																	RSA
-																</h4>
-																<p class="text-center mb-3 text-lg-start">
-																	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-																</p>
-															</div>
-													</div>
-									</div>
-								</div>
-							</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-19 END -->
-
-<!-- bloc-20 -->
-<div class="bloc l-bloc animated fadeIn" data-appear-anim-style="fadeIn" id="bloc-20">
-	<div class="container bloc-lg bloc-no-padding-lg">
-		<div class="row">
-			<div class="col-md-12">
-				<h1 class="mb-4">
-					Introduction
-				</h1>
-				<p class="mb-3 text-justify">
-					Radikant Crypto is a research project and software reference implementation primarily designed for macOS. While primitives are portable to microcontrollers and amenable to hardware optimization (SIMD/NEON), this library is not intended for production use without thorough security auditing. While there are alot of libraries providing the same functionality like openSLL, WolfSLL, EmbedTLS and many more these libraries often have a high level of internal abstractions and are often tightly coupled with some type of internal core native to the library it can become difficult for the reader to focus on the code that does the work. This library is therefore kept simple and internally decoupled wherever possible so its easy just to take coponents and integrate them elsewhere.<br><br>This library is used in other appliction level code such as Radikant-TLS-C and mySQL.<br>
-				</p>
-				<h2 class="text-center mb-4">
-					Ciphers<br>
-				</h2>
-				<p class="mb-3 mx-auto d-block text-lg-center">
-					Symmetric, Asysmetic, Block and Stream ciphers
-				</p>
-			</div>
-			<div class="col-md-6">
-				<div class="row voffset">
-					<div class="col order-1">
-						<h4 class="text-center mt-2 mb-2 text-lg-end">
-							AES
-						</h4>
-						<p class="text-center mb-3 text-lg-end">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-						</p>
-					</div>
-					<div class="col-lg-3 order-lg-1">
-						<div class="text-center">
-							<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-						</div>
-					</div>
-				</div>
-				<div class="row voffset">
-						<div class="col order-2">
-							<h4 class="text-center mt-2 mb-2 text-lg-end">
-								ChaCha20
-							</h4>
-							<p class="text-center mb-3 text-lg-end">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-							</p>
-						</div>
-						<div class="col-lg-3 order-lg-2">
-							<div class="text-center">
-								<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-							</div>
-						</div>
-					</div>
-				<div class="row voffset">
-							<div class="col order-2">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									Salsa20
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
-							<div class="col-lg-3 order-lg-2">
-								<div class="text-center">
-									<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-								</div>
-							</div>
-						</div>
-				<div class="row voffset">
-								<div class="col order-2">
-									<h4 class="text-center mt-2 mb-2 text-lg-end">
-										Twofish
-									</h4>
-									<p class="text-center mb-3 text-lg-end">
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-									</p>
-								</div>
-								<div class="col-lg-3 order-lg-2">
-									<div class="text-center">
-										<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-									</div>
-								</div>
-							</div>
-			</div>
-			<div class="col-md-6">
-								<div class="row">
-									<div class="col-12">
-										<div class="row voffset">
-											<div class="col-lg-3">
-												<div class="text-center">
-													<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-												</div>
-											</div>
-											<div class="col">
-													<h4 class="text-center mt-2 mb-2 text-lg-start">
-														Kuznyechik
-													</h4>
-													<p class="text-center mb-3 text-lg-start">
-														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-													</p>
-												</div>
-										</div>
-										<div class="row voffset">
-												<div class="col-lg-3">
-													<div class="text-center">
-														<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-													</div>
-												</div>
-												<div class="col">
-														<h4 class="text-center mt-2 mb-2 text-lg-start">
-															SM4
-														</h4>
-														<p class="text-center mb-3 text-lg-start">
-															Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-														</p>
-													</div>
-											</div>
-										<div class="row voffset">
-													<div class="col-lg-3">
-														<div class="text-center">
-															<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-														</div>
-													</div>
-													<div class="col">
-															<h4 class="text-center mt-2 mb-2 text-lg-start">
-																Serpent
-															</h4>
-															<p class="text-center mb-3 text-lg-start">
-																Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-															</p>
-														</div>
-												</div>
-										<div class="row voffset">
-														<div class="col-lg-3">
-															<div class="text-center">
-																<blocsicon class="icon-size"><svg viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M336 352c97.2 0 176-78.8 176-176S433.2 0 336 0S160 78.8 160 176c0 18.7 2.9 36.8 8.3 53.7L7 391c-4.5 4.5-7 10.6-7 17v80c0 13.3 10.7 24 24 24h80c13.3 0 24-10.7 24-24V448h40c13.3 0 24-10.7 24-24V384h40c6.4 0 12.5-2.5 17-7l33.3-33.3c16.9 5.4 35 8.3 53.7 8.3zM376 96a40 40 0 1 1 0 80 40 40 0 1 1 0-80z"></path></svg></blocsicon>
-															</div>
-														</div>
-														<div class="col">
-																<h4 class="text-center mt-2 mb-2 text-lg-start">
-																	RSA
-																</h4>
-																<p class="text-center mb-3 text-lg-start">
-																	Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-																</p>
-															</div>
-													</div>
-									</div>
-								</div>
-							</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-20 END -->
+<!-- bloc-22 END -->
 
 <!-- bloc-18 -->
-<div class="bloc l-bloc" id="bloc-18">
+<div class="bloc tc-5275 l-bloc" id="bloc-18">
 	<div class="container bloc-lg bloc-no-padding-lg">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="text-center mb-4">
-					Hashes<br>
+		<div class="row ms-lg-5 me-lg-5">
+			<div class="col-lg-12 col-md-12">
+				<div class="divider-h">
+				</div>
+				<h2 class="mg-md text-center feat-header text-lg-start">
+					KDF
 				</h2>
-				<p class="mb-3 mx-auto d-block text-lg-center">
-					Symmetric, Asysmetic, Block and Stream ciphers
+				<p class="mg-lg text-center feat-sub-header text-lg-start">
+					Key Derivation Functions
 				</p>
 			</div>
-			<div class="col-md-6">
-				<div class="row voffset">
-					<div class="col order-1">
-						<h4 class="text-center mt-2 mb-2 text-lg-end">
-							BLAKE3
-						</h4>
-						<p class="text-center mb-3 text-lg-end">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-						</p>
-					</div>
-					<div class="col-lg-3 order-lg-1">
-						<div class="text-center">
-							<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-						</div>
-					</div>
-				</div>
-				<div class="row voffset">
-						<div class="col order-2">
-							<h4 class="text-center mt-2 mb-2 text-lg-end">
-								MD5
-							</h4>
-							<p class="text-center mb-3 text-lg-end">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-							</p>
-						</div>
-						<div class="col-lg-3 order-lg-2">
-							<div class="text-center">
-								<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-							</div>
-						</div>
-					</div>
-				<div class="row voffset">
-							<div class="col order-2">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									SM3
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
-							<div class="col-lg-3 order-lg-2">
-								<div class="text-center">
-									<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-								</div>
-							</div>
-						</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/key-square-svgrepo-com.svg" class="img-fluid feat-icon-trans float-lg-none animated flash-hvr img-bloc-15-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					Argon2
+				</h4>
+				<p class="text-center text-lg-start">
+					Argon2 with Blake2<br>
+				</p>
 			</div>
-			<div class="col-md-6">
-							<div class="row">
-								<div class="col-12">
-									<div class="row voffset">
-										<div class="col-lg-3">
-											<div class="text-center">
-												<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-											</div>
-										</div>
-										<div class="col">
-												<h4 class="text-center mt-2 mb-2 text-lg-start">
-													SHA1
-												</h4>
-												<p class="text-center mb-3 text-lg-start">
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-												</p>
-											</div>
-									</div>
-									<div class="row voffset">
-											<div class="col-lg-3">
-												<div class="text-center">
-													<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-												</div>
-											</div>
-											<div class="col">
-													<h4 class="text-center mt-2 mb-2 text-lg-start">
-														SHA2
-													</h4>
-													<p class="text-center mb-3 text-lg-start">
-														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-													</p>
-												</div>
-										</div>
-									<div class="row voffset">
-												<div class="col-lg-3">
-													<div class="text-center">
-														<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-													</div>
-												</div>
-												<div class="col">
-														<h4 class="text-center mt-2 mb-2 text-lg-start">
-															SHA3
-														</h4>
-														<p class="text-center mb-3 text-lg-start">
-															Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-														</p>
-													</div>
-											</div>
-								</div>
-							</div>
-						</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/key-square-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					HKDF
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					HMAC-based Extract-and-Expand Key Derivation Function<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/key-square-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					PBKDF2
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Password-Based Key Derivation Function 2<br>
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/key-square-svgrepo-com.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					SCRYPT
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					Scrypt<br>
+				</p>
+			</div>
 		</div>
 	</div>
 </div>
 <!-- bloc-18 END -->
 
-<!-- bloc-19 -->
-<div class="bloc l-bloc" id="bloc-19">
-	<div class="container bloc-lg bloc-no-padding-lg">
-		<div class="row">
-			<div class="col-md-12">
-				<h2 class="text-center mb-4">
-					Mac<br>
-				</h2>
-				<p class="mb-3 mx-auto d-block text-lg-center">
-					message authentication code&nbsp;<strong>&nbsp;</strong>
-				</p>
-			</div>
-			<div class="col-md-6">
-				<div class="row voffset">
-					<div class="col order-1">
-						<h4 class="text-center mt-2 mb-2 text-lg-end">
-							CMAC
-						</h4>
-						<p class="text-center mb-3 text-lg-end">
-							Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-						</p>
-					</div>
-					<div class="col-lg-3 order-lg-1">
-						<div class="text-center">
-							<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-						</div>
-					</div>
-				</div>
-				<div class="row voffset">
-						<div class="col order-2">
-							<h4 class="text-center mt-2 mb-2 text-lg-end">
-								HMAC
-							</h4>
-							<p class="text-center mb-3 text-lg-end">
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-							</p>
-						</div>
-						<div class="col-lg-3 order-lg-2">
-							<div class="text-center">
-								<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-							</div>
-						</div>
-					</div>
-				<div class="row voffset">
-							<div class="col order-2">
-								<h4 class="text-center mt-2 mb-2 text-lg-end">
-									VMAC
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-								</p>
-							</div>
-							<div class="col-lg-3 order-lg-2">
-								<div class="text-center">
-									<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-								</div>
-							</div>
-						</div>
-			</div>
-			<div class="col-md-6">
-							<div class="row">
-								<div class="col-12">
-									<div class="row voffset">
-										<div class="col-lg-3">
-											<div class="text-center">
-												<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-											</div>
-										</div>
-										<div class="col">
-												<h4 class="text-center mt-2 mb-2 text-lg-start">
-													GHASH
-												</h4>
-												<p class="text-center mb-3 text-lg-start">
-													Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-												</p>
-											</div>
-									</div>
-									<div class="row voffset">
-											<div class="col-lg-3">
-												<div class="text-center">
-													<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-												</div>
-											</div>
-											<div class="col">
-													<h4 class="text-center mt-2 mb-2 text-lg-start">
-														POLY
-													</h4>
-													<p class="text-center mb-3 text-lg-start">
-														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-													</p>
-												</div>
-										</div>
-									<div class="row voffset">
-												<div class="col-lg-3">
-													<div class="text-center">
-														<blocsicon class="icon-size"><svg viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc. --><path d="M181.3 32.4c17.4 2.9 29.2 19.4 26.3 36.8L197.8 128h95.1l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3s29.2 19.4 26.3 36.8L357.8 128H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H347.1L325.8 320H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H315.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8l9.8-58.7H155.1l-11.5 69.3c-2.9 17.4-19.4 29.2-36.8 26.3s-29.2-19.4-26.3-36.8L90.2 384H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l21.3-128H64c-17.7 0-32-14.3-32-32s14.3-32 32-32h68.9l11.5-69.3c2.9-17.4 19.4-29.2 36.8-26.3zM187.1 192L165.8 320h95.1l21.3-128H187.1z"></path></svg></blocsicon>
-													</div>
-												</div>
-												<div class="col">
-														<h4 class="text-center mt-2 mb-2 text-lg-start">
-															RMA
-														</h4>
-														<p class="text-center mb-3 text-lg-start">
-															Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-														</p>
-													</div>
-											</div>
-								</div>
-							</div>
-						</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-19 END -->
-
-<!-- bloc-10 -->
-<div class="bloc l-bloc" id="bloc-10">
-	<div class="container bloc-lg">
+<!-- bloc-24 -->
+<div class="bloc l-bloc" id="bloc-24">
+	<div class="container bloc-lg bloc-sm-lg">
 		<div class="row">
 			<div class="col text-start">
-				<h1 class="mb-4">
-					API
-				</h1>
-				<p class="mb-3">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				</p>
-				<div>
-					<div class="code-container" style="background: #272822; padding: 20px; border-radius: 8px;">
+				<h5 class="mb-4 ms-lg-5 me-lg-5">
+					<i>Example</i> <i>PBKDF2</i>
+				</h5>
+				<div class="  ms-lg-5 me-lg-5">
+					<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
     <pre><code class="language-c">
-#include &lt;stdio.h&gt;
-
-int main() {
-    // This is a C comment
-    int number = 10;
-    
-    printf("The number is: %d", number);
-    
-    return 0;
-}
+	int main()
+	{
+	    const char *password = "password";
+	    const uint8_t salt[] = { 0x12, 0x34, 0x56, 0x78 };
+	    uint32_t iterations = 4096;
+	    uint8_t dk[64];
+	
+	    printf("--- PBKDF2-HMAC-SHA512 Example ---\n");
+	    pbkdf2_hmac_sha512((const uint8_t*)password, strlen(password),
+	                       salt, sizeof(salt),
+	                       iterations, dk, sizeof(dk));
+	
+	    printf("Password: %s\n", password);
+	    print_hex("Salt", salt, sizeof(salt));
+	    printf("Iterations: %d\n", iterations);
+	    print_hex("Derived Key", dk, sizeof(dk));
+	    return 0;
+	}
     </code></pre>
 </div>
 					
 				</div>
-				<div>
-						Custom HTML here.
+				<div class="  ms-lg-5 me-lg-5">
+						<div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+    <div class="log-row">
+      <span class="r-time">14:20:10</span>
+      <span class="r-label lbl-info" style="color: #58a6ff !important;">Config</span>
+      <span class="r-msg">--- PBKDF2-HMAC-SHA512 Example ---</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">14:20:10</span>
+      <span class="r-label lbl-err" style="color: #f85149 !important;">Secret</span>
+      <span class="r-msg">Password: password</span>
+    </div>
+
+    <div class="log-row">
+      <span class="r-time">14:20:10</span>
+      <span class="r-label lbl-warn" style="color: #d29922 !important;">Params</span>
+      <span class="r-msg">Salt: 12345678 | Iterations: 4096</span>
+    </div>
+    <div class="log-row">
+      <span class="r-time">14:20:11</span>
+      <span class="r-label lbl-succ" style="color: #3fb950 !important;">Derived</span>
+      <span class="r-msg txt-cyan" style="color: #38dbe6 !important;">33320e9d66500d5b6021d717da567732f323a8775b39fcef4f83f75fe34441592b72c82cb97068ad5a6b72a71b0487d8bcaab379962c165c8e795bce83c6d435</span>
+    </div>
+  </div>
+</div>
 						
 					</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-10 END -->
+<!-- bloc-24 END -->
 
-<!-- bloc-11 -->
-<div class="bloc l-bloc" id="bloc-11">
-	<div class="container bloc-lg">
+<!-- bloc-25 -->
+<div class="bloc l-bloc" id="bloc-25">
+	<div class="container bloc-lg bloc-no-padding-lg">
 		<div class="row">
 			<div class="col text-start">
+				<h1 class="mb-4 btn-resize-mode h1-bloc-25-style ms-lg-5">
+					Testing
+				</h1>
+				<p class="mb-3 text-justify ms-lg-5 me-lg-5">
+					In order to test the bit output of this library the build can produce seperate testing binaries specific for testing against rfc vectors. Since alot of cryptographic primitives are build ontop of eachother a very simple and rudimentary test setup is used for regression testing. <a href="../probe/">Radikant probe</a> is utilized for &nbsp;quick testing and <a href="../log/">Radikant Log</a>&nbsp;for logging. The most commonly used primitives are now tested, but quite a few ciphers like SM2, Grashopper and many more havent been fully tested on correct output, but appear functional at first glance. One of the first next great improvements would be to focus on memory and constant time for &nbsp;major primitives.&nbsp;<br><br><i>Radikant Probe Output</i>
+				</p>
+				<div class="  me-lg-5 ms-lg-5">
+					<style>
+  .rlog-terminal {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 13px;
+    line-height: 1.45;
+    border-radius: 8px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    border: 1px solid #30363d;
+    width: 100%;
+    margin: 20px 0;
+    overflow-x: auto; /* prevents layout break on small screens */
+  }
+
+  .rlog-header {
+    background-color: #161b22;
+    padding: 10px 15px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #30363d;
+  }
+
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red-dot { background-color: #ff5f56; }
+  .ylw-dot { background-color: #ffbd2e; }
+  .grn-dot { background-color: #27c93f; }
+
+  .rlog-body {
+    padding: 18px;
+  }
+
+  /* CRITICAL FOR ALIGNMENT */
+  .r-report {
+    white-space: pre;
+    font-variant-ligatures: none;
+    letter-spacing: 0;
+    tab-size: 4;
+  }
+
+  /* Scoped colors */
+  .rlog-terminal .pass { color: #3fb950; font-weight: 600; }
+  .rlog-terminal .fail { color: #f85149; font-weight: 600; }
+
+  .rlog-terminal .ok  { color: #3fb950; font-weight: 600; }
+  .rlog-terminal .bad { color: #f85149; font-weight: 600; }
+</style>
+
+<div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+<pre class="r-report"> FINAL SUMMARY REPORT | Radikant ECC X25519 Suite | RFC 7748                    
+|------------------------------------------------------------------------------|
+| S | M | Ψ | ID   | Status | Name                           | Standard        |
+|---+---+---+------+--------+--------------------------------+-----------------|
+| <span class="ok">✓</span> | <span class="bad">✗</span> | <span class="ok">✓</span> | 0    | <span class="pass">PASS</span>   | test_arithmetic_fuzz           | Arithmetic Fuzz |
+| <span class="ok">✓</span> | <span class="bad">✗</span> | <span class="ok">✓</span> | 1    | <span class="pass">PASS</span>   | test_rfc7748_vectors           | RFC 7748 Vector |
+| <span class="ok">✓</span> | <span class="bad">✗</span> | <span class="ok">✓</span> | 2    | <span class="pass">PASS</span>   | test_properties                | Properties      |
+| <span class="ok">✓</span> | <span class="bad">✗</span> | <span class="ok">✓</span> | 3    | <span class="pass">PASS</span>   | test_edge_cases                | Edge Cases      |
+| <span class="ok">✓</span> | <span class="bad">✗</span> | <span class="ok">✓</span> | 4    | <span class="pass">PASS</span>   | test_clamping_safety           | Clamping Safety |
+| <span class="ok">✓</span> | <span class="ok">✓</span> | <span class="ok">✓</span> | 5    | <span class="pass">PASS</span>   | test_monte_carlo_1k            | Monte Carlo 1k  |
+| <span class="ok">✓</span> | <span class="ok">✓</span> | <span class="ok">✓</span> | 6    | <span class="pass">PASS</span>   | test_monte_carlo_1m            | Monte Carlo 1M  |
+================================================================================
+ SUMMARY: 7 Tests Run | <span class="pass">7 Passed</span> | <span class="fail">0 Failed</span>
+================================================================================</pre>
+  </div>
+</div>
+					
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-11 END -->
-
-<!-- bloc-10 -->
-<div class="bloc l-bloc" id="bloc-10">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col text-start">
-				<label class="form-label">
-					Label
-				</label>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-10 END -->
+<!-- bloc-25 END -->
 
 <!-- ScrollToTop Button -->
 <button aria-label="Scroll to top button" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"/></svg></button>
@@ -997,35 +1248,24 @@ int main() {
 										<a href="../" class="nav-link">Home</a>
 									</li>
 									<li class="nav-item">
-										<a href="../libraries/" class="nav-link">Libraries</a>
+										<a href="../products/" class="nav-link">Products</a>
 									</li>
 									<li class="nav-item">
-										<a href="../products/" class="nav-link">Products</a>
+										<a href="../engineering/" class="nav-link">Engineering</a>
 									</li>
 									<li class="nav-item">
 										<a href="../electronics/" class="nav-link">Electronics</a>
 									</li>
 									<li class="nav-item">
-										<a href="../engineering/" class="nav-link">Engineering</a>
+										<a href="../manufacturing/" class="a-btn nav-link">Engineering-1</a>
 									</li>
 								</ul>
 							</div>
 						<div class="navbar-content-area d-block col-12 col-md-3 col-lg-2">
-								<div class="mt-lg-2 mt-md-2 mt-sm-1 mt-1 mb-0"><div class="social-link-bric text-center" data-aria="true">
-<a href="https://twitter.com/blocsapp" class="twitter-link" target="_blank" aria-label="Twitter"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#646464" viewBox="0 0 24 24" style="margin-left: 3px; margin-right: 3px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"></path></svg></a>
-
-<a href="https://www.facebook.com/cazoobi" class="facebook-link" target="_blank" aria-label="Facebook"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#646464" viewBox="0 0 24 24" style="margin-left: 3px; margin-right: 3px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"></path></svg></a>
-
-<a href="https://www.instagram.com/cazoobi" class="instagram-link" target="_blank" aria-label="Instagram"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="#646464" viewBox="0 0 24 24" style="margin-left: 3px; margin-right: 3px;"><path d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"></path></svg></a>
-
-
-
-
-
-
-
-
-</div>
+								<div class="row">
+									<div class="col text-lg-center mt-lg-2">
+										<a href="https://www.linkedin.com/in/charlie-elbakry-1738681b8/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></blocsicon></a> <a href="https://github.com/Radikant/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></blocsicon></a><a href="mailto:him@charlie-elbakry.nl"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="512" height="512" viewBox="0 0 512 512"><path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"></path></svg></blocsicon></a>
+									</div>
 								</div>
 							</div>
 					</div>
@@ -1042,8 +1282,8 @@ int main() {
 
 
 <!-- Additional JS -->
-<script src="../js/bootstrap.bundle.min.js?2907"></script>
-<script src="../js/blocs.min.js?1043"></script>
+<script src="../js/bootstrap.bundle.min.js?467"></script>
+<script src="../js/blocs.min.js?5385"></script>
 <script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
 
 

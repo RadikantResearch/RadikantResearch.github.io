@@ -190,6 +190,21 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 	right:100%;
 	left:auto}
 }
+/* = Bric adjustment margins
+-------------------------------------------------------------- */
+
+.mg-sm{
+	margin-top:10px;
+	margin-bottom:5px;
+}
+.mg-md{
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.mg-lg{
+	margin-top:10px;
+	margin-bottom:40px;
+}
 
 /* = Buttons
 -------------------------------------------------------------- */
@@ -215,6 +230,25 @@ blocsicon svg {
 	 display: block;
 }
 
+/* Image Frame */
+.img-frame,.img-frame-md,.img-frame-lg,.img-frame-rd,.img-frame-rd-md,.img-frame-rd-lg{
+	background:#FFF;
+	border:1px solid rgba(0,0,0,0.1);
+	box-shadow:0 2px 2px rgba(0,0,0,0.05);
+	padding:4px;
+}
+.img-frame{
+	border-radius:3px;
+}
+.img-frame-md,.img-frame-lg{
+	border-radius:6px;
+}
+.img-frame-md,.img-frame-rd-md{
+	padding:8px;
+}
+.img-frame-lg,.img-frame-rd-lg{
+	padding:14px;
+}
 /* Image Scale */
 .img-fluid-up{
 	min-width: 100%;
@@ -258,6 +292,19 @@ blocsicon svg {
 	display: inline-block;
 	width: 100%;
 }
+}
+/* = Classic Dividers
+-------------------------------------------------------------- */
+.divider-h{
+	min-height: 1px;
+	background-color:rgba(0,0,0,.2);
+	margin: 20px 0;
+}
+.divider-half{
+	width: 50%;
+}
+.dropdown-menu .divider-h{
+	margin:0;
 }
 
 
@@ -386,14 +433,16 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .h1-style{
 	font-size:44px;
+	opacity:0.2;
 }
 .quote-text{
 	font-size:26px;
 	font-style:italic;
 }
 .p-style{
-	width:100%;
-	font-size:13px;
+	width:90.65%;
+	font-size:18px;
+	line-height:30px;
 }
 .team-card{
 	min-height:350px;
@@ -406,14 +455,17 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .feat-sub-header{
 	font-size:20px;
+	color:#000000!important;
 }
 .feat-icon-trans{
 	background-color:rgba(255,255,255,0.20);
 	margin-bottom:10px;
 	border-radius:10px 10px 10px 10px;
+	color:#000000!important;
 }
 .feat-header{
 	font-weight:bold;
+	color:rgba(0,0,0,0.79)!important;
 }
 .purple-gradient-bg{
 	background:linear-gradient(274deg, #9809FF  0%, #8B74FD 100%);
@@ -447,6 +499,72 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .p-bloc-36-style{
 	line-height:30px;
 }
+.navbar-brand img{
+	width:30px;
+}
+.html-widget-style{
+	width:89.78%;
+}
+.html-widget-bloc-39-style{
+	width:89.49%;
+}
+.img-pictur-style{
+	width:362px;
+}
+.svg-icon-style{
+	width:20px!important;
+	fill:var(--swatch-var-1869)!important;
+}
+.h2-bloc-45-style{
+	width:27.72%;
+	font-size:33px;
+}
+.radikant-gradient-bg{
+	background:linear-gradient(0deg, #FFEED5 0%, #FFF3CA 100%);
+}
+.feature-details-col{
+	color:rgba(0,0,0,0.59)!important;
+}
+.img-bloc-15-style{
+	width:44px;
+}
+.img-38-style{
+	width:44px;
+	height:44px;
+}
+.img-39-style{
+	width:44px;
+	height:44px;
+}
+.img-40-style{
+	width:44px;
+	height:44px;
+}
+.img-41-style{
+	width:44px;
+}
+.img-42-style{
+	width:44px;
+}
+.img-43-style{
+	width:44px;
+}
+.img-44-style{
+	width:44px;
+}
+.img-bloc-17-style{
+	width:44px;
+	height:44px;
+}
+.h1-bloc-25-style{
+	font-size:38px;
+}
+.row-bloc-39-style{
+	width:92.13%;
+}
+.h4-style{
+	width:100%;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -464,9 +582,15 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-1869:rgba(0,0,0,0.7);
 	
-	--swatch-var-6810:#000000;
+	--swatch-var-6810:rgba(0,0,0,0.67);
 	
 	--swatch-var-4205:rgba(0,112,227,1.00);
+	
+	--swatch-var-4877:rgba(32,32,32,1.00);
+	
+	--swatch-var-5275:rgba(255,255,255,0.8);
+	
+	--swatch-var-3059:rgba(0,0,75,0.45);
 	
 }
 
@@ -477,6 +601,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .tc-1869{
 	color:var(--swatch-var-1869)!important;
 }
+.tc-5275{
+	color:var(--swatch-var-5275)!important;
+}
+.tc-6810{
+	color:var(--swatch-var-6810)!important;
+}
 
 /* Bloc image backgrounds */
 
@@ -486,22 +616,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 .code-embed{
 	color:#000;
-}
-.social-link-bric a svg{
-	transition: all 0.3s ease-in-out;
-}
-.social-hover-fade a:hover svg{
-	opacity: 0.5;
-}
-.social-hover-grow a:hover svg{
-	transform: scale(1.2);
-}
-.social-hover-shrink a:hover svg{
-	transform: scale(0.9);
-}
-.social-hover-shadow a:hover svg{
-	filter: drop-shadow(0px 6px 2px rgba(0,0,0,0.3));
-	overflow: visible;
 }
 
 
