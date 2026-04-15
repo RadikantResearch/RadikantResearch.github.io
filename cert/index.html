@@ -8,19 +8,18 @@
 	<link rel="canonical" href="https://radikant.nl/cert/">
 	<meta name="robots" content="index, follow">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="yr">
-	<meta name="twitter:description" content="dygfhhhhh">
+	<meta name="twitter:title" content="Radikant">
+	<meta name="twitter:description" content="Radikant Research">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Radikant">
-	<meta property="og:title" content="yr">
-	<meta property="og:description" content="dygfhhhhh">
+	<meta property="og:title" content="Radikant">
+	<meta property="og:description" content="Radikant Research">
 	<meta property="og:url" content="https://radikant.nl/cert/"> 
     <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
     
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?6719">
-	<link rel="stylesheet" type="text/css" href="../style.css?5470">
-	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?1455">
-	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1642">
+	<link rel="stylesheet" type="text/css" href="../style.css?7044">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?7638">
 	
     <title>Cert</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
@@ -48,7 +47,7 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc l-bloc" id="bloc-0">
+<div class="bloc l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col">
@@ -94,74 +93,19 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<h1 class="text-center mb-4 animated pulse" data-appear-anim-style="pulse">
-					Radikant Cert C
+					📋 Radikant-Cert-C&nbsp;
 				</h1>
 			</div>
 			<div class="offset-md-2 col-md-8 col-lg-8 offset-lg-2 text-lg-start">
 				<div class="mx-auto d-block blocsapp-device blocsapp-device-mb blocsapp-mb-air-midnight">
-					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202025-11-29%20at%2021.47.29.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202025-11-29%20at%2021.47.29.png" class="img-fluid lazyload" alt="Device Screen" width="602" height="402"></picture>
+					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Certificate.webp"><img src="../img/lazyload-ph.png" data-src="../img/Certificate.png" class="img-fluid lazyload" alt="Device Screen" width="602" height="389"></picture>
 				</div>
 				<p class="mb-3">
-					A lightweight and fast ASN.1 encoder/decoder <strong>prototype</strong> library written in C, with no external dependencies.
+					A small library for handling x509, pem and consorting standards in a &nbsp;certificate context. It builds on top of <a href="../crypto/">Radikant Crypto</a> and <a href="../asn1/">Radikant ASN1</a>. It can generate self-signed P256 and RSA certificates however it can also import and export certificates. Currently lacks proper PKI validation.<br>
 				</p>
-				<div class="row align-items-center">
-					<div class="col-md-6 col-lg-4 order-lg-0 order-md-1 offset-lg-1">
-						<div class="row voffset row-style">
-							<div class="col-lg-12 offset-lg-0">
-								<h4 class="text-center tc-1869 mt-2 mb-2 text-lg-end">
-									ASN1
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									If &nbsp;not enabled all logging macros expand to empty loops and will be removed from the binary.
-								</p>
-							</div>
-							<div class="col-lg-12 offset-lg-0">
-								<h4 class="text-center tc-1869 mt-2 mb-2 text-lg-end">
-									X509
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Filter debug messages at runtime to prevent verbose screen
-								</p>
-							</div>
-							<div class="col-lg-12 offset-lg-0">
-								<h4 class="text-center tc-1869 mt-2 mb-2 text-lg-end">
-									PEM
-								</h4>
-								<p class="text-center mb-3 text-lg-end">
-									Abstracts mutex locking to ensure log messages don't get scrambled when accessed by multiple threads.
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6 col-lg-4 order-lg-0 order-md-1 offset-lg-2">
-						<div class="row voffset row-style">
-							<div class="col-lg-12 offset-lg-0">
-								<h4 class="text-center tc-1869 mt-2 mb-2 text-lg-start">
-									Encoding
-								</h4>
-								<p class="text-center mb-3 text-lg-start">
-									Define Log Levels, the macros will remove unused logging functions from runtime.<br>
-								</p>
-							</div>
-							<div class="col-lg-12 offset-lg-0">
-								<h4 class="text-center tc-1869 mt-2 mb-2 text-lg-start">
-									Decoding
-								</h4>
-								<p class="text-center mb-3 text-lg-start">
-									Use context instances, allow different parts of your program to have different log levels.
-								</p>
-							</div>
-							<div class="col-lg-12 offset-lg-0">
-								<h4 class="text-center tc-1869 mt-2 mb-2 text-lg-start">
-									Mint cert
-								</h4>
-								<p class="text-center mb-3 text-lg-start">
-									Log to one ore more files as astream simultaneously and independentily withouth any issues
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
+				<p class="mb-3 text-lg-center">
+					⚠️ Currently PKI and root Certificate mechanism lack implementation
+				</p>
 			</div>
 		</div>
 	</div>
@@ -172,26 +116,142 @@
 <div class="bloc l-bloc" id="bloc-13">
 	<div class="container bloc-lg bloc-no-padding-lg">
 		<div class="row">
-			<div class="col text-start">
+			<div class="text-start offset-lg-1 col-lg-10">
 				<h3 class="mb-4">
-					Encoding
+					Generate P256 Certificate
 				</h3>
-				<div class=" ">
-					<div class="code-container" style="background: #272822; padding: 0px; border-radius: 40px;">
-    <pre><code class="language-c">
-        asn1_encoder_t ctx;
-        asn1_encoder_init(&ctx, buffer, sizeof(buffer));
-        const uint8_t hello_str[] = "hello";
-        asn1_encode_octet_string(&ctx, hello_str, sizeof(hello_str) - 1);
-        asn1_encode_integer(&ctx, -123);
-        size_t content_len = sizeof(buffer) - ctx.current_pos;
-        asn1_encode_tag_and_length(&ctx, ASN1_TAG_SEQUENCE, content_len);
-        const uint8_t* data = asn1_encoder_get_data(&ctx, &final_len);
-    </code></pre>
+				<div class="  html-widget-bloc-13-style">
+					<style>
+  :root {
+    --mac-header: #2d2d2d;
+    --mac-border: #3c3c3c;
+    --mac-text: #ffffff;
+    --mac-dim: #8a8a8a;
+  }
+
+  .ide-window {
+    background-color: #272822;
+    color: #f8f8f2;
+    font-family: -apple-system, "SF Pro Text", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid var(--mac-border);
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block; /* Prevents vertical stretching */
+  }
+
+  /* Titlebar */
+  .ide-titlebar {
+    background: var(--mac-header);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+  }
+
+  .traffic-lights { display: flex; gap: 8px; margin-right: 25px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; border: 0.5px solid #e0443e; } 
+  .ylw { background: #ffbd2e; border: 0.5px solid #dea123; } 
+  .grn { background: #27c93f; border: 0.5px solid #1aab2f; }
+
+  .ide-menu { display: flex; gap: 18px; font-size: 13px; color: #b1b1b1; }
+
+  /* Toolbar */
+  .ide-toolbar {
+    background: #252526;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--mac-border);
+  }
+
+  .controls { display: flex; gap: 15px; align-items: center; }
+  .btn-play { color: #4ade80; font-size: 16px; }
+  .btn-stop { color: #666; font-size: 14px; }
+
+  .project-pill {
+    font-size: 11px;
+    color: #ddd;
+    background: #3c3c3c;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #4a4a4a;
+    flex-grow: 1;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  /* Body - Tight fit, no gaps */
+  .ide-body {
+    padding: 20px 25px;
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #272822;
+    overflow: hidden;
+  }
+
+  .code-line { display: block; white-space: pre; }
+  .type { color: #66d9ef; }    
+  .str { color: #e6db74; }     
+  .func { color: #a6e22e; }    
+  .val { color: #ae81ff; }     
+
+  /* Footer */
+  .ide-footer {
+    background: var(--mac-header);
+    padding: 8px 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--mac-dim);
+    border-top: 1px solid var(--mac-border);
+  }
+
+  .status-actions { display: flex; gap: 18px; }
+</style>
+
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights">
+      <div class="dot red"></div><div class="dot ylw"></div><div class="dot grn"></div>
+    </div>
+    <div class="ide-menu">
+      <span>File</span><span>Edit</span><span>View</span><span>Project</span>
+    </div>
+  </div>
+
+  <div class="ide-toolbar">
+    <div class="controls"><div class="btn-play">▶</div><div class="btn-stop">■</div></div>
+    <div class="project-pill"><b>CertTool</b> — P256 Generation</div>
+  </div>
+
+  <div class="ide-body">
+<div class="code-line"><span class="type">cert_error_t</span> err = <span class="func">rc_generate_self_signed_p256_cert</span>(</div>
+<div class="code-line">    <span class="str">"Radikant Professional Cert"</span>,</div>
+<div class="code-line">    <span class="str">"US"</span>,</div>
+<div class="code-line">    <span class="str">"Radikant Labs"</span>,</div>
+<div class="code-line">    <span class="val">365</span>,</div>
+<div class="code-line">    output_cert_path,</div>
+<div class="code-line">    output_key_path</div>
+<div class="code-line">);</div></div>
+
+  <div class="ide-footer">
+    <div class="status-left">Build Succeeded</div>
+    <div class="status-actions">
+      <span>Run</span><span>Build</span><span>Debug</span>
+      <span style="color: #fff">Ln 8, Col 2</span>
+    </div>
+  </div>
 </div>
 					
 				</div>
-				<div class=" ">
+				<div class="  html-widget-0-style">
 						<style>
   /* --- CONTAINER STYLES --- */
   .rlog-terminal {
@@ -249,38 +309,157 @@
   </div>
 
   <div class="rlog-body">
-Encoded 13 bytes:
-30 0B 02 02 FF 85 04 05 68 65 6C 6C 6F 
-
-Dumping encoded structure:
-0   : Tag=0x30 (SEQUENCE)  Length=11
-  0   : Tag=0x02 (INTEGER)  Length=2
-    Value: -123 (0xffffffffffffff85)
-  4   : Tag=0x04 (OCTET STRING)  Length=5
-    Data: 68:65:6C:6C:6F:
+-----BEGIN CERTIFICATE-----
+MIIB9zCCAZ2gAwIBAgIUNvvBJ3mTmJ2ARtD3An0i0m8tLmUwCgYIKoZIzj0EAwIw
+SjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDVJhZGlrYW50IExhYnMxIzAhBgNVBAMT
+GlJhZGlrYW50IFByb2Zlc3Npb25hbCBDZXJ0MB4XDTI2MDIwNDE3MTcyOFoXDTI3
+MDIwNDE3MTcyOFowSjELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDVJhZGlrYW50IExh
+YnMxIzAhBgNVBAMTGlJhZGlrYW50IFByb2Zlc3Npb25hbCBDZXJ0MFkwEwYHKoZI
+zj0CAQYIKoZIzj0DAQcDQgAERBj9B3N95KFjHhkNOH34BIrAnUXtfcpyelSXPjdu
+3CtneEH5NcFPZUbXNtzjhQzjXB40K15b4E3IQlDfbc1bMaNhMF8wHQYDVR0lBBYw
+FAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBQtG8X4toihDqw1Z+LELlLx
+H+D3hzAfBgNVHSMEGDAWgBQtG8X4toihDqw1Z+LELlLxH+D3hzAKBggqhkjOPQQD
+AgNIADBFAiAi9zH6bo7qTGQZ1Q/8LYI6hFETLuVVIyFJnp9xQiYWKwIhAOFg5Q1k
+N7X0Ks7CcuNQ5EPLmo/rVEX3kqXkR0kIn/m/
+-----END CERTIFICATE-----
   </div>
-</div>§
+</div>
 						
 					</div>
 				<p class="mb-3">
-							Create the sender and reciever tasks, create the scheduler with a tickrate of 1 ms . Pass the reciever task handle as user data to the sender task. The sender task is now “aware” of the recievers taskhandle and can send messages
+							This library is able to generate a P256 Certificate with SHA256. Since Radikant Crypto supports P384, P521 and SHA384 and SHA512 it can easily be extended to support many common certificate formats. When generating a certificate you can keep it in memory or export it to a file.&nbsp;
 						</p>
 				<h3 class="mb-4">
-							Decoding
+							Generate RSA Certificate
 						</h3>
 				<div class=" ">
-							<div class="code-container" style="background: #272822; padding: 0px; border-radius: 40px;">
-    <pre><code class="language-c">
-	asn1_decoder_t ctx;
-	asn1_decoder_init(&ctx, encoded_data, final_len);
-	asn1_decoder_t seq_ctx;
-	asn1_decoder_enter_constructed(&ctx, &seq_ctx, ASN1_TAG_SEQUENCE);
-	int64_t int_val;
-	asn1_decode_integer(&seq_ctx, &int_val);
-	const uint8_t* str_data;
-	size_t str_len;
-	asn1_decode_string_like(&seq_ctx, ASN1_TAG_OCTET_STRING, &str_data, &str_len);
-    </code></pre>
+							<style>
+  :root {
+    --mac-header: #2d2d2d;
+    --mac-border: #3c3c3c;
+    --mac-text: #ffffff;
+    --mac-dim: #8a8a8a;
+  }
+
+  .ide-window {
+    background-color: #272822;
+    color: #f8f8f2;
+    font-family: -apple-system, "SF Pro Text", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid var(--mac-border);
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block; /* Prevents vertical stretching */
+  }
+
+  /* Titlebar */
+  .ide-titlebar {
+    background: var(--mac-header);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+  }
+
+  .traffic-lights { display: flex; gap: 8px; margin-right: 25px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; border: 0.5px solid #e0443e; } 
+  .ylw { background: #ffbd2e; border: 0.5px solid #dea123; } 
+  .grn { background: #27c93f; border: 0.5px solid #1aab2f; }
+
+  .ide-menu { display: flex; gap: 18px; font-size: 13px; color: #b1b1b1; }
+
+  /* Toolbar */
+  .ide-toolbar {
+    background: #252526;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--mac-border);
+  }
+
+  .controls { display: flex; gap: 15px; align-items: center; }
+  .btn-play { color: #4ade80; font-size: 16px; }
+  .btn-stop { color: #666; font-size: 14px; }
+
+  .project-pill {
+    font-size: 11px;
+    color: #ddd;
+    background: #3c3c3c;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #4a4a4a;
+    flex-grow: 1;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  /* Body - Tight fit, no gaps */
+  .ide-body {
+    padding: 20px 25px;
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #272822;
+    overflow: hidden;
+  }
+
+  .code-line { display: block; white-space: pre; }
+  .type { color: #66d9ef; }    
+  .str { color: #e6db74; }     
+  .func { color: #a6e22e; }    
+  .val { color: #ae81ff; }     
+
+  /* Footer */
+  .ide-footer {
+    background: var(--mac-header);
+    padding: 8px 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--mac-dim);
+    border-top: 1px solid var(--mac-border);
+  }
+
+  .status-actions { display: flex; gap: 18px; }
+</style>
+
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights">
+      <div class="dot red"></div><div class="dot ylw"></div><div class="dot grn"></div>
+    </div>
+    <div class="ide-menu">
+      <span>File</span><span>Edit</span><span>View</span><span>Project</span>
+    </div>
+  </div>
+
+  <div class="ide-toolbar">
+    <div class="controls"><div class="btn-play">▶</div><div class="btn-stop">■</div></div>
+    <div class="project-pill"><b>CertTool</b> — RSA Generation</div>
+  </div>
+
+  <div class="ide-body">
+<div class="code-line"><span class="type">cert_error_t</span> err = <span class="func">rc_generate_self_signed_rsa_cert</span>(</div>
+<div class="code-line">    <span class="str">"Radikant RSA Test"</span>,</div>
+<div class="code-line">    <span class="str">"NL"</span>,</div>
+<div class="code-line">    <span class="str">"Radikant Labs"</span>,</div>
+<div class="code-line">    <span class="val">365</span>,</div>
+<div class="code-line">    output_cert_path,</div>
+<div class="code-line">    output_key_path</div>
+<div class="code-line">);</div></div>
+
+  <div class="ide-footer">
+    <div class="status-left">Build Succeeded</div>
+    <div class="status-actions">
+      <span>Run</span><span>Build</span><span>Debug</span>
+      <span style="color: #fff">Ln 8, Col 2</span>
+    </div>
+  </div>
 </div>
 							
 						</div>
@@ -342,21 +521,36 @@ Dumping encoded structure:
   </div>
 
   <div class="rlog-body">
-Decoding encoded structure:
-  - Read INTEGER: -123
-  - Read OCTET STRING: 'hello'
-Encode/decode test successful.
+-----BEGIN CERTIFICATE-----
+MIIDDjCCAfagAwIBAgIUEMxf3RbEYI7fraMn2RJD2f0sAOwwDQYJKoZIhvcNAQEL
+BQAwQTELMAkGA1UEBhMCTkwxFjAUBgNVBAoTDVJhZGlrYW50IExhYnMxGjAYBgNV
+BAMTEVJhZGlrYW50IFJTQSBUZXN0MB4XDTI2MDIwNDE3MzcwMloXDTI3MDIwNDE3
+MzcwMlowQTELMAkGA1UEBhMCTkwxFjAUBgNVBAoTDVJhZGlrYW50IExhYnMxGjAY
+BgNVBAMTEVJhZGlrYW50IFJTQSBUZXN0MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8A
+MIIBCgKCAQEAzpl34YuXI6Yrstc8WLptbEhzIo+Qe1+LKGsWMOoi8FK/OIEHRp30
+GJG6PvBu//MQcm2hlWcuTKN6ZkESO2HYjZzJROutCLTCj1AXJrmUoh6CuPjXAW9K
+DIaijlwDQZOhcFEC8g7eRu+5jszajfgFZQHNQda3N613QbCxcCnwuF0n7nFZzZD+
+yWzbyxo35MFyosMQF58CXVeDnTslPWyEr9Lbe3nH4MDrbtqLtDH0pssIy8mfHHxr
+3VaFOb8RUrJ18F5pOusWYlXb15IwDvPVMD7WYNnAhvklG2dr3HXAeBVpuQYpHLEv
+AtFTYB6iqjzvBRlWeP+vqvwBWkckupT8PQIDAQABMA0GCSqGSIb3DQEBCwUAA4IB
+AQDFbswdcYNR+WTWKXWfan6jsk2fCP7KJYEo621TIyoxVqdm3/f7Lc62iUBKwuka
+TTb6us9pvS+zMkv3LKU26kgIilIAm4F9GaLlgoJI26RcXa5ioCkP/dxazATmNVz/
+dQrwdJOQU12fUZnRw8cgg7xgHNCL/6pKjF1KBDsgWAsmPudhUa4XSnVc7yD0GO5D
+rEJTBj63NSQ+jkYQAzykJYD8NL9PETt/SlvV7IrywbzI8+VAr4WFB2DRcAzqatFu
+06CPM0XweOaOXRZeX5l7Eoyc/4X84cs1Mh88bCj1ZjqRZOh1inKiRkfTmzeNgwkX
+1jw1hTrChu8O5UN0SIlA+WCy
+-----END CERTIFICATE-----
   </div>
 </div>
 								
 							</div>
 				<p class="mb-3">
-									Dereference the reciever task handle from user data. Create a static stack variable and send data to the reciever using its dereferenced taskhandle.
+									This library is able to generate a RSA2048 Certificate with SHA256. Currently there is no support for RSA4096 in Radikant Crypto because the Big Num lib needs to be rewritten to support this.&nbsp;
 								</p>
 			</div>
 		</div>
 		<div class="row">
-							<div class="col text-start">
+							<div class="text-start offset-lg-1 col-lg-10">
 								<h3 class="mb-4">
 									Extract key
 								</h3>
@@ -492,38 +686,181 @@ Exponent (e): 65537 (0x10001)
   </div>
 
   <div class="rlog-body">
-Key Length: 2048 bits
-Modulus (n) (256 bytes):
-DB29967347219CA9D4E117B915704304E8CDCC190E4E5B7A974DB668C7D37379
-3B294E5D2E8F4E57F5D50235A2193EFF2F818770808040FFE23BE0C133B4053C
-39BA1193DA110B14446917F8139909DFE0E41AE35B5CC7A9A8F677C90ABCF0AD
-30D02252BBF58F578D596358B91F260FD1970C66C93EBA3E4097BA5CFF87E404
-A5C50C84F116A0EFC5385A4DD1B255E2F022604019AFCD02D631CDE22EA4E78E
-D889F95639D1C2DDA4C6F965B485C3F07B7AD544F2E6BC3690D46566F75BEEEE
-7B75FAFE5572DFADD79365F2C92E546D1D4D0D7A2CA9BF67973C68F8EAA8C3B9
-7F44C088F3B6C1598797D465ADBF86795CE72F4E147799DB6D47B1E5FF375065
+[TEST] Import P-256 Public Key from Memory
+✅ P-256 Public Key Import passed (65 bytes)
+   Type: Uncompressed P-256 Point
+   X: F8:DA:34:36:84:4E:E3:E8:BF:C9:EE:48:4D:4B:32:AA:
+14:C9:DB:0B:41:A6:C6:4B:D0:E7:F6:A8:A8:EC:8D:6B
+   Y: 67:2E:CC:06:77:3E:97:33:D1:75:BA:E4:CD:F6:E5:42:
+37:BC:76:49:70:62:08:2E:20:07:87:3C:E2:B7:BF:7D
 
-Exponent (e): 65537 (0x10001)
+[TEST] Import P-256 Public Key from File: temp_p256_pub.pem
+✅ P-256 Public Key File Import passed (65 bytes)
+   Type: Uncompressed P-256 Point
+   X: F8:DA:34:36:84:4E:E3:E8:BF:C9:EE:48:4D:4B:32:AA:
+14:C9:DB:0B:41:A6:C6:4B:D0:E7:F6:A8:A8:EC:8D:6B
+   Y: 67:2E:CC:06:77:3E:97:33:D1:75:BA:E4:CD:F6:E5:42:
+37:BC:76:49:70:62:08:2E:20:07:87:3C:E2:B7:BF:7D
   </div>
 </div>
 										
 									</div>
 								<p class="mb-3">
-											<br>
+											This library is able to extract RSA and ECC Nist keys from the certificates. Which is is required for a live encrypted connection. For example Radikant Crypto extracts private and public keys from a pre-generated certificates. The Key extraction API now is very flaky and not fool proof, its needs to be&nbsp;
 										</p>
 								<h3 class="mb-4">
 											Parse Cert
 										</h3>
 								<div class=" ">
-											<div class="code-container" style="background: #272822; padding: 0px; border-radius: 40px;">
-    <pre><code class="language-c">
-    asn1_error_t err = x509_parse_and_print_certificate(
-        github_der, 
-        sizeof(github_der), 
-        0
-    );
+											<style>
+  :root {
+    --mac-bg: #1e1e1e;
+    --mac-header: #2d2d2d;
+    --mac-border: #3c3c3c;
+    --mac-text: #ffffff;
+    --mac-dim: #8a8a8a;
+  }
 
-    </code></pre>
+  /* Main Container - Optimized for Blocs 6 Width */
+  .ide-window {
+    background-color: var(--mac-bg);
+    color: var(--mac-text);
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid var(--mac-border);
+    width: 100%; /* Spans full width of the Blocs 6 code block */
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Top Bar */
+  .ide-titlebar {
+    background: var(--mac-header);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+  }
+
+  .traffic-lights { display: flex; gap: 8px; margin-right: 25px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; border: 0.5px solid #e0443e; } 
+  .ylw { background: #ffbd2e; border: 0.5px solid #dea123; } 
+  .grn { background: #27c93f; border: 0.5px solid #1aab2f; }
+
+  .ide-menu {
+    display: flex;
+    gap: 18px;
+    font-size: 13px;
+    color: #b1b1b1;
+    font-weight: 400;
+  }
+
+  /* Toolbar */
+  .ide-toolbar {
+    background: #252525;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--mac-border);
+  }
+
+  .controls { display: flex; gap: 15px; align-items: center; }
+  .btn-play { color: #4ade80; font-size: 16px; cursor: pointer; }
+  .btn-stop { color: #666; font-size: 14px; }
+
+  .project-pill {
+    font-size: 12px;
+    color: #ddd;
+    background: #3c3c3c;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #4a4a4a;
+    flex-grow: 1;
+    max-width: 400px;
+    text-align: center;
+  }
+
+  /* Main Editor Area */
+  .ide-body {
+    padding: 25px;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 180px;
+    overflow-x: auto;
+    background: #1e1e1e;
+  }
+
+  .code-line { display: block; white-space: pre; }
+  .func { color: #66d9ef; }
+  .var { color: #f8f8f2; }
+  .comment { color: #75715e; font-style: italic; }
+
+  /* Bottom Bar */
+  .ide-footer {
+    background: var(--mac-header);
+    padding: 6px 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--mac-dim);
+    border-top: 1px solid var(--mac-border);
+  }
+
+  .status-actions { display: flex; gap: 18px; }
+  .status-actions span { cursor: pointer; transition: color 0.2s; }
+  .status-actions span:hover { color: #fff; }
+</style>
+
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights">
+      <div class="dot red"></div>
+      <div class="dot ylw"></div>
+      <div class="dot grn"></div>
+    </div>
+    <div class="ide-menu">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Find</span>
+      <span>Navigate</span>
+    </div>
+  </div>
+
+  <div class="ide-toolbar">
+    <div class="controls">
+      <div class="btn-play">▶</div>
+      <div class="btn-stop">■</div>
+    </div>
+    <div class="project-pill">
+        <b>MySecurityApp</b> — iPhone 15 Pro Max
+    </div>
+  </div>
+
+  <div class="ide-body">
+    <div class="code-line"><span class="comment">// Import the P256 certificate for processing</span></div>
+    <div class="code-line"><span class="func">pem_import_from_file</span>(p256_cert_path, &loaded_data, &loaded_len);</div>
+    <div class="code-line"></div>
+    <div class="code-line"><span class="comment">// Debug output to terminal</span></div>
+    <div class="code-line"><span class="func">x509_parse_and_print_certificate</span>(loaded_data, loaded_len, <span class="var">0</span>);</div>
+  </div>
+
+  <div class="ide-footer">
+    <div class="status-left">Build Succeeded</div>
+    <div class="status-actions">
+      <span>Run</span>
+      <span>Build</span>
+      <span>Debug</span>
+      <span style="color: #fff;">Ln 14, Col 5</span>
+    </div>
+  </div>
 </div>
 											
 										</div>
@@ -585,117 +922,82 @@ Exponent (e): 65537 (0x10001)
   </div>
 
   <div class="rlog-body">
-===================================
-Parsing Github.com Certificate...
-===================================
+✅ RSA Cert Import passed (700 bytes)
+
+--- Decoded Certificate ---
 Certificate (SEQUENCE):
   TBSCertificate (SEQUENCE):
     Version: [0] EXPLICIT
       Value: 2 (v3)
-    Serial Number: 00:AB:66:86:B5:62:7B:E8:05:96:82:13:30:12:86:49:F5
+    Serial Number: 2F:CC:82:3B:95:F9:66:D7:53:A2:F1:AB:0C:7E:D7:9B:
+        61:0F:9F:22
     Algorithm: ecdsa-with-SHA256 (1.2.840.10045.4.3.2)
     Issuer:
       countryName (2.5.4.6)
-        Value: 'GB'
+        Value: 'NL'
       stateOrProvinceName (2.5.4.8)
-        Value: 'Greater Manchester'
+        Value: 'Noord Holland'
       localityName (2.5.4.7)
-        Value: 'Salford'
+        Value: 'Amsterdam'
       organizationName (2.5.4.10)
-        Value: 'Sectigo Limited'
+        Value: 'Radikant-OpenSSL'
+      organizationalUnitName (2.5.4.11)
+        Value: 'Radikant Research'
       commonName (2.5.4.3)
-        Value: 'Sectigo ECC Domain Validation Secure Server CA'
+        Value: 'Radikant Server'
+      emailAddress (1.2.840.113549.1.9.1)
+        Value: 'him@charlie-elbakry.nl'
     Validity:
-      Not Before: '250205000000Z'
-      Not After : '260205235959Z'
+      Not Before: '260110235403Z'
+      Not After : '270110235403Z'
     Subject:
+      countryName (2.5.4.6)
+        Value: 'NL'
+      stateOrProvinceName (2.5.4.8)
+        Value: 'Noord Holland'
+      localityName (2.5.4.7)
+        Value: 'Amsterdam'
+      organizationName (2.5.4.10)
+        Value: 'Radikant-OpenSSL'
+      organizationalUnitName (2.5.4.11)
+        Value: 'Radikant Research'
       commonName (2.5.4.3)
-        Value: 'github.com'
+        Value: 'Radikant Server'
+      emailAddress (1.2.840.113549.1.9.1)
+        Value: 'him@charlie-elbakry.nl'
     Subject Public Key Info:
       Algorithm: ecPublicKey (1.2.840.10045.2.1)
       Parameters: (Skipped)
       Public Key (Unused Bits: 0):
-		04:20:34:5C:46:FF:2C:CB:F8:24:9A:AE:F0:BB:2F:77:
-		A9:1F:97:21:36:71:BA:C2:26:18:C5:1E:43:FD:9D:49:
-		E0:CC:46:9C:85:FC:29:B4:F9:7C:28:0B:A3:2C:C7:5C:
-		BF:6F:E7:46:DD:04:8A:BA:CB:80:2D:37:88:0D:EE:06:
-		D6
-	    Extensions: [3] EXPLICIT
-      Extension OID: authorityKeyIdentifier (2.5.29.35)
-        Value (OCTET STRING): 
-30:16:80:14:F6:85:0A:3B:11:86:E1:04:7D:0E:AA:0B:2C:D2:EE:CC:64:7B:7B:AE
+        04:77:D0:C9:44:BD:BB:2E:5E:D1:C8:5F:26:AE:7D:85:
+        35:82:57:37:F1:E7:DA:DF:1B:C2:1B:23:5C:3D:8D:26:
+        C6:90:51:CB:68:66:24:80:5B:C2:77:CD:8A:FA:14:6D:
+        B7:F0:3C:50:7D:19:7B:66:D3:84:B8:31:C9:16:EF:1A:
+        43
+    Extensions: [3] EXPLICIT
       Extension OID: subjectKeyIdentifier (2.5.29.14)
-        Value (OCTET STRING): 
-04:14:53:C8:7F:DE:9E:98:4E:C7:4D:D6:BC:DE:AB:95:3E:30:3D:3D:D1:C8
-      Extension OID: keyUsage (2.5.29.15)
-        Critical: TRUE
-        Value (OCTET STRING): 03:02:07:80
+        Value (OCTET STRING): 04:14:B3:A8:37:65:00:8A:38:F2:A3:D9:57:BC:53:7B:
+        ED:6A:87:54:21:44
+      Extension OID: authorityKeyIdentifier (2.5.29.35)
+        Value (OCTET STRING): 30:16:80:14:B3:A8:37:65:00:8A:38:F2:A3:D9:57:BC:
+        53:7B:ED:6A:87:54:21:44
       Extension OID: basicConstraints (2.5.29.19)
         Critical: TRUE
-        Value (OCTET STRING): 30:00
-      Extension OID: extendedKeyUsage (2.5.29.37)
-        Value (OCTET STRING): 
-30:14:06:08:2B:06:01:05:05:07:03:01:06:08:2B:06:01:05:05:07:03:02
-      Extension OID: certificatePolicies (2.5.29.32)
-        Value (OCTET STRING): 
-30:40:30:34:06:0B:2B:06:01:04:01:B2:31:01:02:02:
-07:30:25:30:23:06:08:2B:06:01:05:05:07:02:01:16:
-17:68:74:74:70:73:3A:2F:2F:73:65:63:74:69:67:6F:
-2E:63:6F:6D:2F:43:50:53:30:08:06:06:67:81:0C:01:
-02:01
-      Extension OID: authorityInfoAccess (1.3.6.1.5.5.7.1.1)
-        Value (OCTET STRING): 
-30:76:30:4F:06:08:2B:06:01:05:05:07:30:02:86:43:
-68:74:74:70:3A:2F:2F:63:72:74:2E:73:65:63:74:69:
-67:6F:2E:63:6F:6D:2F:53:65:63:74:69:67:6F:45:43:
-43:44:6F:6D:61:69:6E:56:61:6C:69:64:61:74:69:6F:
-6E:53:65:63:75:72:65:53:65:72:76:65:72:43:41:2E:
-63:72:74:30:23:06:08:2B:06:01:05:05:07:30:01:86:
-17:68:74:74:70:3A:2F:2F:6F:63:73:70:2E:73:65:63:
-74:69:67:6F:2E:63:6F:6D
-      Extension OID: SCT List (Sectigo) (1.3.6.1.4.1.22112.2.4.2)
-        Value (OCTET STRING): 
-04:82:01:6A:01:68:00:75:00:96:97:64:BF:55:58:97:
-AD:F7:43:87:68:37:08:42:77:E9:F0:3A:D5:F6:A4:F3:
-36:6E:46:A4:3F:0F:CA:A9:C6:00:00:01:94:D3:6B:94:
-4B:00:00:04:03:00:46:30:44:02:20:3B:8B:AA:3E:2E:
-94:23:B7:A0:1E:12:39:6D:1E:1B:3F:4E:21:02:9C:77:
-74:C5:37:9E:AF:FD:EF:0F:5C:60:B0:02:20:62:51:B0:
-46:8B:7E:4A:A1:01:0A:CF:FF:7E:BC:7F:60:74:CF:C2:
-8C:7D:40:B7:72:EC:68:D3:2D:61:DF:70:C0:00:77:00:
-19:86:D4:C7:28:AA:6F:FE:BA:03:6F:78:2A:4D:01:91:
-AA:CE:2D:72:31:0F:AE:CE:5D:70:41:2D:25:4C:C7:D4:
-00:00:01:94:D3:6B:93:ED:00:00:04:03:00:48:30:46:
-02:21:00:E5:AC:89:F1:EC:9F:B7:31:FA:A0:C4:1D:BE:
-16:FA:B7:74:C9:64:D6:A8:F8:72:13:B0:FF:E1:E4:61:
-57:C6:D0:02:21:00:C4:FE:24:A0:10:7D:4B:88:74:11:
-B1:7E:BC:AB:1A:BC:2C:38:3D:E9:46:CD:6D:C8:0C:B2:
-91:D3:C6:46:0B:13:00:76:00:CB:38:F7:15:89:7C:84:
-A1:44:5F:5B:C1:DD:FB:C9:6E:F2:9A:59:CD:47:0A:69:
-05:85:B0:CB:14:C3:14:58:E7:00:00:01:94:D3:6B:94:
-25:00:00:04:03:00:47:30:45:02:21:00:D4:62:96:F7:
-66:A0:0C:53:49:21:8A:CC:1F:78:1A:25:D5:EC:74:85:
-69:51:C6:4E:7F:11:F5:16:4B:1B:B8:B1:02:20:52:42:
-7E:C9:48:36:17:39:DD:0D:13:20:C2:47:75:C1:4E:5B:
-6B:60:1B:8B:41:03:57:4B:F3:CD:6D:5D:B3:27
-      Extension OID: subjectAltName (2.5.29.17)
-        Value (decoded SubjectAltName):
-          DNS Name: 'github.com'
-          DNS Name: 'www.github.com'
+        Value (OCTET STRING): 30:03:01:01:FF
   Algorithm: ecdsa-with-SHA256 (1.2.840.10045.4.3.2)
   Signature Value (Unused Bits: 0):
-    30:44:02:20:71:8C:A7:6E:C1:04:12:75:DF:9E:A5:09:
-ED:96:63:2C:D8:22:9F:DF:00:E3:50:33:70:24:78:4F:
-DF:CA:6D:2C:02:20:6D:55:F3:77:62:02:19:FA:77:87:
-11:FC:1C:46:18:73:E2:E0:E9:73:C1:7E:B4:A9:AD:71:
-E5:89:4A:27:0C:90
-
-===================================
-Successfully parsed certificate.
-  </div>
+    30:44:02:20:56:30:E5:50:50:C4:38:D9:20:12:80:2C:
+        12:B0:A9:A3:37:53:BB:3D:A3:AC:6D:0C:46:17:0C:3B:
+        98:DF:AD:DE:02:20:32:88:B0:07:AF:3C:34:67:44:D8:
+        47:8E:C2:E7:37:3C:44:4E:B7:B7:E9:7D:10:07:3A:4F:
+        2C:A7:9C:88:F5:A1
+---------------------------  </div>
 </div>
 												
 											</div>
+								<p class="mb-3">
+													This library is able to generate a RSA2048 Certificate with SHA256. Currently there is no support for RSA4096 in Radikant Crypto because the Big Num lib needs to be rewritten to support this.&nbsp;
+												</p>
 							</div>
 						</div>
 	</div>
@@ -714,7 +1016,7 @@ Successfully parsed certificate.
 			<div class="col">
 				<nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
 					<div class="container-fluid flex-column">
-						<a class="navbar-brand mx-auto" href="../">Company</a>
+						<a class="navbar-brand mx-auto" href="../">Radikant</a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-1653">
 							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
 						</button>
@@ -724,22 +1026,25 @@ Successfully parsed certificate.
 										<a href="../" class="nav-link">Home</a>
 									</li>
 									<li class="nav-item">
-										<a href="../products/" class="nav-link">Products</a>
+										<a href="../libraries/" class="nav-link">Libraries</a>
 									</li>
 									<li class="nav-item">
-										<a href="../engineering/" class="nav-link">Engineering</a>
+										<a href="../manufacturing/" class="nav-link">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
 									</li>
 									<li class="nav-item">
 										<a href="../electronics/" class="nav-link">Electronics</a>
 									</li>
 									<li class="nav-item">
-										<a href="../manufacturing/" class="a-btn nav-link">Engineering-1</a>
+										<a href="../about/" class="nav-link">About</a>
 									</li>
 								</ul>
 							</div>
 						<div class="navbar-content-area d-block col-12 col-md-3 col-lg-2">
 								<div class="row">
-									<div class="col text-lg-center mt-lg-2">
+									<div class="col text-lg-center mt-lg-2 text-md-center">
 										<a href="https://www.linkedin.com/in/charlie-elbakry-1738681b8/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></blocsicon></a> <a href="https://github.com/Radikant/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></blocsicon></a><a href="mailto:him@charlie-elbakry.nl"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="512" height="512" viewBox="0 0 512 512"><path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"></path></svg></blocsicon></a>
 									</div>
 								</div>
@@ -758,8 +1063,8 @@ Successfully parsed certificate.
 
 
 <!-- Additional JS -->
-<script src="../js/bootstrap.bundle.min.js?467"></script>
-<script src="../js/blocs.min.js?5385"></script>
+<script src="../js/bootstrap.bundle.min.js?3469"></script>
+<script src="../js/blocs.min.js?3678"></script>
 <script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
 
 

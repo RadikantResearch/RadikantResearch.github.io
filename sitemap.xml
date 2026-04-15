@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
 	<loc>https://radikant.nl/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>1.0</priority>
 	<image:image>
@@ -24,7 +24,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/libraries/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -38,7 +38,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/products/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -68,7 +68,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/electronics/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -170,13 +170,13 @@
 </url>
 <url>
 	<loc>https://radikant.nl/engineering/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/event/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -190,7 +190,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/jwt/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -201,10 +201,14 @@
 	<image:loc>https://radikant.nl/img/Screenshot%202025-12-01%20at%2020.21.25.webp</image:loc>
 	<image:title>Device Screen</image:title>
 	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/box.svg</image:loc>
+	<image:title>cms icon</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/crypto/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -214,10 +218,6 @@
 	<image:image>
 	<image:loc>https://radikant.nl/img/Screenshot%202025-12-02%20at%2004.01.56.webp</image:loc>
 	<image:title>Device Screen</image:title>
-	</image:image>
-	<image:image>
-	<image:loc>https://radikant.nl/img/box.svg</image:loc>
-	<image:title>cms icon</image:title>
 	</image:image>
 	<image:image>
 	<image:loc>https://radikant.nl/img/box-svgrepo-com.svg</image:loc>
@@ -238,9 +238,17 @@
 </url>
 <url>
 	<loc>https://radikant.nl/firebase/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Firebase.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Firebase.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
 	<image:image>
 	<image:loc>https://radikant.nl/img/Firebase_Logo.svg.png</image:loc>
 	<image:title>Firebase_Logo</image:title>
@@ -249,16 +257,28 @@
 	<image:loc>https://radikant.nl/img/Firebase_Logo.svg.webp</image:loc>
 	<image:title>Firebase_Logo</image:title>
 	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/orange_box.svg</image:loc>
+	<image:title>cms icon</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/printer/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Radikant%20Printer.jpg</image:loc>
+	<image:title>Radikant Printer</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Radikant%20Printer.webp</image:loc>
+	<image:title>Radikant Printer</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/log/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -272,7 +292,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/tls/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -286,7 +306,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/socket/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -300,13 +320,25 @@
 </url>
 <url>
 	<loc>https://radikant.nl/ble/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/BluetoothLogo.svg</image:loc>
+	<image:title>BluetoothLogo</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Bluetooth.png</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Bluetooth.webp</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/mysql/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -320,89 +352,131 @@
 </url>
 <url>
 	<loc>https://radikant.nl/asn1/</loc>
-	<lastmod>2026-02-02</lastmod>
-	<changefreq>Weekly</changefreq>
-	<priority>0.5</priority>
-</url>
-<url>
-	<loc>https://radikant.nl/url/</loc>
-	<lastmod>2026-02-02</lastmod>
-	<changefreq>Weekly</changefreq>
-	<priority>0.5</priority>
-</url>
-<url>
-	<loc>https://radikant.nl/json/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
-	<image:loc>https://radikant.nl/img/mbp-screen.jpg</image:loc>
+	<image:loc>https://radikant.nl/img/ASN1.png</image:loc>
 	<image:title>Device Screen</image:title>
 	</image:image>
 	<image:image>
-	<image:loc>https://radikant.nl/img/mbp-screen.webp</image:loc>
+	<image:loc>https://radikant.nl/img/ASN1.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/url/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Url.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Url.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/json/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/rjson.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/rjson.webp</image:loc>
 	<image:title>Device Screen</image:title>
 	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/about/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/curicilum-vitea/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/flasher/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
-</url>
-<url>
-	<loc>https://radikant.nl/flasher-1/</loc>
-	<lastmod>2026-02-02</lastmod>
-	<changefreq>Weekly</changefreq>
-	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/ESP32%20Programmer.png</image:loc>
+	<image:title>ESP32 Programmer</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/ESP32%20Programmer.webp</image:loc>
+	<image:title>ESP32 Programmer</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/nvs/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/NVS.png</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/NVS.webp</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/coap/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/CoAP.png</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/CoAP.webp</image:loc>
+	<image:title>Screenshot 2025 11 30 at 23.01.45</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/manufacturing/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/nvs-extended/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/websocket/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/pocketbase/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Screenshot%202026-02-02%20at%2018.26.33.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Screenshot%202026-02-02%20at%2018.26.33.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
 	<image:image>
 	<image:loc>https://radikant.nl/img/pocketbase.svg</image:loc>
 	<image:title>Firebase_Logo</image:title>
@@ -410,19 +484,39 @@
 </url>
 <url>
 	<loc>https://radikant.nl/supabase/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Supabase.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Supabase.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
 	<image:image>
 	<image:loc>https://radikant.nl/img/supabase_BIG.svg</image:loc>
 	<image:title>Firebase_Logo</image:title>
 	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/box_green.svg</image:loc>
+	<image:title>cms icon</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/trailbase/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Trailbase.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Trailbase.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
 	<image:image>
 	<image:loc>https://radikant.nl/img/Trailbase.svg</image:loc>
 	<image:title>Firebase_Logo</image:title>
@@ -430,14 +524,298 @@
 </url>
 <url>
 	<loc>https://radikant.nl/probe/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/PROBE.png</image:loc>
+	<image:title>PROBE</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/PROBE.webp</image:loc>
+	<image:title>PROBE</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/cert/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Certificate.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Certificate.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/fleshlight-launch/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/placeholder-image.png</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/placeholder-image.webp</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/kiiroo-cliona/</loc>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
-	<loc>https://radikant.nl/cert/</loc>
-	<lastmod>2026-02-02</lastmod>
+	<loc>https://radikant.nl/kiiroo-powerblow/</loc>
+	<lastmod>2026-04-15</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/kiiroo-keon/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/beterbed-indexer/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/base64/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Base64.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Base64.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/serial/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/SerialPort.png</image:loc>
+	<image:title>SerialPort</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/SerialPort.webp</image:loc>
+	<image:title>SerialPort</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/1770925060877.jpg</image:loc>
+	<image:title>1770925060877</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/1770925060877.webp</image:loc>
+	<image:title>1770925060877</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/queue/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Queue.png</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Queue.webp</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/sasl/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/SASL.png</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/SASL.webp</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/postgresql/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/PostgreSQL.png</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/PostgreSQL.webp</image:loc>
+	<image:title>Device Screen</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/postgresql-logo-600x275.png</image:loc>
+	<image:title>postgresql logo 600x275</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/postgresql-logo-600x275.webp</image:loc>
+	<image:title>postgresql logo 600x275</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/lorawan/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/vna/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/vector%20network%20analyzer.jpg</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/vector%20network%20analyzer.webp</image:loc>
+	<image:title>placeholder image</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/1774302482209.jpg</image:loc>
+	<image:title>1774302482209</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/1774302482209.webp</image:loc>
+	<image:title>1774302482209</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/rf/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/kiiroo-pearl/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/kiiroo-control/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/storm-mvp/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/thermostat/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/ota-extended/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/kiiroo-spot/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/kiiroo-luxus/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/trv/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/noise/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Noise.png</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/Noise.webp</image:loc>
+	<image:title>NVS</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/librariesext/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/diffie-helman/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/kdf/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/aes/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/AES-CBC-F1.svg</image:loc>
+	<image:title>AES CBC F1</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/AES-CTR.svg</image:loc>
+	<image:title>AES CTR</image:title>
+	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/polynomial/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/mac/</loc>
+	<lastmod>2026-04-15</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+	<image:image>
+	<image:loc>https://radikant.nl/img/HMAC-SHA.svg</image:loc>
+	<image:title>HMAC SHA</image:title>
+	</image:image>
 </url>
 </urlset>

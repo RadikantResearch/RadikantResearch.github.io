@@ -8,21 +8,20 @@
 	<link rel="canonical" href="https://radikant.nl/jwt/">
 	<meta name="robots" content="index, follow">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="yr">
-	<meta name="twitter:description" content="dygfhhhhh">
+	<meta name="twitter:title" content="Radikant">
+	<meta name="twitter:description" content="Radikant Research">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Radikant">
-	<meta property="og:title" content="yr">
-	<meta property="og:description" content="dygfhhhhh">
+	<meta property="og:title" content="Radikant">
+	<meta property="og:description" content="Radikant Research">
 	<meta property="og:url" content="https://radikant.nl/jwt/"> 
     <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
     
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?6719">
-	<link rel="stylesheet" type="text/css" href="../style.css?5470">
-	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?1455">
-	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1642">
+	<link rel="stylesheet" type="text/css" href="../style.css?7044">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?7638">
 	
-    <title>Event-1</title>
+    <title>Jwt</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
@@ -45,7 +44,7 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc l-bloc" id="bloc-0">
+<div class="bloc l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col">
@@ -90,8 +89,8 @@
 	<div class="container bloc-no-padding-lg">
 		<div class="row">
 			<div class="col-lg-12">
-				<h1 class="text-center mb-4">
-					Radikant Jwt C
+				<h1 class="text-center mb-4 sm-shadow">
+					🪪 Radikant-JWT-C
 				</h1>
 			</div>
 			<div class="offset-md-2 col-md-8 col-lg-8 offset-lg-2">
@@ -99,7 +98,7 @@
 					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202025-12-01%20at%2020.21.25.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202025-12-01%20at%2020.21.25.png" class="img-fluid lazyload" alt="Device Screen" width="602" height="391"></picture>
 				</div>
 				<p class="mb-3 text-justify">
-					A small c library that with no external dependencies other than Radikant’s own Crypto, Json and &nbsp;library. This library can be used to mint, sign and verify JWT (Json Web Tokens). The API is designed for simplicity and easy readability. It is currently used by Radikant-Firebase-C<br>
+					A small c library that with no external dependencies other than <a href="../crypto/">Radikant’s Crypto</a>, <a href="../json/">Json</a>. This library can be used to mint, sign and verify JWT (Json Web Tokens). The API is designed for simplicity. It is currently used by <a href="../firebase/">Radikant-Firebase-C</a> and other database libs that need auth.<br>
 				</p>
 			</div>
 		</div>
@@ -107,37 +106,276 @@
 </div>
 <!-- bloc-15 END -->
 
+<!-- bloc-14 -->
+<div class="bloc tc-5275 l-bloc" id="bloc-14">
+	<div class="container bloc-lg bloc-no-padding-lg">
+		<div class="row ms-lg-5 me-lg-5">
+			<div class="col-lg-12 col-md-12">
+				<div class="divider-h">
+				</div>
+				<h2 class="mg-md text-center feat-header text-lg-start">
+					Digital signature algorithms
+				</h2>
+				<p class="mg-lg text-center feat-sub-header text-lg-start">
+					Sign and verify JWT’s&nbsp;
+				</p>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style animated bounceIn lazyload" alt="cms icon" data-appear-anim-style="bounceIn" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					ES-SHA
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					ECDSA
+				</p>
+				<ul>
+					<li>
+						<p>
+							<strong>ES256</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>ES384</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>ES512</strong>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style animated bounceIn lazyload" alt="cms icon" data-appear-anim-style="bounceIn" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					RS-SHA
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					RSASSA-PKCS1-v1_5
+				</p>
+				<ul>
+					<li>
+						<p>
+							<strong>RS256</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>RS384</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>RS512</strong>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style animated bounceIn lazyload" alt="cms icon" data-appear-anim-style="bounceIn" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					PS-SHA
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					RSASSA-PSS
+				</p>
+				<ul>
+					<li>
+						<p>
+							<strong>PS256</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>PS384</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>PS512</strong>
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 feature-details-col">
+				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style animated bounceIn lazyload" alt="cms icon" data-appear-anim-style="bounceIn" width="44" height="44">
+				<h4 class="mg-sm text-center text-lg-start">
+					HS-SHA
+				</h4>
+				<p class="mg-lg text-center text-lg-start">
+					HMAC-SHA
+				</p>
+				<ul>
+					<li>
+						<p>
+							<strong>HS256</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>HS384</strong>
+						</p>
+					</li>
+					<li>
+						<p>
+							<strong>HS512</strong>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-14 END -->
+
 <!-- bloc-15 -->
 <div class="bloc l-bloc" id="bloc-15">
 	<div class="container bloc-lg bloc-no-padding-lg">
 		<div class="row">
 			<div class="col text-start">
+				<div class="divider-h">
+				</div>
 				<h1 class="mb-4">
 					Encoding<br>
 				</h1>
 				<div><code class="code-embed"></code>
 				</div>
-				<div class=" ">
-						<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
-    <pre><code class="language-c">
-    jwt_payload_t* payload = jwt_payload_new();
-    jwt_payload_set_subject(payload, "user-123");
-    jwt_payload_set_issued_at(payload, (time_t)1678886400);
-    jwt_payload_add_string(payload, "name", "Charlie Elbakry");
-    jwt_payload_add_string(payload, "email", "charlie@radikant.nl");
-    jwt_payload_add_string(payload, "group", "raid");
-    jwt_payload_add_string(payload, "project", "Radikant");
-    jwt_payload_add_bool(payload, "admin", 1);
-    
-    jwt_sign_es256(payload, priv_key, out_jwt);
-	 jwt_verify_es256(signed_jwt, pub_key, &decoded_token);
-    
-    jwt_payload_free(payload);
-    </code></pre>
+				<div class=" html-widget-bloc-15-style">
+						<style>
+  :root {
+    --mac-header: #2d2d2d;
+    --mac-border: #3c3c3c;
+    --mac-text: #ffffff;
+    --mac-dim: #8a8a8a;
+  }
+
+  .ide-window {
+    background-color: #272822;
+    color: #f8f8f2;
+    font-family: -apple-system, "SF Pro Text", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid var(--mac-border);
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .ide-titlebar {
+    background: var(--mac-header);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+  }
+
+  .traffic-lights { display: flex; gap: 8px; margin-right: 25px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; border: 0.5px solid #e0443e; } 
+  .ylw { background: #ffbd2e; border: 0.5px solid #dea123; } 
+  .grn { background: #27c93f; border: 0.5px solid #1aab2f; }
+
+  .ide-menu { display: flex; gap: 18px; font-size: 13px; color: #b1b1b1; }
+
+  .ide-toolbar {
+    background: #252526;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--mac-border);
+  }
+
+  .controls { display: flex; gap: 15px; align-items: center; }
+  .btn-play { color: #4ade80; font-size: 16px; }
+  .btn-stop { color: #666; font-size: 14px; }
+
+  .project-pill {
+    font-size: 11px;
+    color: #ddd;
+    background: #3c3c3c;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #4a4a4a;
+    flex-grow: 1;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .ide-body {
+    padding: 20px 25px;
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #272822;
+    overflow: hidden;
+  }
+
+  .code-line { display: block; white-space: pre; }
+  .keyword { color: #f92672; } 
+  .type { color: #66d9ef; }    
+  .str { color: #e6db74; }      
+  .func { color: #a6e22e; }    
+  .val { color: #ae81ff; }     
+
+  .ide-footer {
+    background: var(--mac-header);
+    padding: 8px 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--mac-dim);
+    border-top: 1px solid var(--mac-border);
+  }
+
+  .status-actions { display: flex; gap: 18px; }
+</style>
+
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights">
+      <div class="dot red"></div><div class="dot ylw"></div><div class="dot grn"></div>
+    </div>
+    <div class="ide-menu">
+      <span>File</span><span>Edit</span><span>View</span><span>Project</span>
+    </div>
+  </div>
+
+  <div class="ide-toolbar">
+    <div class="controls"><div class="btn-play">▶</div><div class="btn-stop">■</div></div>
+    <div class="project-pill"><b>libjwt-c</b> — auth_service.c</div>
+  </div>
+
+  <div class="ide-body">
+<div class="code-line">    <span class="type">jwt_payload_t</span>* payload = <span class="func">jwt_payload_new</span>();</div>
+<div class="code-line">    <span class="func">jwt_payload_set_subject</span>(payload, <span class="str">"user-123"</span>);</div>
+<div class="code-line">    <span class="func">jwt_payload_set_issued_at</span>(payload, (<span class="type">time_t</span>)<span class="val">1678886400</span>);</div>
+<div class="code-line">    <span class="func">jwt_payload_add_string</span>(payload, <span class="str">"name"</span>, <span class="str">"Charlie Elbakry"</span>);</div>
+<div class="code-line">    <span class="func">jwt_payload_add_string</span>(payload, <span class="str">"email"</span>, <span class="str">"charlie@radikant.nl"</span>);</div>
+<div class="code-line">    <span class="func">jwt_payload_add_string</span>(payload, <span class="str">"group"</span>, <span class="str">"raid"</span>);</div>
+<div class="code-line">    <span class="func">jwt_payload_add_string</span>(payload, <span class="str">"project"</span>, <span class="str">"Radikant"</span>);</div>
+<div class="code-line">    <span class="func">jwt_payload_add_bool</span>(payload, <span class="str">"admin"</span>, <span class="val">1</span>);</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">    <span class="func">jwt_sign_es256</span>(payload, priv_key, out_jwt);</div>
+<div class="code-line">    <span class="func">jwt_verify_es256</span>(signed_jwt, pub_key, &decoded_token);</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">    <span class="func">jwt_payload_free</span>(payload);</div>
+  </div>
+
+  <div class="ide-footer">
+    <div class="status-left">Build Succeeded</div>
+    <div class="status-actions">
+      <span>Run</span><span>Build</span><span>Debug</span>
+      <span style="color: #fff">Ln 14, Col 1</span>
+    </div>
+  </div>
 </div>
 						
 					</div>
-				<div class=" ">
+				<div>
 							<style>
   /* --- CONTAINER STYLES --- */
   .rlog-terminal {
@@ -229,10 +467,10 @@ Verification SUCCESS!
   admin     : true (ret: 0)
 
 --- EXAMPLE LOGIC ---
->>> Access Granted: User is an admin! <<<
+&gt;&gt;&gt; Access Granted: User is an admin! &lt;&lt;&lt;
 
   </div>
-</div>§
+</div>
 							
 						</div>
 				<p class="mb-3">
@@ -241,60 +479,379 @@ Verification SUCCESS!
 				<h1 class="mb-4">
 								Decoding
 							</h1>
-				<div class=" ">
-								<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
-    <pre><code class="language-c">
-    jwt_payload_t* payload = jwt_payload_new();
-    
-    jwt_payload_set_subject(payload, "user-123");
-    jwt_payload_set_issued_at(payload, (time_t)1678886400); // Fixed time for consistent output
-    jwt_payload_add_string(payload, "name", "Charlie Elbakry");
-    jwt_payload_add_string(payload, "email", "charlie@radikant.nl");
-    jwt_payload_add_string(payload, "group", "raid");
-    jwt_payload_add_string(payload, "project", "Radikant");
-    jwt_payload_add_bool(payload, "admin", 1);
-    
-    jwt_sign_es256(payload, priv_key, out_jwt);
-    jwt_payload_free(payload);
-    </code></pre>
+				<div>
+								<style>
+  :root {
+    --mac-header: #2d2d2d;
+    --mac-border: #3c3c3c;
+    --mac-text: #ffffff;
+    --mac-dim: #8a8a8a;
+  }
+
+  .ide-window {
+    background-color: #272822;
+    color: #f8f8f2;
+    font-family: -apple-system, "SF Pro Text", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid var(--mac-border);
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .ide-titlebar {
+    background: var(--mac-header);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+  }
+
+  .traffic-lights { display: flex; gap: 8px; margin-right: 25px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; border: 0.5px solid #e0443e; } 
+  .ylw { background: #ffbd2e; border: 0.5px solid #dea123; } 
+  .grn { background: #27c93f; border: 0.5px solid #1aab2f; }
+
+  .ide-menu { display: flex; gap: 18px; font-size: 13px; color: #b1b1b1; }
+
+  .ide-toolbar {
+    background: #252526;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--mac-border);
+  }
+
+  .controls { display: flex; gap: 15px; align-items: center; }
+  .btn-play { color: #4ade80; font-size: 16px; }
+  .btn-stop { color: #666; font-size: 14px; }
+
+  .project-pill {
+    font-size: 11px;
+    color: #ddd;
+    background: #3c3c3c;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #4a4a4a;
+    flex-grow: 1;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .ide-body {
+    padding: 20px 25px;
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    background: #272822;
+    overflow-x: auto;
+  }
+
+  .code-line { display: block; white-space: pre; }
+  .keyword { color: #f92672; } 
+  .type { color: #66d9ef; }    
+  .str { color: #e6db74; }      
+  .func { color: #a6e22e; }    
+  .val { color: #ae81ff; }
+  .comment { color: #75715e; }
+  .preproc { color: #a6e22e; }
+
+  .ide-footer {
+    background: var(--mac-header);
+    padding: 8px 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--mac-dim);
+    border-top: 1px solid var(--mac-border);
+  }
+
+  .status-actions { display: flex; gap: 18px; }
+</style>
+
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights">
+      <div class="dot red"></div><div class="dot ylw"></div><div class="dot grn"></div>
+    </div>
+    <div class="ide-menu">
+      <span>File</span><span>Edit</span><span>View</span><span>Project</span>
+    </div>
+  </div>
+
+  <div class="ide-toolbar">
+    <div class="controls"><div class="btn-play">▶</div><div class="btn-stop">■</div></div>
+    <div class="project-pill"><b>Radikant</b> — decode_example.c</div>
+  </div>
+
+  <div class="ide-body">
+<div class="code-line"><span class="preproc">#include</span> <span class="str">&lt;radikant-jwt-c.h&gt;</span></div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line"><span class="keyword">int</span> <span class="func">main</span>() {</div>
+<div class="code-line">    <span class="keyword">const char</span> *jwt_str = <span class="str">"eyJhbGciOiJFUzI1NiIs..."</span>;</div>
+<div class="code-line">    <span class="type">uint8_t</span> pub_key[<span class="val">64</span>] = { <span class="val">0x2C</span>, <span class="val">0x37</span>, ... };</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">    <span class="keyword">struct</span> <span class="type">jwt_decoded</span> *decoded_token = <span class="val">NULL</span>;</div>
+<div class="code-line">    <span class="keyword">int</span> verify_ret = <span class="func">jwt_verify_es256</span>(jwt_str, pub_key, &decoded_token);</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">    <span class="keyword">if</span> (verify_ret == <span class="val">JWT_SUCCESS</span>) {</div>
+<div class="code-line">        <span class="func">printf</span>(<span class="str">"  [INFO] Verification successful!\n"</span>);</div>
+<div class="code-line">        <span class="func">jwt_print</span>(decoded_token);</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">        <span class="keyword">int</span> bool_val = <span class="val">0</span>;</div>
+<div class="code-line">        <span class="keyword">int</span> ret = <span class="func">jwt_payload_get_bool</span>(decoded_token->payload, <span class="str">"admin"</span>, &bool_val);</div>
+<div class="code-line">        <span class="keyword">if</span> (ret == <span class="val">JWT_SUCCESS</span> && bool_val) {</div>
+<div class="code-line">            <span class="func">printf</span>(<span class="str">"&gt;&gt;&gt; Access Granted: User is an admin! &lt;&lt;&lt;\n"</span>);</div>
+<div class="code-line">        }</div>
+<div class="code-line">    }</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">    <span class="func">jwt_free_decoded</span>(decoded_token);</div>
+<div class="code-line">    <span class="keyword">return</span> <span class="val">0</span>;</div>
+<div class="code-line">}</div>
+  </div>
+
+  <div class="ide-footer">
+    <div class="status-left">Build Succeeded</div>
+    <div class="status-actions">
+      <span>Run</span><span>Build</span><span>Debug</span>
+      <span style="color: #fff">Ln 48, Col 1</span>
+    </div>
+  </div>
 </div>
 								
 							</div>
-				<p class="mb-3">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-								</p>
-				<h1 class="mb-4">
-									Claims<br>
-								</h1>
-				<p class="mb-3">
-									Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-								</p>
-				<div class=" ">
-									<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
-    <pre><code class="language-c">
-    const char* str_val = NULL;
-    double num_val = 0;
-    int bool_val = 0;
-    int ret;
+				<div>
+									<style>
+  /* --- CONTAINER STYLES --- */
+  .rlog-terminal {
+    background-color: #1e1e1e;
+    color: #cccccc;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 1.35;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #333;
+  }
 
-    ret = jwt_payload_get_string(decoded_token->payload, "sub", &str_val);
-    printf("  sub       : %s (ret: %d)\n", (ret == 0) ? str_val : "NOT FOUND", ret); 
-    ret = jwt_payload_get_number(decoded_token->payload, "iat", &num_val);
-    printf("  iat       : %.0f (ret: %d)\n", (ret == 0) ? num_val : 0, ret); 
-    ret = jwt_payload_get_string(decoded_token->payload, "name", &str_val);
-    printf("  name      : %s (ret: %d)\n", (ret == 0) ? str_val : "NOT FOUND", ret); 
-    ret = jwt_payload_get_string(decoded_token->payload, "email", &str_val);
-    printf("  email     : %s (ret: %d)\n", (ret == 0) ? str_val : "NOT FOUND", ret); 
-    </code></pre>
+  /* Mac-style Window Header */
+  .rlog-header {
+    background-color: #252526;
+    padding: 8px 12px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #111;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .red-dot { background-color: #ff5f56; }
+  .ylw-dot { background-color: #ffbd2e; }
+  .grn-dot { background-color: #27c93f; }
+
+  /* Log Body Area */
+  .rlog-body {
+    padding: 12px 15px;
+    overflow-x: auto;
+    white-space: pre; /* Preserves exact text/newlines */
+    display: block;
+  }
+
+  /* --- COLOR MAPPING --- */
+  .r-time  { color: #6b7280; }
+  .r-loc   { color: #4b5563; font-style: italic; }
+  .r-info  { color: #61dafb; }
+  .r-succ  { color: #4ade80; }
+  .r-err   { color: #ef4444; }
+  .r-fail  { color: #ef4444; font-weight: bold; }
+  .r-alert { color: #d946ef; font-weight: bold; }
+  .r-warn  { color: #facc15; }
+</style>
+
+<div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+  [DEBUG] Verifying JWT...
+  [INFO] Verification successful!
+=== HEADER ===
+{
+  "alg": "ES256",
+  "typ": "JWT"
+}
+
+=== PAYLOAD (CLAIMS) ===
+{
+  "sub": "user-123",
+  "iat": 1.67889e+09,
+  "name": "Charlie Elbakry",
+  "email": "charlie@radikant.nl",
+  "group": "raid",
+  "project": "Radikant",
+  "admin": true
+}
+&gt;&gt;&gt; Access Granted: User is an admin! &lt;&lt;&lt;
+  </div>
 </div>
 									
 								</div>
-				<h1 class="mb-4">
-										Heading content
-									</h1>
 				<p class="mb-3">
-										Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+										This library allows users to decode a token and extract claims from the token.
 									</p>
+				<h1 class="mb-4">
+										Claims<br>
+									</h1>
+				<div>
+										<style>
+  :root {
+    --mac-header: #2d2d2d;
+    --mac-border: #3c3c3c;
+    --mac-text: #ffffff;
+    --mac-dim: #8a8a8a;
+  }
+
+  .ide-window {
+    background-color: #272822;
+    color: #f8f8f2;
+    font-family: -apple-system, "SF Pro Text", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid var(--mac-border);
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .ide-titlebar {
+    background: var(--mac-header);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+  }
+
+  .traffic-lights { display: flex; gap: 8px; margin-right: 25px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; border: 0.5px solid #e0443e; } 
+  .ylw { background: #ffbd2e; border: 0.5px solid #dea123; } 
+  .grn { background: #27c93f; border: 0.5px solid #1aab2f; }
+
+  .ide-menu { display: flex; gap: 18px; font-size: 13px; color: #b1b1b1; }
+
+  .ide-toolbar {
+    background: #252526;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--mac-border);
+  }
+
+  .controls { display: flex; gap: 15px; align-items: center; }
+  .btn-play { color: #4ade80; font-size: 16px; }
+  .btn-stop { color: #666; font-size: 14px; }
+
+  .project-pill {
+    font-size: 11px;
+    color: #ddd;
+    background: #3c3c3c;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #4a4a4a;
+    flex-grow: 1;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .ide-body {
+    padding: 20px 25px;
+    font-family: 'SF Mono', 'Menlo', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #272822;
+    overflow: hidden;
+  }
+
+  .code-line { display: block; white-space: pre; }
+  .keyword { color: #f92672; } 
+  .type { color: #66d9ef; }    
+  .str { color: #e6db74; }      
+  .func { color: #a6e22e; }    
+  .val { color: #ae81ff; }
+  .comment { color: #75715e; }
+
+  .ide-footer {
+    background: var(--mac-header);
+    padding: 8px 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--mac-dim);
+    border-top: 1px solid var(--mac-border);
+  }
+
+  .status-actions { display: flex; gap: 18px; }
+</style>
+
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights">
+      <div class="dot red"></div><div class="dot ylw"></div><div class="dot grn"></div>
+    </div>
+    <div class="ide-menu">
+      <span>File</span><span>Edit</span><span>View</span><span>Project</span>
+    </div>
+  </div>
+
+  <div class="ide-toolbar">
+    <div class="controls"><div class="btn-play">▶</div><div class="btn-stop">■</div></div>
+    <div class="project-pill"><b>Radikant</b> — jwt_decode_test.c</div>
+  </div>
+
+  <div class="ide-body">
+<div class="code-line"><span class="keyword">const char</span>* str_val = <span class="val">NULL</span>;</div>
+<div class="code-line"><span class="keyword">double</span> num_val = <span class="val">0</span>;</div>
+<div class="code-line"><span class="keyword">int</span> ret;</div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">ret = <span class="func">jwt_payload_get_string</span>(decoded_token->payload, <span class="str">"sub"</span>, &str_val);</div>
+<div class="code-line"><span class="func">printf</span>(<span class="str">"  sub       : %s (ret: %d)\n"</span>, (ret == <span class="val">0</span>) ? str_val : <span class="str">"NOT FOUND"</span>, ret); </div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">ret = <span class="func">jwt_payload_get_number</span>(decoded_token->payload, <span class="str">"iat"</span>, &num_val);</div>
+<div class="code-line"><span class="func">printf</span>(<span class="str">"  iat       : %.0f (ret: %d)\n"</span>, (ret == <span class="val">0</span>) ? num_val : <span class="val">0</span>, ret); </div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">ret = <span class="func">jwt_payload_get_string</span>(decoded_token->payload, <span class="str">"name"</span>, &str_val);</div>
+<div class="code-line"><span class="func">printf</span>(<span class="str">"  name      : %s (ret: %d)\n"</span>, (ret == <span class="val">0</span>) ? str_val : <span class="str">"NOT FOUND"</span>, ret); </div>
+<div class="code-line">&nbsp;</div>
+<div class="code-line">ret = <span class="func">jwt_payload_get_string</span>(decoded_token->payload, <span class="str">"email"</span>, &str_val);</div>
+<div class="code-line"><span class="func">printf</span>(<span class="str">"  email     : %s (ret: %d)\n"</span>, (ret == <span class="val">0</span>) ? str_val : <span class="str">"NOT FOUND"</span>, ret);</div>
+  </div>
+
+  <div class="ide-footer">
+    <div class="status-left">Build Succeeded</div>
+    <div class="status-actions">
+      <span>Run</span><span>Build</span><span>Debug</span>
+      <span style="color: #fff">Ln 14, Col 1</span>
+    </div>
+  </div>
+</div>
+										
+									</div>
+				<p class="mb-3">
+											It is possible extract claims directly from the decoded jwt.&nbsp;
+										</p>
 			</div>
 		</div>
 	</div>
@@ -313,7 +870,7 @@ Verification SUCCESS!
 			<div class="col">
 				<nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
 					<div class="container-fluid flex-column">
-						<a class="navbar-brand mx-auto" href="../">Company</a>
+						<a class="navbar-brand mx-auto" href="../">Radikant</a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-1653">
 							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
 						</button>
@@ -323,22 +880,25 @@ Verification SUCCESS!
 										<a href="../" class="nav-link">Home</a>
 									</li>
 									<li class="nav-item">
-										<a href="../products/" class="nav-link">Products</a>
+										<a href="../libraries/" class="nav-link">Libraries</a>
 									</li>
 									<li class="nav-item">
-										<a href="../engineering/" class="nav-link">Engineering</a>
+										<a href="../manufacturing/" class="nav-link">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
 									</li>
 									<li class="nav-item">
 										<a href="../electronics/" class="nav-link">Electronics</a>
 									</li>
 									<li class="nav-item">
-										<a href="../manufacturing/" class="a-btn nav-link">Engineering-1</a>
+										<a href="../about/" class="nav-link">About</a>
 									</li>
 								</ul>
 							</div>
 						<div class="navbar-content-area d-block col-12 col-md-3 col-lg-2">
 								<div class="row">
-									<div class="col text-lg-center mt-lg-2">
+									<div class="col text-lg-center mt-lg-2 text-md-center">
 										<a href="https://www.linkedin.com/in/charlie-elbakry-1738681b8/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></blocsicon></a> <a href="https://github.com/Radikant/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></blocsicon></a><a href="mailto:him@charlie-elbakry.nl"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="512" height="512" viewBox="0 0 512 512"><path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"></path></svg></blocsicon></a>
 									</div>
 								</div>
@@ -357,8 +917,8 @@ Verification SUCCESS!
 
 
 <!-- Additional JS -->
-<script src="../js/bootstrap.bundle.min.js?467"></script>
-<script src="../js/blocs.min.js?5385"></script>
+<script src="../js/bootstrap.bundle.min.js?3469"></script>
+<script src="../js/blocs.min.js?3678"></script>
 <script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
 
 

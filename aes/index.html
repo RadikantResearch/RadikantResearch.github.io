@@ -1,0 +1,403 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="defense cryptography">
+    <meta name="description" content="defense cryptography">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="canonical" href="https://radikant.nl/aes/">
+	<meta name="robots" content="index, follow">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Radikant">
+	<meta name="twitter:description" content="Radikant Research">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Radikant">
+	<meta property="og:title" content="Radikant">
+	<meta property="og:description" content="Radikant Research">
+	<meta property="og:url" content="https://radikant.nl/aes/"> 
+    <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
+    
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1642">
+	<link rel="stylesheet" type="text/css" href="../style.css?7044">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?7638">
+	
+    <title>AES</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body data-clean-url="true">
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-0 -->
+<div class="bloc l-bloc " id="bloc-0">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md" role="navigation">
+					<div class="container-fluid ">
+						<a class="navbar-brand" href="../"><picture><source type="image/webp" srcset="../img/160545421.webp"><img src="../img/160545421.jpeg" alt="logo" width="30" height="30"></picture></a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 ms-auto" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-12779">
+							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-35179 navbar-12779">
+								<ul class="site-navigation nav navbar-nav ms-auto">
+									<li class="nav-item">
+										<a href="../" class="nav-link">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="../libraries/" class="nav-link">Libraries</a>
+									</li>
+									<li class="nav-item">
+										<a href="../manufacturing/" class="nav-link a-btn">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
+									</li>
+									<li class="nav-item">
+										<a href="../electronics/" class="nav-link">Electronics</a>
+									</li>
+									<li class="nav-item">
+										<a href="../about/" class="nav-link a-btn">About</a>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-0 END -->
+
+<!-- bloc-94 -->
+<div class="bloc l-bloc" id="bloc-94">
+	<div class="container bloc-lg bloc-sm-lg">
+		<div class="row">
+			<div class="text-start offset-lg-2 col-lg-8">
+				<h1 class="mb-4">
+					AES
+				</h1>
+				<p class="mb-3 text-justify">
+					The advanced encryption standard (AES) is a symmetric block chipher that encrypts data in blocks of 16 bytes regarless of key length. Regarded secure enough for regular applications with no <i>publicly</i> known practical attack. The cipher is symmetric so the same key can be used for both encryption and decryption. The output looks like random noise. Often the OKM from a key derrivation (KDF) function is used as the cipher-key. AES is featured inside <a href="../crypto/">Radikant-Crypto-C</a>.<br>
+				</p>
+				<h3 class="mb-4">
+					Introduction
+				</h3>
+				<p class="mb-3 text-justify">
+					AES is a deterministic state machine transforming the input-message using an cipher-key during several rounds into a cipher-message. The cipher-key can have sizes of 128,192 or 256 bits. The cipher-key is expanded into a KeySchedule that consists of sliced smaller 128 bit RoundKeys. The first RoundKey is XOR’ed with a plaintext before any rounds start. During each of these rounds (10,12 or 14) depending on the cipher-key size, the data undergoes 4 distinct steps: SubBytes, ShiftRows, MixColumns, and AddRoundKey. <br><br>In the last round MixColumns&nbsp;is omitted because its purpose is to spread information into future rounds of SubBytes. Since no further rounds exist, the designers state it does not contribute to security in any meaningfullway and left it out in the final step.<br>
+				</p>
+				<h3 class="mb-4">
+					Key Schedule
+				</h3>
+				<div>
+					<table class="aes-table">
+  <tbody>
+    <tr class="aes-header-row">
+      <td>&nbsp;AES</td>
+      <td>&nbsp;[W]</td>
+      <td colspan="9" style="text-align: center;">KeySchedule</td>
+      <td>&nbsp;bits</td>
+    </tr>
+    <tr>
+      <td>AES128</td>
+      <td>4</td>
+      <td>W₀</td>
+      <td>W₁&nbsp;</td>
+      <td>W₂</td>
+      <td>W₃</td>
+      <td>exp</td>
+      <td>exp</td>
+      <td>&nbsp;exp</td>
+      <td>&nbsp;exp</td>
+      <td>&nbsp;exp</td>
+      <td>1408</td>
+    </tr>
+    <tr>
+      <td>AES192</td>
+      <td>6&nbsp;</td>
+      <td>W₀</td>
+      <td>W₁&nbsp;</td>
+      <td>W₂</td>
+      <td>W₃</td>
+      <td>W₄</td>
+      <td>W₅</td>
+      <td>&nbsp;exp</td>
+      <td>exp</td>
+      <td>&nbsp;exp</td>
+      <td>1664&nbsp;</td>
+    </tr>
+    <tr>
+      <td>AES256</td>
+      <td>8</td>
+      <td>W₀</td>
+      <td>W₁&nbsp;</td>
+      <td>W₂</td>
+      <td>W₃</td>
+      <td>W₄&nbsp;</td>
+      <td>W₅</td>
+      <td>W₆</td>
+      <td>&nbsp;W₇</td>
+      <td>&nbsp;exp</td>
+      <td>1920&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  /* Main table styling */
+  .aes-table {
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+
+  /* Styling for individual cells */
+  .aes-table td {
+    padding: 10px 5px; 
+    text-align: left;
+    vertical-align: middle;
+    /* This adds a 1px solid black border at 50% opacity */
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+  }
+
+  /* Makes the top row bold */
+  .aes-header-row {
+    font-weight: bold;
+  }
+</style>
+					
+				</div>
+				<p class="mb-3 text-justify">
+						The cipher key is expanded into a larger byte array called the KeySchedule. The total KeySchedule size depends on the amount of rounds. The amount of rounds depends on the cipher-key size. The Keyschedule consists of multiple 128 bit RoundKeys and are always 128 bit. Before any AES round start the first RoundKey from the keyschedule is XOR’ed with the plaintext. Therefore one additional RoundKey is generated to match the RoundKeys consumption during rounds. The remaining RoundKeys are all used during each cycle.<br><br><strong>Rounds</strong><br><strong>‣</strong> AES128 - 10 rounds &nbsp; &nbsp;&nbsp;<strong>‣</strong> KeySchedule = 1408 bits &nbsp; &nbsp;<strong>‣</strong> 11 RoundKeys &nbsp; &nbsp;<strong>‣</strong> 4 KeyWords¹<br><strong>‣</strong> AES192 - 12 rounds &nbsp; &nbsp;&nbsp;<strong>‣</strong> KeySchedule = 1664 bits &nbsp; &nbsp;<strong>‣</strong> 13 RoundKeys &nbsp; &nbsp;<strong>‣</strong> 6 KeyWords¹<br><strong>‣</strong> AES256 - 14 rounds &nbsp; &nbsp;&nbsp;<strong>‣</strong> KeySchedule = 1920 bits &nbsp; &nbsp;<strong>‣</strong> 15 RoundKeys &nbsp; &nbsp;<strong>‣</strong> 8 KeyWords¹<br><br><strong>Key expansion</strong><br>The cipher key is always fully visible in the first bytes of the keyschedule and is used as seed to expand the key to the desired length. The key expansion is performed by splitting the cipher-key into 4 byte chunks called word, for example a 128 bit¹ cipher-key has 4 words: [W₀] [W₁] [W₂] [W₃]. Then a chain of XOR(⊕) operations and a G-Function every 4/6/8 words depending on the keylngth expands the key by generating new words:<br><br>W₄ = W₀ ⊕ <span data-custom-interaction-click="blocs_goToTls">G(W₃)</span> <i>G-Function</i><br>W₅ = W₁ ⊕ W₄ <br>W₆ = W₂ ⊕ W₅ <br>W₇ = W₃ ⊕ W₆<br><br>•&nbsp;<i>The G-Function applied to every new batch¹&nbsp;of keywords: for 128bit¹&nbsp;(4 KeyWords) (W₄ , W₈ , W₁₂ etc.. )</i><br><i>• AES256 adds an additional SubBytes step is applied every 4 KeyWords before XOR.</i><br><br>This chain reaction continues until desired length for the keyschedule is reached e.g. 1920 bits for AES256.<br><br><strong>Inital AddRoundKey</strong><br>‣ AES128 - 128 bits | so the entire cipher key is XORed with the plaintext<br>‣ AES192 - 192 bits | only the first 128 bits (W₀ W₁ W₂ W₃) are XORed with the plaintext. <br>‣ AES256 - 256 bits | only the first half (W₀ W₁ W₂ W₃) is XORed with the plaintext. <br> <br>The remaining KeySchedule is sliced in 128 bit RoundKeys that are consumed at the final step AddRoundKey during a round. Since the RoundKey is one slice of the Key Schedule and is always 128 bits and the 1st key is mixed with the plain text message before the rounds start, the formula is (rounds+1) x 128 = KeySchedule size.<br>
+					</p>
+				<h3 class="mb-4">
+						G Function
+					</h3>
+				<p class="mb-3 text-justify">
+						The G function transformation is used in the key expansion(KeySchedule) to introduce unpredictability to the round keys derived from the cipher key in three sequential operations:<strong><br><br>1. RotWord</strong><br>Shifts 4 bytes left by one position<br>[a0, a1, a2, a3] → [a1, a2, a3, a0]<br><br><strong>2. SubBytes</strong><br>Each byte is replaced using the &nbsp;S-Box based on GF(2⁸) inversion):<br><br><strong>3. Rcon</strong><br>XOR with Round Constant:&nbsp;&nbsp;{<strike>0x8d</strike>, 0x01, 0x02, 0x04, 0x08, 0x10, 0x20, 0x40, 0x80, 0x1b, 0x36}<br>
+					</p>
+				<h3 class="mb-4">
+						AES Round Steps<br>
+					</h3>
+				<p class="mb-3 text-justify">
+						<strong>1. SubBytes<br></strong>SubBytes tranforms the input using a Substitution Box (S-box) and substitutes every single byte of the input for a different byte from the (S-Box). Resulting in a non-linear relation between the input and the output.<br><br><strong>2. ShiftRows<br></strong>Organizes a 16-byte block into a [4x4] matrix/grid with rows and columns. In this step, it shifts rows to the left. First Row is untouched, the second row shifts (one), the third (two), and the fourth three (3).&nbsp;This ensures bytes are spread out over &nbsp;different columns than they started in, achieving diffusion.<br><br><strong>3. MixColumns<br></strong>In mix columns there is an AES constant [4x4] matrix, which is multiplied with the [4x1] columns of the [4x4] matrix from ShiftRows operation. Multiplying a [4x4] matrix with a [4x1] matrix results in a new [4x1] column matrix. This blends values within a column, since if you change 1 byte from the input matrix it changes all 4 bytes of the output column matrix. The 4 operations do not depend on each other and can be executed in parallel. In the last round this step is skipped. Matrix multiplication is performed in GF(2⁸). This ensures the result of multiplication is still a valid byte and reversible for decryption.<br><br><strong>4. AddRoundKey<br></strong>Finally, the algorithm takes a round key(128 bits) which is part of the expanded cipher-key from the Key KeySchedule and &nbsp;XOR'ed is with the 16 bytes. This locks the scrambled data to the specific cipher-key.<br>
+					</p>
+				<h3 class="mb-4">
+						S-Box
+					</h3>
+				<div>
+						<div class="sbox-container">
+    <table class="sbox-table">
+        <caption>S-BOX</caption>
+        <thead>
+            <tr>
+                <th></th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th><th>F</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><th>0</th><td>63</td><td>7c</td><td>77</td><td>7b</td><td>f2</td><td>6b</td><td>6f</td><td>c5</td><td>30</td><td>01</td><td>67</td><td>2b</td><td>fe</td><td>d7</td><td>ab</td><td>76</td></tr>
+            <tr><th>1</th><td>ca</td><td>82</td><td>c9</td><td>7d</td><td>fa</td><td>59</td><td>47</td><td>f0</td><td>ad</td><td>d4</td><td>a2</td><td>af</td><td>9c</td><td>a4</td><td>72</td><td>c0</td></tr>
+            <tr><th>2</th><td>b7</td><td>fd</td><td>93</td><td>26</td><td>36</td><td>3f</td><td>f7</td><td>cc</td><td>34</td><td>a5</td><td>e5</td><td>f1</td><td>71</td><td>d8</td><td>31</td><td>15</td></tr>
+            <tr><th>3</th><td>04</td><td>c7</td><td>23</td><td>c3</td><td>18</td><td>96</td><td>05</td><td>9a</td><td>07</td><td>12</td><td>80</td><td>e2</td><td>eb</td><td>27</td><td>b2</td><td>75</td></tr>
+            <tr><th>4</th><td>09</td><td>83</td><td>2c</td><td>1a</td><td>1b</td><td>6e</td><td>5a</td><td>a0</td><td>52</td><td>3b</td><td>d6</td><td>b3</td><td>29</td><td>e3</td><td>2f</td><td>84</td></tr>
+            <tr><th>5</th><td>53</td><td>d1</td><td>00</td><td>ed</td><td>20</td><td>fc</td><td>b1</td><td>5b</td><td>6a</td><td>cb</td><td>be</td><td>39</td><td>4a</td><td>4c</td><td>58</td><td>cf</td></tr>
+            <tr><th>6</th><td>d0</td><td>ef</td><td>aa</td><td>fb</td><td>43</td><td>4d</td><td>33</td><td>85</td><td>45</td><td>f9</td><td>02</td><td>7f</td><td>50</td><td>3c</td><td>9f</td><td>a8</td></tr>
+            <tr><th>7</th><td>51</td><td>a3</td><td>40</td><td>8f</td><td>92</td><td>9d</td><td>38</td><td>f5</td><td>bc</td><td>b6</td><td>da</td><td>21</td><td>10</td><td>ff</td><td>f3</td><td>d2</td></tr>
+            <tr><th>8</th><td>cd</td><td>0c</td><td>13</td><td>ec</td><td>5f</td><td>97</td><td>44</td><td>17</td><td>c4</td><td>a7</td><td>7e</td><td>3d</td><td>64</td><td>5d</td><td>19</td><td>73</td></tr>
+            <tr><th>9</th><td>60</td><td>81</td><td>4f</td><td>dc</td><td>22</td><td>2a</td><td>90</td><td>88</td><td>46</td><td>ee</td><td>b8</td><td>14</td><td>de</td><td>5e</td><td>0b</td><td>db</td></tr>
+            <tr><th>A</th><td>e0</td><td>32</td><td>3a</td><td>0a</td><td>49</td><td>06</td><td>24</td><td>5c</td><td>c2</td><td>d3</td><td>ac</td><td>62</td><td>91</td><td>95</td><td>e4</td><td>79</td></tr>
+            <tr><th>B</th><td>e7</td><td>c8</td><td>37</td><td>6d</td><td>8d</td><td>d5</td><td>4e</td><td>a9</td><td>6c</td><td>56</td><td>f4</td><td>ea</td><td>65</td><td>7a</td><td>ae</td><td>08</td></tr>
+            <tr><th>C</th><td>ba</td><td>78</td><td>25</td><td>2e</td><td>1c</td><td>a6</td><td>b4</td><td>c6</td><td>e8</td><td>dd</td><td>74</td><td>1f</td><td>4b</td><td>bd</td><td>8b</td><td>8a</td></tr>
+            <tr><th>D</th><td>70</td><td>3e</td><td>b5</td><td>66</td><td>48</td><td>03</td><td>f6</td><td>0e</td><td>61</td><td>35</td><td>57</td><td>b9</td><td>86</td><td>c1</td><td>1d</td><td>9e</td></tr>
+            <tr><th>E</th><td>e1</td><td>f8</td><td>98</td><td>11</td><td>69</td><td>d9</td><td>8e</td><td>94</td><td>9b</td><td>1e</td><td>87</td><td>e9</td><td>ce</td><td>55</td><td>28</td><td>df</td></tr>
+            <tr><th>F</th><td>8c</td><td>a1</td><td>89</td><td>0d</td><td>bf</td><td>e6</td><td>42</td><td>68</td><td>41</td><td>99</td><td>2d</td><td>0f</td><td>b0</td><td>54</td><td>bb</td><td>16</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
+<style>
+    .sbox-container {
+        width: 100%;
+        overflow-x: hidden; 
+    }
+    
+    .sbox-table {
+        width: 100%;
+        border-collapse: collapse;
+        table-layout: fixed; 
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 12px;
+        line-height: 1;
+        background: transparent; 
+    }
+    
+    .sbox-table caption {
+        font-weight: bold;
+        padding: 5px;
+    }
+    
+    /* Applies the 0.5 alpha raster lines to all cells */
+    .sbox-table th, .sbox-table td {
+        border: 1px solid rgba(0, 0, 0, 0.1); 
+        padding: 2px 0;   
+        height: 18px;     
+        text-align: center;
+        vertical-align: middle;
+        overflow: hidden;
+    }
+    
+    /* Shrinks the first column to the smallest possible width */
+    .sbox-table th:first-child {
+        width: 1%; 
+        white-space: nowrap;
+    }
+
+    /* Forces ONLY the top row (inside thead) to be as short as possible */
+    .sbox-table thead th, 
+    .sbox-table thead td {
+        height: auto;     
+        padding: 0;       
+    }
+    
+    /* Keeps the top row and first column filled with color */
+    .sbox-table thead th, .sbox-table tbody th {
+        background-color: #f0f0f0;
+        color: #333;
+        font-weight: bold;
+    }
+</style>
+						
+					</div>
+				<p class="mb-3">
+							The S-Box or subsitution box is a 256 byte array that subsitutes a byte for another value. A byte has 256 possible values therefore there are 256 subsitutes in the S-Box. You can use the above table as a lookup table&nbsp;1st hex &nbsp;digit = Row and&nbsp;2nd hex digit = Column<br><br>Examples<br>0xFF = 0x16 &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>0x79 = 0xb6 &nbsp; &nbsp;<br>0xb3 = 0x6d<br><br>The S-Box and the Inverse S-Box are functional inverses. This means that if you apply the S-Box to a byte and then apply the Inverse S-Box to the result, you get your original byte back.<br>
+						</p>
+				<h1 class="mb-4">
+							AES Modes
+						</h1>
+				<div class="divider-h">
+						</div>
+				<h3 class="mb-4">
+							AES-ECB
+						</h3>
+				<p class="mb-3 text-justify">
+							Electronic Codebook (ECB) takes a array of bytes of any length (multiple of 16 bytes) and encrypts each block of 16 bytes independently. The gives some advantages since every block will look like random noise and it can be executed in parallel. However since AES is deterministic every input block will have the same output. Data like json’s, text and other structured information is highly repetetive this will lead inevitabile to repeating patterns in the encrypted output and thus leaks information. For this reason ECB is considered insecure on its own.<br>
+						</p>
+				<h3 class="mb-4">
+							AES-CBC
+						</h3>
+				<p class="mb-3 text-justify">
+							Cipher Block Chaining (CBC)&nbsp;In this mode, every single block of data is &nbsp;tangled up with preceding block.&nbsp;Because the very first block doesn't have a "previous block" to chain to, the computer generates a random 16-byte number called the Initialization Vector(IV) and xor’s the 1st block of plaintext with the IV. The IV serves as a seed block to kickstart the process and is usualy send in plain text to the other party.<br>
+						</p><img src="../img/lazyload-ph.png" data-src="../img/AES-CBC-F1.svg" class="img-fluid mx-auto d-block mt-lg-3 mb-lg-3 lazyload" alt="AES CBC F1" width="752" height="237">
+				<p class="mb-3">
+							The intermediate result of the IV and the plain-text-1 is IMR-1 and is encrypted with the cipher-key using AES producing cipher-text-1. Cipher-text-1 can now be XOR’ed with plain-text-2 to produce IMR-2 which can now be encrypted with the cipher-key to produce cipher-text-2. Information ripples trough the chain, so unlike ECB mode, a change in plain-text-1 affects the whole chain.<br><br>CBC encryption is sequential and therefore cannot be executed in parralel because the next block always depends on the preceding block and therefore slow. Decryption however can be parralalized. Because with the cipher-key the IMR-5 can be de decrypted. Now since we we know cipher-text-4 ar just do an inverse XOR operation&nbsp;<br>
+						</p>
+				<h3 class="mb-4">
+							AES-CTR
+						</h3>
+				<p class="mb-3 text-justify">
+							In counter mode, a 16-byte input(counter) block is generated by concatenating a nonce and a counter. This block is encrypted using AES with the cipher-key. to produce a pseudorandom KeyStream block. The keystream is then XORed with the plaintext to produce the ciphertext. The counter is incremented for each block.Because blocks do not chain together, the process can be fully parallelized across multiple CPU cores. The nonce is send in plain text but may never be reused with a particular cipher-key. Furthermore the counter may never be reset. If the counter is reset (session) a new nonce should be generated.<br>
+						</p><img src="../img/lazyload-ph.png" data-src="../img/AES-CTR.svg" class="img-fluid mx-auto d-block lazyload" alt="AES CTR" width="752" height="260">
+				<p class="mb-3 text-justify">
+							The counter is incremented on every block generating a new KeyStream. If an attacker knows the block data in advance (Known-Plaintext Attack) and the data is for example “isadmin: false” he could simply invert the final XOR operation to deduce the KeyStream of that particular block and could then alter the data to “isadmin: true” with a bit flipping attack without the reciever knowing the data was tampered with. These attacks pose a security risk especially in communication protocols which follow an easily predictable pattern such as “hello client”.
+						</p>
+				<h3 class="mb-4">
+							AES-CCM
+						</h3>
+				<p class="mb-3 text-justify">
+							Counter with CBC-MAC (CCM) To solve the vulnerability of bit-flipping attacks, modern systems use Authenticated Encryption modes like AES-CCM (Counter with CBC-MAC). CCM solves the problem by passing over the data twice. In the first pass, it uses the chaining logic of CBC to generate a secure Message Authentication Code (MAC) verifying the file's integrity. <br><br>In the second pass, it uses CTR mode to encrypt the payload. Because it provides both rock-solid confidentiality and tamper-proof integrity, AES-CCM is the trusted standard behind everyday technologies like WPA2 Wi-Fi and Bluetooth.<br>
+						</p>
+				<p class="mb-4">
+						</p>
+				<h3 class="mb-4">
+							AES-GCM
+						</h3>
+				<p class="mb-3 text-justify">
+							Galois/Counter Mode&nbsp;AES-GCM (Galois/Counter Mode) is the reigning champion of Authenticated Encryption (AEAD). While older authenticated modes like CCM forced the computer to pass data through the AES engine twice, GCM optimizes the process. It encrypts the payload using fully parallelizable CTR mode, while simultaneously generating a Message Authentication Code (MAC) using high-speed Galois Field multiplication. This "one-pass" architecture allows modern multi-core processors to encrypt and authenticate massive amounts of data with virtually zero delay.
+						</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-94 END -->
+
+<!-- ScrollToTop Button -->
+<button aria-label="Scroll to top button" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"/></svg></button>
+<!-- ScrollToTop Button END-->
+
+
+<!-- bloc-30 -->
+<div class="bloc l-bloc" id="bloc-30">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
+					<div class="container-fluid flex-column">
+						<a class="navbar-brand mx-auto" href="../">Radikant</a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-1653">
+							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-45833 navbar-44110 navbar-35368 navbar-46454 navbar-1653">
+								<ul class="site-navigation nav navbar-nav mx-auto justify-content-center">
+									<li class="nav-item">
+										<a href="../" class="nav-link">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="../libraries/" class="nav-link">Libraries</a>
+									</li>
+									<li class="nav-item">
+										<a href="../manufacturing/" class="nav-link">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
+									</li>
+									<li class="nav-item">
+										<a href="../electronics/" class="nav-link">Electronics</a>
+									</li>
+									<li class="nav-item">
+										<a href="../about/" class="nav-link">About</a>
+									</li>
+								</ul>
+							</div>
+						<div class="navbar-content-area d-block col-12 col-md-3 col-lg-2">
+								<div class="row">
+									<div class="col text-lg-center mt-lg-2 text-md-center">
+										<a href="https://www.linkedin.com/in/charlie-elbakry-1738681b8/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></blocsicon></a> <a href="https://github.com/Radikant/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></blocsicon></a><a href="mailto:him@charlie-elbakry.nl"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="512" height="512" viewBox="0 0 512 512"><path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"></path></svg></blocsicon></a>
+									</div>
+								</div>
+							</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-30 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+
+<!-- Additional JS -->
+<script src="../js/bootstrap.bundle.min.js?3469"></script>
+<script src="../js/blocs.min.js?3678"></script>
+<script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
+
+
+</body>
+</html>

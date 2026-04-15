@@ -8,21 +8,20 @@
 	<link rel="canonical" href="https://radikant.nl/tls/">
 	<meta name="robots" content="index, follow">
 	<meta name="twitter:card" content="summary">
-	<meta name="twitter:title" content="yr">
-	<meta name="twitter:description" content="dygfhhhhh">
+	<meta name="twitter:title" content="Radikant">
+	<meta name="twitter:description" content="Radikant Research">
 	<meta property="og:type" content="website">
 	<meta property="og:site_name" content="Radikant">
-	<meta property="og:title" content="yr">
-	<meta property="og:description" content="dygfhhhhh">
+	<meta property="og:title" content="Radikant">
+	<meta property="og:description" content="Radikant Research">
 	<meta property="og:url" content="https://radikant.nl/tls/"> 
     <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
     
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?6719">
-	<link rel="stylesheet" type="text/css" href="../style.css?5470">
-	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?1455">
-	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1642">
+	<link rel="stylesheet" type="text/css" href="../style.css?7044">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?7638">
 	
-    <title>Log-1</title>
+    <title>TLS</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
@@ -45,7 +44,7 @@
 <div class="page-container">
     
 <!-- bloc-0 -->
-<div class="bloc l-bloc" id="bloc-0">
+<div class="bloc l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col">
@@ -85,165 +84,332 @@
 </div>
 <!-- bloc-0 END -->
 
-<!-- bloc-39 -->
-<div class="bloc l-bloc" id="bloc-39">
-	<div class="container bloc-lg bloc-md-lg">
-		<div class="row">
-			<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-start offset-lg-1 col-lg-10">
+<!-- bloc-35 -->
+<div class="bloc l-bloc" id="bloc-35">
+	<div class="container bloc-lg bloc-no-padding-lg">
+		<div class="row row-81-style">
+			<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-start offset-lg-2 col-lg-7">
 				<h1 class="mb-4 text-lg-center mx-auto d-block">
-					Radikant-TLS-C
+					🔏 Radikant-TLS-C
 				</h1>
+				<h3 class="float-none text-center mb-4 h3-47-style">
+					&nbsp;🔒 TLS 1.3&nbsp;
+				</h3>
 				<div class="mx-auto d-block blocsapp-device blocsapp-device-mb blocsapp-mb-air-midnight">
-					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202025-12-01%20at%2004.16.06.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202025-12-01%20at%2004.16.06.png" class="img-fluid lazyload" alt="Screenshot%202025 11 30%20at%2023.01.45" width="757" height="490"></picture>
+					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202025-12-01%20at%2004.16.06.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202025-12-01%20at%2004.16.06.png" class="img-fluid lazyload" alt="Screenshot%202025 11 30%20at%2023.01.45" width="524" height="339"></picture>
 				</div>
 				<h1 class="mb-4">
 					Introduction
 				</h1>
 				<p class="mb-3 text-justify">
-					Radikant TLS is a light weight TLS (Transport Layer Security) protocol 1.3 client & server library written in C. Supporting &nbsp;botu client and server mode in 1.2 and 1.3 &nbsp;turned into self inflicted pain. Modern servers support tls 1.3 therefore 1.2 support is completely dropped. <br><br>This library relies on <a href="../crypto/">Radikant Crypto</a> for all its underlying cryptographic primitivees, utilizes <a href="../socket/">Radikant Socket</a> for socket managment and&nbsp;<a href="../cert/">Radikant Cert</a> for certificate management such as x509/pem etc..<br><br>This library is a proof-of-concept that TLS statemachine is doable from scratch, however currently it is insecure currently since its corner stone Radikant Crypto is currently insecure (<i>leaks memory, secrets and non-constant time</i>). It is a demonstration/experiment how to split up TLS smaller managable modules.<br><br>Currently in client mode the client skips verifying the server identity because PKI and root Certificate validation is not implemented in the Certificate module.
+					Radikant TLS is a light weight TLS (Transport Layer Security) protocol 1.3 client & server library written in C. Supporting &nbsp;botu client and server mode in 1.2 and 1.3 &nbsp;turned into self inflicted pain. Modern servers support tls 1.3 therefore 1.2 support is completely dropped. <br><br>This library relies on <a href="../crypto/">Radikant Crypto</a> for all its underlying cryptographic primitivees, utilizes <a href="../socket/">Radikant Socket</a> for socket managment and&nbsp;<a href="../cert/">Radikant Cert</a> for certificate management such as x509/pem etc..<br><br>This library is a proof-of-concept that TLS statemachine is doable from scratch, however currently iinsecure currently since its corner stone Radikant Crypto is currently insecure (<i>leaks memory, secrets and non-constant time</i>). It is an experiment how to split up TLS smaller managable modules.<br><br>In client mode the client skips verifying the server identity because PKI and root Certificate validation is not implemented in the Certificate module.<br><br>⚠️ Radikant TLS is build in top of Radikant Crypto and Radikant Cert and therefore inherits their <u>security</u> flaws.<br>
 				</p>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-39 END -->
+<!-- bloc-35 END -->
 
-<!-- bloc-34 -->
-<div class="bloc tc-5275 l-bloc" id="bloc-34">
+<!-- bloc-36 -->
+<div class="bloc l-bloc" id="bloc-36">
 	<div class="container bloc-lg bloc-no-padding-lg">
-		<div class="row ms-lg-5 me-lg-5">
-			<div class="col-lg-12 col-md-12">
-				<div class="divider-h">
+		<div class="row">
+			<div class="text-start offset-lg-1 col-lg-9 align-self-center">
+				<div class="row ms-lg-5 me-lg-5">
+					<div class="col-lg-12 col-md-12">
+						<div class="divider-h">
+						</div>
+						<h2 class="mg-md text-center feat-header text-lg-start">
+							TLS 1.3
+						</h2>
+						<p class="mg-lg text-center feat-sub-header text-lg-start">
+							Cipher Suites
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid feat-icon-trans float-lg-none img-bloc-15-style flash-hvr lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start h4-bloc-36-style">
+							AES256 <br><span class="text-span-0-bloc-36-style">gcm</span> <br>
+						</h4>
+						<p class="mb-3">
+							<strong>SHA384</strong>
+						</p>
+						<p class="text-center text-lg-start">
+							<br>
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							AES128<br><span class="text-span-8281-style">ccm</span><br>
+						</h4>
+						<p class="mb-3">
+							<strong>SHA256</strong>
+						</p>
+						<p class="mg-lg text-center text-lg-start p-bloc-34-style">
+							<br>
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							AES128<br><span class="text-span-0-style">ccm-8</span><br>
+						</h4>
+						<p class="mb-3">
+							<strong>SHA256</strong>
+						</p>
+						<p class="mg-lg text-center text-lg-start p-bloc-34-style">
+							<br>
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							AES128<br><span class="text-span-bloc-36-style">ccm</span><br>
+						</h4>
+						<p class="mb-3">
+							<strong>SHA256</strong>
+						</p>
+						<p class="mg-lg text-center text-lg-start">
+							<br>
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							CHACHA20 <span class="text-span-style">poly1305</span>
+						</h4>
+						<p class="mb-3">
+							<strong>SHA256</strong>
+						</p>
+						<p class="mg-lg text-center text-lg-start">
+							<br>
+						</p>
+					</div>
 				</div>
-				<h2 class="mg-md text-center feat-header text-lg-start">
-					TLS 1.3
-				</h2>
-				<p class="mg-lg text-center feat-sub-header text-lg-start">
-					Cipher Suites
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid feat-icon-trans float-lg-none img-bloc-15-style flash-hvr lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					AES256 GCM SHA384
-				</h4>
-				<p class="text-center text-lg-start">
-					Tx
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					AES128 CCM SHA256
-				</h4>
-				<p class="mg-lg text-center text-lg-start p-bloc-34-style">
-					Tx
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start h4-style">
-					AES128<br>CCM 8<br>SHA256
-				</h4>
-				<p class="mg-lg text-center text-lg-start">
-					Txt
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					AES128<br>CCM<br>SHA256<br>
-				</h4>
-				<p class="mg-lg text-center text-lg-start">
-					Tx
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					CHACHA20 POLY1305 SHA256
-				</h4>
-				<p class="mg-lg text-center text-lg-start">
-					tx
-				</p>
-			</div>
-		</div>
-		<div class="row ms-lg-5 me-lg-5">
-			<div class="col-lg-12 col-md-12">
-				<p class="mg-lg text-center feat-sub-header text-lg-start">
-					Key Generation
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid feat-icon-trans float-lg-none img-bloc-15-style flash-hvr lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					X25519
-				</h4>
-				<p class="text-center text-lg-start">
-					Tx
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					X448
-				</h4>
-				<p class="mg-lg text-center text-lg-start p-bloc-34-style">
-					Tx
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start h4-style">
-					P-256<br>
-				</h4>
-				<p class="mg-lg text-center text-lg-start">
-					Txt
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					P-384<br>
-				</h4>
-				<p class="mg-lg text-center text-lg-start">
-					Tx
-				</p>
-			</div>
-			<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
-				<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
-				<h4 class="mg-sm text-center text-lg-start">
-					P-521
-				</h4>
-				<p class="mg-lg text-center text-lg-start">
-					tx
-				</p>
+				<div class="row ms-lg-5 me-lg-5">
+					<div class="col-lg-12 col-md-12">
+						<p class="mg-lg text-center feat-sub-header text-lg-start">
+							Key Generation
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid feat-icon-trans float-lg-none img-bloc-15-style flash-hvr lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							X25519
+						</h4>
+						<p class="text-center text-lg-start">
+							DJB Curve
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-38-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							X448
+						</h4>
+						<p class="mg-lg text-center text-lg-start p-bloc-34-style">
+							MH Curve
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-39-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start h4-style">
+							P-256<br>
+						</h4>
+						<p class="mg-lg text-center text-lg-start">
+							NIST Curve
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							P-384<br>
+						</h4>
+						<p class="mg-lg text-center text-lg-start">
+							NIST Curve<br>
+						</p>
+					</div>
+					<div class="col-md-6 col-sm-6 feature-details-col col-lg-2">
+						<img src="../img/lazyload-ph.png" data-src="../img/box.svg" class="img-fluid float-lg-none feat-icon-trans img-40-style lazyload" alt="cms icon" width="44" height="44">
+						<h4 class="mg-sm text-center text-lg-start">
+							P-521
+						</h4>
+						<p class="mg-lg text-center text-lg-start">
+							NIST Curve<br>
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- bloc-34 END -->
+<!-- bloc-36 END -->
 
 <!-- bloc-35 -->
 <div class="bloc l-bloc" id="bloc-35">
 	<div class="container bloc-lg">
 		<div class="row">
-			<div class="col text-start">
-				<div>
-					<div class="code-container" style="background: #272822; padding: 0px; border-radius: 20px;">
-    <pre><code class="language-c">
-int main(int argc, char *argv[]) {
-    const char *hostname = "google.com";
-    const char *port = "443"; // Standard HTTPS port
+			<div class="text-start offset-lg-1 col-lg-10">
+				<h4 class="mb-4">
+					Example
+				</h4>
+				<div class=" ">
+					<style>
+  :root {
+    --mac-bg: #1e1e1e;
+    --mac-header: #2d2d2d;
+    --mac-border: #3c3c3c;
+    --mac-text: #ffffff;
+    --mac-dim: #8a8a8a;
+  }
 
-    int sock_fd = tcp_connect(hostname, port);
-    tls_context *ctx = tls_context_new(TLS_MODE_CLIENT);
-    tls_context_set_socket(ctx, sock_fd);
-    tls_connect(ctx, hostname);
-    tls_context_free(ctx); 
-    return 0;
-}
-    </code></pre>
+  .ide-window {
+    background-color: var(--mac-bg);
+    color: var(--mac-text);
+    font-family: -apple-system, "SF Pro Text", "Helvetica Neue", sans-serif;
+    border-radius: 10px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    overflow: hidden;
+    border: 1px solid var(--mac-border);
+    width: 100%; 
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Titlebar */
+  .ide-titlebar {
+    background: var(--mac-header);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #111;
+  }
+
+  .traffic-lights { display: flex; gap: 8px; margin-right: 25px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .red { background: #ff5f56; border: 0.5px solid #e0443e; } 
+  .ylw { background: #ffbd2e; border: 0.5px solid #dea123; } 
+  .grn { background: #27c93f; border: 0.5px solid #1aab2f; }
+
+  .ide-menu {
+    display: flex;
+    gap: 18px;
+    font-size: 13px;
+    color: #b1b1b1;
+  }
+
+  /* Toolbar */
+  .ide-toolbar {
+    background: #252525;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid var(--mac-border);
+  }
+
+  .controls { display: flex; gap: 15px; align-items: center; }
+  .btn-play { color: #4ade80; font-size: 16px; cursor: pointer; }
+  .btn-stop { color: #666; font-size: 14px; }
+
+  .project-pill {
+    font-size: 12px;
+    color: #ddd;
+    background: #3c3c3c;
+    padding: 4px 15px;
+    border-radius: 6px;
+    border: 1px solid #4a4a4a;
+    flex-grow: 1;
+    max-width: 450px;
+    text-align: center;
+    font-family: -apple-system, sans-serif;
+  }
+
+  /* Editor Area */
+  .ide-body {
+    padding: 25px;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', monospace;
+    font-size: 14px;
+    line-height: 1.7;
+    min-height: 220px;
+    overflow-x: auto;
+    background: #1e1e1e;
+  }
+
+  /* Syntax Highlighting */
+  .code-line { display: block; white-space: pre; }
+  .keyword { color: #ff7ab2; } /* int, const, return */
+  .func { color: #66d9ef; }    /* functions */
+  .str { color: #e6db74; }     /* strings */
+  .comment { color: #75715e; font-style: italic; }
+
+  /* Footer */
+  .ide-footer {
+    background: var(--mac-header);
+    padding: 8px 18px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: var(--mac-dim);
+    border-top: 1px solid var(--mac-border);
+  }
+
+  .status-actions { display: flex; gap: 18px; }
+  .status-actions span { cursor: pointer; }
+  .status-actions b { color: #fff; font-weight: 500; }
+</style>
+
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights">
+      <div class="dot red"></div>
+      <div class="dot ylw"></div>
+      <div class="dot grn"></div>
+    </div>
+    <div class="ide-menu">
+      <span>File</span>
+      <span>Edit</span>
+      <span>View</span>
+      <span>Find</span>
+      <span>Navigate</span>
+    </div>
+  </div>
+
+  <div class="ide-toolbar">
+    <div class="controls">
+      <div class="btn-play">▶</div>
+      <div class="btn-stop">■</div>
+    </div>
+    <div class="project-pill">
+        <b>NetworkClient</b> — My Mac
+    </div>
+  </div>
+
+  <div class="ide-body">
+<div class="code-line"><span class="keyword">int</span> <span class="func">main</span>(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[]) {</div>
+<div class="code-line">    <span class="keyword">const char</span> *hostname = <span class="str">"google.com"</span>;</div>
+<div class="code-line">    <span class="keyword">const char</span> *port = <span class="str">"443"</span>; <span class="comment">// Standard HTTPS port</span></div>
+<div class="code-line"></div>
+<div class="code-line">    <span class="keyword">int</span> sock_fd = <span class="func">tcp_connect</span>(hostname, port);</div>
+<div class="code-line">    <span class="func">tls_context</span> *ctx = <span class="func">tls_context_new</span>(TLS_MODE_CLIENT);</div>
+<div class="code-line">    <span class="func">tls_context_set_socket</span>(ctx, sock_fd);</div>
+<div class="code-line">    <span class="func">tls_connect</span>(ctx, hostname);</div>
+<div class="code-line">    <span class="func">tls_context_free</span>(ctx); </div>
+<div class="code-line">    <span class="keyword">return</span> 0;</div>
+<div class="code-line">}</div>
+  </div>
+
+  <div class="ide-footer">
+    <div class="status-left">Ready</div>
+    <div class="status-actions">
+      <span>Run</span>
+      <span>Build</span>
+      <span>Debug</span>
+      <b>Ln 1, Col 1</b>
+    </div>
+  </div>
 </div>
 					
 				</div>
@@ -450,7 +616,7 @@ Encrypting 2 bytes for record type 21
 			<div class="col">
 				<nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
 					<div class="container-fluid flex-column">
-						<a class="navbar-brand mx-auto" href="../">Company</a>
+						<a class="navbar-brand mx-auto" href="../">Radikant</a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-1653">
 							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
 						</button>
@@ -460,22 +626,25 @@ Encrypting 2 bytes for record type 21
 										<a href="../" class="nav-link">Home</a>
 									</li>
 									<li class="nav-item">
-										<a href="../products/" class="nav-link">Products</a>
+										<a href="../libraries/" class="nav-link">Libraries</a>
 									</li>
 									<li class="nav-item">
-										<a href="../engineering/" class="nav-link">Engineering</a>
+										<a href="../manufacturing/" class="nav-link">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
 									</li>
 									<li class="nav-item">
 										<a href="../electronics/" class="nav-link">Electronics</a>
 									</li>
 									<li class="nav-item">
-										<a href="../manufacturing/" class="a-btn nav-link">Engineering-1</a>
+										<a href="../about/" class="nav-link">About</a>
 									</li>
 								</ul>
 							</div>
 						<div class="navbar-content-area d-block col-12 col-md-3 col-lg-2">
 								<div class="row">
-									<div class="col text-lg-center mt-lg-2">
+									<div class="col text-lg-center mt-lg-2 text-md-center">
 										<a href="https://www.linkedin.com/in/charlie-elbakry-1738681b8/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></blocsicon></a> <a href="https://github.com/Radikant/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></blocsicon></a><a href="mailto:him@charlie-elbakry.nl"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="512" height="512" viewBox="0 0 512 512"><path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"></path></svg></blocsicon></a>
 									</div>
 								</div>
@@ -494,8 +663,8 @@ Encrypting 2 bytes for record type 21
 
 
 <!-- Additional JS -->
-<script src="../js/bootstrap.bundle.min.js?467"></script>
-<script src="../js/blocs.min.js?5385"></script>
+<script src="../js/bootstrap.bundle.min.js?3469"></script>
+<script src="../js/blocs.min.js?3678"></script>
 <script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
 
 

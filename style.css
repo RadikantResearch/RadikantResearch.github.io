@@ -8,7 +8,7 @@
 body{
 	margin:0;
 	padding:0;
-    background:#EBE3E2;
+    background:#F5EEDF;
     overflow-x:hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -88,6 +88,26 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 }
 .bloc-fill-screen .fill-bloc-bottom-edge{
 	align-self: flex-end;
+}
+
+/* = Full Width Blocs 
+-------------------------------------------------------------- */
+
+.full-width-bloc{
+	padding-left:0;
+	padding-right:0;
+}
+.full-width-bloc .row{
+	margin-left:0;
+	margin-right:0;
+}
+.full-width-bloc .container{
+	width:100%;
+	max-width:100%!important;
+}
+.full-width-bloc .carousel img{
+	width:100%;
+	height:auto;
 }
 
 
@@ -217,9 +237,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 
 /* = Icons
 -------------------------------------------------------------- */
-.icon-md{
-	font-size:30px!important;
-}
 blocsicon{
 	display:inline-block;
 	width:100%;
@@ -230,31 +247,17 @@ blocsicon svg {
 	 display: block;
 }
 
-/* Image Frame */
-.img-frame,.img-frame-md,.img-frame-lg,.img-frame-rd,.img-frame-rd-md,.img-frame-rd-lg{
-	background:#FFF;
-	border:1px solid rgba(0,0,0,0.1);
-	box-shadow:0 2px 2px rgba(0,0,0,0.05);
-	padding:4px;
-}
-.img-frame{
-	border-radius:3px;
-}
-.img-frame-md,.img-frame-lg{
-	border-radius:6px;
-}
-.img-frame-md,.img-frame-rd-md{
-	padding:8px;
-}
-.img-frame-lg,.img-frame-rd-lg{
-	padding:14px;
-}
 /* Image Scale */
 .img-fluid-up{
 	min-width: 100%;
 	height: auto;
 }
 
+/* = Text & Icon Styles
+-------------------------------------------------------------- */
+.sm-shadow{
+	text-shadow:0 1px 2px rgba(0,0,0,.3);
+}
 .text-justify{
 	text-align: justify;
 }
@@ -398,13 +401,6 @@ url("img/apple-macbook-pro.webp") 2x);background-image: image-set(url("img/apple
 url("img/apple-macbook-pro.png") 2x,url("img/apple-macbook-pro.webp") 1x,
 url("img/apple-macbook-pro.webp") 2x);
 }
-.blocsapp-mb-air{
-	background-image:url("img/apple-macbook-air-silver.png");
-	background-image: -webkit-image-set(url("img/apple-macbook-air-silver.webp") 1x,
-url("img/apple-macbook-air-silver.webp") 2x);background-image: image-set(url("img/apple-macbook-air-silver.png") 1x,
-url("img/apple-macbook-air-silver.png") 2x,url("img/apple-macbook-air-silver.webp") 1x,
-url("img/apple-macbook-air-silver.webp") 2x);
-}
 .blocsapp-mb-air-midnight{
 	background-image:url("img/apple-macbook-air-midnight.png");
 	background-image: -webkit-image-set(url("img/apple-macbook-air-midnight.webp") 1x,
@@ -440,7 +436,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-style:italic;
 }
 .p-style{
-	width:90.65%;
+	width:92.19%;
 	font-size:18px;
 	line-height:30px;
 }
@@ -480,7 +476,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:85.12%;
 }
 .img-style{
-	height:80px;
+	height:55px;
+	width:357px;
 }
 .h3-47-style{
 	font-size:20px;
@@ -503,10 +500,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	width:30px;
 }
 .html-widget-style{
-	width:89.78%;
-}
-.html-widget-bloc-39-style{
-	width:89.49%;
+	width:100%;
 }
 .img-pictur-style{
 	width:362px;
@@ -565,6 +559,48 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .h4-style{
 	width:100%;
 }
+.img-firebase-lo-style{
+	width:250px;
+}
+.h3-bloc-43-style{
+	font-size:20px;
+}
+.html-widget-0-bloc-39-style{
+	width:85.66%;
+}
+.text-span-style{
+	font-size:16px;
+}
+.text-span-bloc-36-style{
+	font-size:16px;
+}
+.text-span-0-bloc-36-style{
+	font-size:16px;
+}
+.text-span-0-style{
+	font-size:16px;
+}
+.text-span-8281-style{
+	font-size:16px;
+}
+.row-141-style{
+	width:92.52%;
+}
+.img-17709250608-style{
+	width:922px;
+}
+.img-bluetoothlo-style{
+	width:100px;
+}
+.img-bloc-39-style{
+	width:199px;
+}
+.p-bloc-39-style{
+	width:90.84%;
+}
+.p-277-style{
+	width:91.04%;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -588,9 +624,13 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-4877:rgba(32,32,32,1.00);
 	
-	--swatch-var-5275:rgba(255,255,255,0.8);
+	--swatch-var-5275:rgba(62,207,142,1.00);
 	
 	--swatch-var-3059:rgba(0,0,75,0.45);
+	
+	--swatch-var-3415:rgba(140,198,240,1.00);
+	
+	--swatch-var-3903:rgba(0,0,0,1.00);
 	
 }
 
@@ -606,6 +646,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .tc-6810{
 	color:var(--swatch-var-6810)!important;
+}
+.tc-3903{
+	color:var(--swatch-var-3903)!important;
 }
 
 /* Bloc image backgrounds */
