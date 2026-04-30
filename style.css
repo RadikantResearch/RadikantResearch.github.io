@@ -263,6 +263,8 @@ blocsicon svg {
 }
 
 
+/* = Cards
+-------------------------------------------------------------- */
 .card-sq, .card-sq .card-header, .card-sq .card-footer{
 	border-radius:0;
 }
@@ -628,13 +630,18 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-3059:rgba(0,0,75,0.45);
 	
-	--swatch-var-3415:rgba(140,198,240,1.00);
+	--swatch-var-3415:rgba(44,47,48,1.00);
 	
 	--swatch-var-3903:rgba(0,0,0,1.00);
 	
 }
 
 
+/* Background colour styles */
+
+.bgc-3415{
+	background-color:var(--swatch-var-3415);
+}
 
 /* Text colour styles */
 

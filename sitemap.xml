@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
 <url>
 	<loc>https://radikant.nl/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>1.0</priority>
 	<image:image>
@@ -24,7 +24,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/libraries/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -38,7 +38,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/products/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -68,7 +68,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/electronics/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -170,13 +170,13 @@
 </url>
 <url>
 	<loc>https://radikant.nl/engineering/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/event/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -190,7 +190,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/jwt/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -208,7 +208,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/crypto/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -238,7 +238,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/firebase/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -264,7 +264,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/printer/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -278,7 +278,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/log/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -292,7 +292,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/tls/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -306,7 +306,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/socket/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -320,7 +320,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/ble/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -338,7 +338,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/mysql/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -352,7 +352,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/asn1/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -366,7 +366,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/url/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -380,7 +380,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/json/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -394,19 +394,19 @@
 </url>
 <url>
 	<loc>https://radikant.nl/about/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/curicilum-vitea/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/flasher/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -420,7 +420,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/nvs/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -434,7 +434,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/coap/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -448,25 +448,25 @@
 </url>
 <url>
 	<loc>https://radikant.nl/manufacturing/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/nvs-extended/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/websocket/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/pocketbase/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -484,7 +484,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/supabase/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -506,7 +506,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/trailbase/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -524,7 +524,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/probe/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -538,7 +538,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/cert/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -552,7 +552,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/fleshlight-launch/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -566,31 +566,31 @@
 </url>
 <url>
 	<loc>https://radikant.nl/kiiroo-cliona/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/kiiroo-powerblow/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/kiiroo-keon/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/beterbed-indexer/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/base64/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -604,7 +604,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/serial/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -626,7 +626,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/queue/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -640,7 +640,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/sasl/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -654,7 +654,7 @@
 </url>
 <url>
 	<loc>https://radikant.nl/postgresql/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -676,13 +676,13 @@
 </url>
 <url>
 	<loc>https://radikant.nl/lorawan/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/vna/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -704,61 +704,61 @@
 </url>
 <url>
 	<loc>https://radikant.nl/rf/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/kiiroo-pearl/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/kiiroo-control/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/storm-mvp/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/thermostat/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/ota-extended/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/kiiroo-spot/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/kiiroo-luxus/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/trv/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/noise/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -772,25 +772,25 @@
 </url>
 <url>
 	<loc>https://radikant.nl/librariesext/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/diffie-helman/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/kdf/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/aes/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
@@ -801,21 +801,41 @@
 	<image:loc>https://radikant.nl/img/AES-CTR.svg</image:loc>
 	<image:title>AES CTR</image:title>
 	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/AES-CCM.svg</image:loc>
+	<image:title>AES CCM</image:title>
+	</image:image>
+	<image:image>
+	<image:loc>https://radikant.nl/img/AES-GCM.svg</image:loc>
+	<image:title>AES GCM</image:title>
+	</image:image>
 </url>
 <url>
 	<loc>https://radikant.nl/polynomial/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 </url>
 <url>
 	<loc>https://radikant.nl/mac/</loc>
-	<lastmod>2026-04-15</lastmod>
+	<lastmod>2026-04-30</lastmod>
 	<changefreq>Weekly</changefreq>
 	<priority>0.5</priority>
 	<image:image>
 	<image:loc>https://radikant.nl/img/HMAC-SHA.svg</image:loc>
 	<image:title>HMAC SHA</image:title>
 	</image:image>
+</url>
+<url>
+	<loc>https://radikant.nl/ghash/</loc>
+	<lastmod>2026-04-30</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
+</url>
+<url>
+	<loc>https://radikant.nl/galois-fields/</loc>
+	<lastmod>2026-04-30</lastmod>
+	<changefreq>Weekly</changefreq>
+	<priority>0.5</priority>
 </url>
 </urlset>

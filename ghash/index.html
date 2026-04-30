@@ -5,7 +5,7 @@
     <meta name="keywords" content="defense cryptography">
     <meta name="description" content="defense cryptography">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-	<link rel="canonical" href="https://radikant.nl/aes/">
+	<link rel="canonical" href="https://radikant.nl/ghash/">
 	<meta name="robots" content="index, follow">
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:title" content="Radikant">
@@ -14,14 +14,14 @@
 	<meta property="og:site_name" content="Radikant">
 	<meta property="og:title" content="Radikant">
 	<meta property="og:description" content="Radikant Research">
-	<meta property="og:url" content="https://radikant.nl/aes/"> 
+	<meta property="og:url" content="https://radikant.nl/ghash/"> 
     <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
     
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?120">
 	<link rel="stylesheet" type="text/css" href="../style.css?4188">
 	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?9970">
 	
-    <title>AES</title>
+    <title>AES-1</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
@@ -90,7 +90,7 @@
 		<div class="row">
 			<div class="text-start offset-lg-2 col-lg-8">
 				<h1 class="mb-4">
-					AES
+					GHASH
 				</h1>
 				<p class="mb-3 text-justify">
 					The advanced encryption standard (AES) is a symmetric block chipher that encrypts data in blocks of 16 bytes regarless of key length. Regarded secure enough for regular applications with no <i>publicly</i> known practical attack. The cipher is symmetric so the same key can be used for both encryption and decryption. The output looks like random noise. Often the OKM from a key derrivation (KDF) function is used as the cipher-key. AES is featured inside <a href="../crypto/">Radikant-Crypto-C</a>.<br>
