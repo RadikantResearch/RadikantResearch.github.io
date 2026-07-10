@@ -1,0 +1,264 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="canonical" href="https://radikant.nl/spectrum-analyzer/">
+	<meta name="robots" content="index, follow">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Radikant">
+	<meta name="twitter:description" content="Radikant Research">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Radikant">
+	<meta property="og:title" content="Radikant">
+	<meta property="og:description" content="Radikant Research">
+	<meta property="og:url" content="https://radikant.nl/spectrum-analyzer/"> 
+    <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
+    
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?4301">
+	<link rel="stylesheet" type="text/css" href="../style.css?1228">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?1212">
+	<link rel="stylesheet" type="text/css" href="../css/all.min.css">
+	
+    <title>Poor Mans Spectrum Analyzer</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body data-clean-url="true">
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-0 -->
+<div class="bloc l-bloc " id="bloc-0">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md" role="navigation">
+					<div class="container-fluid ">
+						<a class="navbar-brand" href="../"><picture><source type="image/webp" srcset="../img/160545421.webp"><img src="../img/160545421.jpeg" alt="logo" width="30" height="30"></picture></a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 ms-auto" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-12779">
+							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-35179 navbar-12779">
+								<ul class="site-navigation nav navbar-nav ms-auto">
+									<li class="nav-item">
+										<a href="../" class="nav-link">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="../libraries/" class="nav-link">Libraries</a>
+									</li>
+									<li class="nav-item">
+										<a href="../engineering/" class="nav-link a-btn">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
+									</li>
+									<li class="nav-item">
+										<a href="../electronics/" class="nav-link">Electronics</a>
+									</li>
+									<li class="nav-item">
+										<a href="../about/" class="nav-link a-btn">About</a>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-0 END -->
+
+<!-- bloc-113 -->
+<div class="bloc l-bloc" id="bloc-113">
+	<div class="container bloc-lg bloc-sm-lg">
+		<div class="row">
+			<div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 text-start offset-lg-1 col-lg-10">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="mb-4 text-lg-center mb-lg-0">
+							📟 RTL Spectrum Analyzer
+						</h2>
+						<p class="mb-3 text-lg-center">
+							<strong>A Poor mans Spectrum Analyzer</strong><br>
+						</p>
+						<div class="mx-auto d-block blocsapp-device blocsapp-device-mb blocsapp-mb-air-midnight">
+							<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202026-05-21%20at%2023.59.25.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202026-05-21%20at%2023.59.25.png" class="img-fluid lazyload" alt="SerialPort" width="757" height="490"></picture>
+						</div>
+					</div>
+				</div>
+				<h3 class="mb-4">
+					Introduction
+				</h3>
+				<p class="mb-3 p-style text-justify">
+					In past years Software Defined Radio got really poplair and devices got really affordable. The market is flooded with devices ranging from premium devices like Aaornia Spectran 6 to absolte bottom of the barrel devices such as RTL SDR which i bought in an upwelling. <br><br>I wanted to know if a COAX cable from a local ISP was connected to the neighbourhood cabinet, and i thought my RTL SDR would be great to look if the ISP was sending data over the COAX cable. <br><br>I installed the popular SDR++ but quickly came to conclusion it has very narrow bandwitdth of just 2.6 Mhz. But i wanted to check the complete spectrum from 1Mhz up tp 1.7 GHz. I concluded that i was under the naive impression i could use it as Spectrum Analyzer out of the box. I simply never heard of instationous bandwidth or PPL settling time before i started this project. <br><br>In order to know if needed a to make my RTL SDR a device that van sweep the whole specturm. Finally it led me to write my own <a href="../sa/">Radikant-SA-C</a>.
+				</p>
+				<h3 class="mb-4">
+					Bandwidth&nbsp;
+				</h3>
+				<p class="mb-3 p-style text-justify">
+					I thought i could solve the bandwitdth problem to just look at 2.6 Mhz at any moment in time and consecutively sweep the whole spectrum. I started to look for spectral analsysis software that supports the RTL SDR and found a few. Unfortunately all of them where difficult to get running or where only supported on other platforms than osx which i happen to use for my laptop. I tried running the windows Apps in a virtual machine using Parralels but i couldnt get the USB drivers for the RTL SDR to work trough the virtual machine after many attempts.&nbsp;<br>
+				</p>
+				<h3 class="mb-4">
+					Contituents
+				</h3>
+				<p class="mb-3 p-style text-justify">
+					After spending about a day trying to get other solution to work i was so fed up with it i wanted a small simple clean solution that builds easily across my different OSX development machines. So i started to question what i would need to be able to get spectral analsysis for the RTL SDR over the full bandwith with a sweep and i wanted an easy build prefferably from c with no heavy dependencies.<br><br>Since the RTL SDR just pushes the amplitude ADC values like an osciliscope i needed a way untangle the frequency content and remember from another project that Fast Fourier Transform (FFT) is the way do to do this. After researching i found there are interesting options worth exploring like Esprit, Wavelet, Goertzel & CZT algorithms.<br><br>Since i already wasted a lot of time trying existing solutions on windows and complex builds I opted for <a href="https://www.fftw.org/" target="_blank">fftw3</a> for its easy of build, c compatablity, outstanding track record and just to limit the scope for now. Next i needed a driver for my RTL-SDR, by looking into the source code of various SDR programs like <a href="https://github.com/alexandrerouma/sdrplusplus" target="_blank">SDR++</a> i found <a href="https://github.com/steve-m/librtlsdr" target="_blank">librtlsdr</a> which is a c driver. Finally i needed an easy GUI solution that just builds i settled on <a href="https://github.com/ocornut/imgui" target="_blank">ImGui</a> +<a class="link-style" href="https://www.libsdl.org/" target="_blank"></a> <a href="https://www.libsdl.org/" target="_blank">SDL2</a> which im already aquainted. <br>
+				</p>
+				<h3 class="mb-4">
+					Sweeping
+				</h3>
+				<p class="mb-3 p-style text-justify">
+					One of the first problems i noticed on the RTL SDR in SDR++ is next to that the maximum instanious bandwidth is just 3.2 Mhz and there seems to be also a rolloff on either side of the tuning frequency.<br>
+				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/2%20Mhz%20Window.webp"><img src="../img/lazyload-ph.png" data-src="../img/2%20Mhz%20Window.png" class="img-fluid mx-auto d-block lazyload" alt="SDR%20FallOff" width="946" height="160"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 1</strong>&nbsp; 3<i>.2 Mhz Window</i><br>
+				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/SDR%20FallOff.webp"><img src="../img/lazyload-ph.png" data-src="../img/SDR%20FallOff.png" class="img-fluid mx-auto d-block lazyload" alt="SDR%20FallOff" width="946" height="288"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 2</strong>&nbsp;&nbsp;<i>1.7 Mhz Window</i><br>
+				</p>
+				<p class="mb-3 p-style text-justify">
+					The falloff is depended on the Gain setting, and at maximum gain the Fall-Off is 3-4 dB. In the screenshot i have drawn a green line on a 1.7 Mhz Window, on a 3.2 Mhz window the difference gets more pronounced.&nbsp;<br>
+				</p><img src="../img/lazyload-ph.png" data-src="../img/SA_Bin_Window_2Mhz.drawio.svg" class="img-fluid mx-auto d-block img-bloc-113-style img-fluid-up lazyload" alt="SA_Bin_Window_2Mhz.drawio" width="946" height="143">
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 3</strong>&nbsp; <i>Sweeping Windows</i><br>
+				</p>
+				<p class="mb-3 p-style text-justify">
+					The falloff is depended on the Gain setting, and at maximum gain the Fall-Off is 3-4 dB. In the screenshot i have drawn a green line on a 1.7 Mhz Window, on a 3.2 Mhz window the difference gets more pronounced.&nbsp;<br>
+				</p>
+				<p class="mb-3 p-style text-justify">
+					The concept is to split the sweep range into smaller 2 Mhz Windows W¹, W², W³, Wⁿ as shown in Figure 3 and disregard the rolloff data on the edges of the window. So i would want to sweep from 100-112 Mhz i need just 6 windows of 2 Mhz. Each window is where the Frequency data lives in PowerBins. A PowerBin is a window where the total<br>
+				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Fall%20OF%20Repeat.webp"><img src="../img/lazyload-ph.png" data-src="../img/Fall%20OF%20Repeat.png" class="img-fluid mx-auto d-block lazyload" alt="SDR%20FallOff" width="946" height="258"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 4:</strong>&nbsp;<i>1.7 Mhz Window</i><br>
+				</p>
+				<h3 class="mb-4">
+					I/Q Sampling
+				</h3>
+				<p class="mb-3 p-style text-justify">
+					In-phase (I), Quadrature (Q) 8-bit sameples that are collected containing magnitude and phase information and send over usb to computer for further proccesing. An antenna physically produces only one analog voltage at any moment in time there is no IQ, no complex number. Inside the SDR there is a local clock-generated signal:<br><br>* cos(ωt) → for I<br>* sin(ωt) &nbsp;→ for Q ( 90° shifted)<br><br>IQ is created inside the receiver, not the antenna. It is made by mixing (multiplying) the signal with two local oscillators.<br>
+				</p>
+				<h3 class="mb-4">
+					Software Testing
+				</h3><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/SA.webp"><img src="../img/lazyload-ph.png" data-src="../img/SA.jpg" class="img-fluid mx-auto d-block lazyload" alt="SA" width="946" height="426"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 5</strong>&nbsp; Testing with 20&nbsp;<i>Mhz</i><br>
+				</p>
+				<p class="mb-3 text-justify">
+					I finished the software in C++ and could use the sweeper and now could analyze the full range of the specturm of the RTL SDR from 1Mhz all the way up to 1.7 Ghz! Connected a Keysight signal generator and generated a 20 Mhz sine signal to my RTL SDR and it worked! I could see a sharp peak at 20 Mhz. <br><br>The second peak visible to the right is from the RTL clock 28.8 Mhz clock that leaks into the reciever. &nbsp;I’m currently also not entirely sure why the area around the peak has such a sharp drop below the noise floor.&nbsp;<br>
+				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LibreVNA%20and%20RTL-SDR.webp"><img src="../img/lazyload-ph.png" data-src="../img/LibreVNA%20and%20RTL-SDR.png" class="img-fluid mx-auto d-block lazyload" alt="SA" width="946" height="426"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 6</strong>&nbsp; Testing with 860&nbsp;<i>Mhz</i><br>
+				</p>
+				<p class="mb-3 text-justify">
+					Next i wanted to use a higer frequency signal, however my Keysight signal generator cannot generate nearr Ghz or beyond signals. I looked around the workshop and found that the LibreVNA would be the best option to generate a high frequency signal. A nice results that proves my poor mans Signal Analyzer is able to detect strong frequencies.&nbsp;<br>
+				</p>
+				<h3 class="mb-4">
+					Field Testing
+				</h3><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Hunting%20Signals%20Ziggo.webp"><img src="../img/lazyload-ph.png" data-src="../img/Hunting%20Signals%20Ziggo.png" class="img-fluid mx-auto d-block lazyload" alt="SA" width="946" height="426"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 7</strong>&nbsp; Field testing<br>
+				</p>
+				<p class="mb-3">
+					I connected my RTL SDR to the Ziggo Coax cable inside the&nbsp;meter cabinet and started to hunt for signals. I’m aware Ziggo deploys 75 ohm COAX cables in their network and the input impedance of the RTL SDR is 50&nbsp;ohm but even if there is a mismatch i’d still be able to recieve intentional signals.
+				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Analaysis%20Ziggo.webp"><img src="../img/lazyload-ph.png" data-src="../img/Analaysis%20Ziggo.jpg" class="img-fluid mx-auto d-block lazyload" alt="SA" width="946" height="612"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 8</strong>&nbsp; Interresting Signals<br>
+				</p>
+				<p class="mb-3 text-justify">
+					I preforrmed a full frequency sweep from 1 Mhz to 1.7 Ghz and made notes on &nbsp;some interresting intentional signals. I prefformed another narrower sweep of a few ranges with strong signals. These signals where not present when the COAX was disconnected so they where definitly being transmitted trough the COAX.<br>
+				</p>
+				<h3 class="mb-4">
+					Conclusion
+				</h3>
+				<p class="mb-3 text-justify">
+					After inspecting all the measurements, I concluded the signals recieved where to weak to be intentionallly radiated ISP Upstream of Downstream traffic. When i connected a broadband antenna to my RTL SDR I had identical results at the same frequencies, which means the COAX was acting as an antenna and picking up stray signals.<br> <br>Not the result I was hoping for but it ruled out the coax was connected. Now convinced the cable was unconnected. I used <a href="../time-domain-reflectometry/">TDR</a> (Time Domain Reflectrometry) techniques to determine why the cable was not connected and if it possibly was severed.<br><br>Since my poor mans spectrum analyzer was written in c++ i also wanted a c version of this spectrum analyzer which led to the development of <a href="../sa/">Radikant-SA-C</a>. I’m really happy with the results because i don’t own a instrument grade Spectrum Analyzer yet and this software and control of the source allows be to have some RF eyes in the workshop at very low cost with high versatility.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-113 END -->
+
+<!-- ScrollToTop Button -->
+<button aria-label="Scroll to top button" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"/></svg></button>
+<!-- ScrollToTop Button END-->
+
+
+<!-- bloc-30 -->
+<div class="bloc l-bloc" id="bloc-30">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
+					<div class="container-fluid flex-column">
+						<a class="navbar-brand mx-auto" href="../">Radikant</a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-1653">
+							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-45833 navbar-44110 navbar-35368 navbar-46454 navbar-1653">
+								<ul class="site-navigation nav navbar-nav mx-auto justify-content-center">
+									<li class="nav-item">
+										<a href="../" class="nav-link">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="../libraries/" class="nav-link">Libraries</a>
+									</li>
+									<li class="nav-item">
+										<a href="../engineering/" class="nav-link a-btn">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
+									</li>
+									<li class="nav-item">
+										<a href="../electronics/" class="nav-link">Electronics</a>
+									</li>
+									<li class="nav-item">
+										<a href="../about/" class="nav-link">About</a>
+									</li>
+								</ul>
+							</div>
+						<div class="navbar-content-area d-block col-12 col-md-3 col-lg-2">
+								<div class="row">
+									<div class="col text-lg-center mt-lg-2 text-md-center">
+										<a href="https://www.linkedin.com/in/charlie-elbakry-1738681b8/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></blocsicon></a> <a href="https://github.com/Radikant/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></blocsicon></a><a href="mailto:him@charlie-elbakry.nl"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="512" height="512" viewBox="0 0 512 512"><path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"></path></svg></blocsicon></a>
+									</div>
+								</div>
+							</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-30 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+
+<!-- Additional JS -->
+<script src="../js/bootstrap.bundle.min.js?1884"></script>
+<script src="../js/blocs.min.js?8045"></script>
+<script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
+
+
+</body>
+</html>

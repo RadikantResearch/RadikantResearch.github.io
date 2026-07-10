@@ -111,6 +111,83 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 }
 
 
+/* Background Effects */
+
+.parallax__container {
+	clip: rect(0, auto, auto, 0);
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:-1;
+}
+.parallax {
+	position: fixed;
+	top: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+/* Dark theme */
+
+.d-bloc{
+	color:rgba(255,255,255,.7);
+}
+.d-bloc button:hover{
+	color:rgba(255,255,255,.9);
+}
+.d-bloc .icon-round,.d-bloc .icon-square,.d-bloc .icon-rounded,.d-bloc .icon-semi-rounded-a,.d-bloc .icon-semi-rounded-b{
+	border-color:rgba(255,255,255,.9);
+}
+.d-bloc .divider-h span{
+	border-color:rgba(255,255,255,.2);
+}
+.d-bloc .a-btn,.d-bloc .navbar a, .d-bloc a .icon-sm, .d-bloc a .icon-md, .d-bloc a .icon-lg, .d-bloc a .icon-xl, .d-bloc h1 a, .d-bloc h2 a, .d-bloc h3 a, .d-bloc h4 a, .d-bloc h5 a, .d-bloc h6 a, .d-bloc p a{
+	color:rgba(255,255,255,.6);
+}
+.d-bloc .a-btn:hover,.d-bloc .navbar a:hover,.d-bloc a:hover .icon-sm, .d-bloc a:hover .icon-md, .d-bloc a:hover .icon-lg, .d-bloc a:hover .icon-xl, .d-bloc h1 a:hover, .d-bloc h2 a:hover, .d-bloc h3 a:hover, .d-bloc h4 a:hover, .d-bloc h5 a:hover, .d-bloc h6 a:hover, .d-bloc p a:hover{
+	color:rgba(255,255,255,1);
+}
+.d-bloc .navbar-toggle .icon-bar{
+	background:rgba(255,255,255,1);
+}
+.d-bloc .btn-wire,.d-bloc .btn-wire:hover{
+	color:rgba(255,255,255,1);
+	border-color:rgba(255,255,255,1);
+}
+.d-bloc .card{
+	color:rgba(0,0,0,.5);
+}
+.d-bloc .card button:hover{
+	color:rgba(0,0,0,.7);
+}
+.d-bloc .card icon{
+	border-color:rgba(0,0,0,.7);
+}
+.d-bloc .card .divider-h span{
+	border-color:rgba(0,0,0,.1);
+}
+.d-bloc .card .a-btn{
+	color:rgba(0,0,0,.6);
+}
+.d-bloc .card .a-btn:hover{
+	color:rgba(0,0,0,1);
+}
+.d-bloc .card .btn-wire, .d-bloc .card .btn-wire:hover{
+	color:rgba(0,0,0,.7);
+	border-color:rgba(0,0,0,.3);
+}
+
+
 /* Light theme */
 
 .d-bloc .card,.l-bloc{
@@ -237,6 +314,9 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 
 /* = Icons
 -------------------------------------------------------------- */
+.icon-md{
+	font-size:30px!important;
+}
 blocsicon{
 	display:inline-block;
 	width:100%;
@@ -438,7 +518,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-style:italic;
 }
 .p-style{
-	width:92.19%;
+	width:100%;
 	font-size:18px;
 	line-height:30px;
 }
@@ -603,6 +683,54 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .p-277-style{
 	width:91.04%;
 }
+.p-375-style{
+	width:100%;
+}
+.img-177-style{
+	height:298px;
+}
+.img-178-style{
+	height:298px;
+}
+.img-159-style{
+	height:298px;
+}
+.img-160-style{
+	height:298px;
+}
+.img-bloc-113-style{
+	border-radius:45px 45px 45px 45px;
+}
+.link-style{
+	text-decoration:none;
+}
+.img-kiiroo-logo-style{
+	width:100px;
+}
+.img-bloc-6-style{
+	width:100px;
+}
+.img-bloc-9-style{
+	width:200px;
+}
+.img-beterbed-logo-style{
+	width:120px;
+}
+.img-53-style{
+	width:150px;
+}
+.img-194-style{
+	width:200px;
+}
+.img-168-style{
+	width:100px;
+}
+.img-windmeist-style{
+	width:180px;
+}
+.img-194-kiiroo-logo-style{
+	width:100px;
+}
 
 /* = Colour
 -------------------------------------------------------------- */
@@ -634,6 +762,10 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-3903:rgba(0,0,0,1.00);
 	
+	--swatch-var-3109:rgba(195,192,206,0.44);
+	
+	--swatch-var-1941:rgba(255,255,255,0.8);
+	
 }
 
 
@@ -657,9 +789,204 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 .tc-3903{
 	color:var(--swatch-var-3903)!important;
 }
+.tc-4279{
+	color:var(--swatch-var-4279)!important;
+}
+
+/* Button colour styles */
+
+.bgc-7343{
+	background-color:var(--swatch-var-7343);
+}
+.tc-7343{
+	color:var(--swatch-var-7343)!important;
+}
+.btn-c-7343,.btn-c-7343:focus{
+	background:var(--swatch-var-7343);
+	color:#FFFFFF!important;
+}
+.btn-c-7343:hover{
+	background:#2313CC!important;
+	color:#FFFFFF!important;
+}
+.wire-btn-c-7343{
+	color:var(--swatch-var-7343)!important;
+	border-color:var(--swatch-var-7343)!important;
+}
+.ltc-7343{
+	color:var(--swatch-var-7343)!important;
+}
+.ltc-7343:hover{
+	color:#2313CC!important;
+}
+.icon-7343{
+	color:var(--swatch-var-7343)!important;
+	border-color:var(--swatch-var-7343)!important;
+}
+/**/.bgc-4279{
+	background-color:var(--swatch-var-4279);
+}
+.tc-4279{
+	color:var(--swatch-var-4279)!important;
+}
+.btn-c-4279,.btn-c-4279:focus{
+	background:var(--swatch-var-4279);
+	color:rgba(0,0,0,.5)!important;
+}
+.btn-c-4279:hover{
+	background:#CCCCCC!important;
+	color:rgba(0,0,0,.5)!important;
+}
+.wire-btn-c-4279{
+	color:var(--swatch-var-4279)!important;
+	border-color:var(--swatch-var-4279)!important;
+}
+.ltc-4279{
+	color:var(--swatch-var-4279)!important;
+}
+.ltc-4279:hover{
+	color:#CCCCCC!important;
+}
+.icon-4279{
+	color:var(--swatch-var-4279)!important;
+	border-color:var(--swatch-var-4279)!important;
+}
+/**/.bgc-426{
+	background-color:var(--swatch-var-426);
+}
+.tc-426{
+	color:var(--swatch-var-426)!important;
+}
+.btn-c-426,.btn-c-426:focus{
+	background:var(--swatch-var-426);
+	color:rgba(0,0,0,.5)!important;
+}
+.btn-c-426:hover{
+	background:#009090!important;
+	color:rgba(0,0,0,.5)!important;
+}
+.wire-btn-c-426{
+	color:var(--swatch-var-426)!important;
+	border-color:var(--swatch-var-426)!important;
+}
+.ltc-426{
+	color:var(--swatch-var-426)!important;
+}
+.ltc-426:hover{
+	color:#009090!important;
+}
+.icon-426{
+	color:var(--swatch-var-426)!important;
+	border-color:var(--swatch-var-426)!important;
+}
+/**/.bgc-4593{
+	background-color:var(--swatch-var-4593);
+}
+.tc-4593{
+	color:var(--swatch-var-4593)!important;
+}
+.btn-c-4593,.btn-c-4593:focus{
+	background:var(--swatch-var-4593);
+	color:rgba(0,0,0,.5)!important;
+}
+.btn-c-4593:hover{
+	background:rgba(204,204,204,0.50)!important;
+	color:rgba(0,0,0,.5)!important;
+}
+.wire-btn-c-4593{
+	color:var(--swatch-var-4593)!important;
+	border-color:var(--swatch-var-4593)!important;
+}
+.ltc-4593{
+	color:var(--swatch-var-4593)!important;
+}
+.ltc-4593:hover{
+	color:rgba(204,204,204,0.50)!important;
+}
+.icon-4593{
+	color:var(--swatch-var-4593)!important;
+	border-color:var(--swatch-var-4593)!important;
+}
+/**/.bgc-1869{
+	background-color:var(--swatch-var-1869);
+}
+.tc-1869{
+	color:var(--swatch-var-1869)!important;
+}
+.btn-c-1869,.btn-c-1869:focus{
+	background:var(--swatch-var-1869);
+	color:#FFFFFF!important;
+}
+.btn-c-1869:hover{
+	background:rgba(0,0,0,0.70)!important;
+	color:#FFFFFF!important;
+}
+.wire-btn-c-1869{
+	color:var(--swatch-var-1869)!important;
+	border-color:var(--swatch-var-1869)!important;
+}
+.ltc-1869{
+	color:var(--swatch-var-1869)!important;
+}
+.ltc-1869:hover{
+	color:rgba(0,0,0,0.70)!important;
+}
+.icon-1869{
+	color:var(--swatch-var-1869)!important;
+	border-color:var(--swatch-var-1869)!important;
+}
+/**/.bgc-6810{
+	background-color:var(--swatch-var-6810);
+}
+.tc-6810{
+	color:var(--swatch-var-6810)!important;
+}
+.btn-c-6810,.btn-c-6810:focus{
+	background:var(--swatch-var-6810);
+	color:#FFFFFF!important;
+}
+.btn-c-6810:hover{
+	background:rgba(0,0,0,0.67)!important;
+	color:#FFFFFF!important;
+}
+.wire-btn-c-6810{
+	color:var(--swatch-var-6810)!important;
+	border-color:var(--swatch-var-6810)!important;
+}
+.ltc-6810{
+	color:var(--swatch-var-6810)!important;
+}
+.ltc-6810:hover{
+	color:rgba(0,0,0,0.67)!important;
+}
+.icon-6810{
+	color:var(--swatch-var-6810)!important;
+	border-color:var(--swatch-var-6810)!important;
+}
+/**/.bgc-4205{
+	background-color:var(--swatch-var-4205);
+}
+.tc-4205{
+	color:var(--swatch-var-4205)!important;
+}
+.btn-c-4205,.btn-c-4205:focus{
+	background:var(--swatch-var-4205);
+	color:#FFFFFF!important;
+}
+.btn-c-4205:hover{
+	background:#003DB0!important;
+	color:#FFFFFF!important;
+}
 
 /* Bloc image backgrounds */
 
+.bg-1782930190341{
+	background-image:url("img/1782930190341.jpg");
+	background-image: -webkit-image-set(url("img/1782930190341.webp") 1x,
+url("img/1782930190341.webp") 2x);background-image: image-set(url("img/1782930190341.jpg") 1x,
+url("img/1782930190341.jpg") 2x,url("img/1782930190341.webp") 1x,
+url("img/1782930190341.webp") 2x);
+}
 
 /* = Custom Bric Data
 -------------------------------------------------------------- */
