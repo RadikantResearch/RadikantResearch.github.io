@@ -314,9 +314,6 @@ nav .dropdown-menu .nav-link{color:rgba(0,0,0,0.6)!important;} /* Maintain Downd
 
 /* = Icons
 -------------------------------------------------------------- */
-.icon-md{
-	font-size:30px!important;
-}
 blocsicon{
 	display:inline-block;
 	width:100%;
@@ -393,6 +390,18 @@ blocsicon svg {
 }
 
 
+.carousel-nav-icon{
+	fill: none;
+	stroke: #fff;
+	stroke-width: 2px;
+	fill-rule: evenodd;
+	stroke-linecap:round;
+}
+
+.carousel-indicators li::marker{
+	font-size:0;
+}
+
 
 /* ScrollToTop button */
 
@@ -446,12 +455,25 @@ blocsicon svg {
 	border-radius:3%/2%}.blocsapp-device-ipad-pro.ipad-pro-portrait .ratio, .blocsapp-device-ipad-air.ipad-air-portrait .ratio{
 	padding-bottom:35%;
 }
+.blocsapp-device-ipad-pro.ipad-pro-landscape .ratio::before,.blocsapp-device-ipad-air.ipad-air-landscape .ratio::before{
+	padding-top: 56.25%;
+}
+.blocsapp-device-ipad-pro.ipad-pro-landscape .ratio,.blocsapp-device-ipad-air.ipad-air-landscape .ratio{
+	padding-bottom: 15%;
+}
 .blocsapp-device-ipad-pro.ipad-pro-portrait.ipad-pro-silver{
 	background-image:url("img/apple-ipad-pro-portrait-silver.png");
 	background-image: -webkit-image-set(url("img/apple-ipad-pro-portrait-silver.webp") 1x,
 url("img/apple-ipad-pro-portrait-silver.webp") 2x);background-image: image-set(url("img/apple-ipad-pro-portrait-silver.png") 1x,
 url("img/apple-ipad-pro-portrait-silver.png") 2x,url("img/apple-ipad-pro-portrait-silver.webp") 1x,
 url("img/apple-ipad-pro-portrait-silver.webp") 2x);
+}
+.blocsapp-device-ipad-pro.ipad-pro-landscape.ipad-pro-silver{
+	background-image:url("img/apple-ipad-pro-landscape-silver.png");
+	background-image: -webkit-image-set(url("img/apple-ipad-pro-landscape-silver.webp") 1x,
+url("img/apple-ipad-pro-landscape-silver.webp") 2x);background-image: image-set(url("img/apple-ipad-pro-landscape-silver.png") 1x,
+url("img/apple-ipad-pro-landscape-silver.png") 2x,url("img/apple-ipad-pro-landscape-silver.webp") 1x,
+url("img/apple-ipad-pro-landscape-silver.webp") 2x);
 }
 /* = MacBook Devices
 -------------------------------------------------------------- */
@@ -705,7 +727,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	text-decoration:none;
 }
 .img-kiiroo-logo-style{
-	width:100px;
+	width:150px;
 }
 .img-bloc-6-style{
 	width:100px;
@@ -730,6 +752,21 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .img-194-kiiroo-logo-style{
 	width:100px;
+}
+.img-1kx1k-half-sp-style{
+	width:567px;
+	height:567px;
+}
+.img-202-style{
+	width:567px;
+	height:567px;
+}
+.img-bloc-13-style{
+	width:1000px;
+	height:564px;
+}
+.btn-style{
+	text-decoration:none;
 }
 
 /* = Colour
@@ -766,6 +803,8 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	
 	--swatch-var-1941:rgba(255,255,255,0.8);
 	
+	--swatch-var-7048:rgba(0,0,0,0.37);
+	
 }
 
 
@@ -777,6 +816,9 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 
 /* Text colour styles */
 
+.tc-7048{
+	color:var(--swatch-var-7048)!important;
+}
 .tc-1869{
 	color:var(--swatch-var-1869)!important;
 }

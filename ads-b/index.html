@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="canonical" href="https://radikant.nl/ads-b/">
+	<meta name="robots" content="index, follow">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="Radikant">
+	<meta name="twitter:description" content="Radikant Research">
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Radikant">
+	<meta property="og:title" content="Radikant">
+	<meta property="og:description" content="Radikant Research">
+	<meta property="og:url" content="https://radikant.nl/ads-b/"> 
+    <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
+    
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1178">
+	<link rel="stylesheet" type="text/css" href="../style.css?593">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?6265">
+	
+    <title>ADS-B Library in c</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-c.min.js"></script>
+    
+<!-- Analytics -->
+ 
+<!-- Analytics END -->
+    
+</head>
+<body data-clean-url="true">
+
+<!-- Preloader -->
+<div id="page-loading-blocs-notifaction" class="page-preloader"></div>
+<!-- Preloader END -->
+
+
+<!-- Main container -->
+<div class="page-container">
+    
+<!-- bloc-0 -->
+<div class="bloc l-bloc " id="bloc-0">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md" role="navigation">
+					<div class="container-fluid ">
+						<a class="navbar-brand" href="../"><picture><source type="image/webp" srcset="../img/160545421.webp"><img src="../img/160545421.jpeg" alt="logo" width="30" height="30"></picture></a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0 ms-auto" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-12779">
+							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-35179 navbar-12779">
+								<ul class="site-navigation nav navbar-nav ms-auto">
+									<li class="nav-item">
+										<a href="../" class="nav-link">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="../libraries/" class="nav-link">Libraries</a>
+									</li>
+									<li class="nav-item">
+										<a href="../engineering/" class="nav-link a-btn">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
+									</li>
+									<li class="nav-item">
+										<a href="../electronics/" class="nav-link">Electronics</a>
+									</li>
+									<li class="nav-item">
+										<a href="../about/" class="nav-link a-btn">About</a>
+									</li>
+								</ul>
+							</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-0 END -->
+
+<!-- bloc-8 -->
+<div class="bloc l-bloc" id="bloc-8">
+	<div class="container bloc-no-padding-lg">
+		<div class="row">
+			<div class="col-lg-12">
+				<h1 class="text-center mb-4 mb-lg-1">
+					📡 Radikant-ADSB-C&nbsp;
+				</h1>
+				<h5 class="mb-4 text-lg-center">
+					Automatic Dependent Surveillance-Broadcast (ADS-B) library in C.<br>
+				</h5>
+			</div>
+			<div class="offset-md-2 col-md-8 col-lg-8 offset-lg-2">
+				<div class="mx-auto d-block blocsapp-device blocsapp-device-mb blocsapp-device-mbp">
+					<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/Screenshot%202026-09-18%20at%2012.36.48.webp"><img src="../img/lazyload-ph.png" data-src="../img/Screenshot%202026-09-18%20at%2012.36.48.png" class="img-fluid lazyload" alt="Device Screen" width="602" height="389"></picture>
+				</div>
+				<p class="mb-3">
+					Radikant-ADS-C is a source agnostic ADS-B Library for tracking aircraft on 1090 Mhz&nbsp;
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-8 END -->
+
+<!-- bloc-13 -->
+<div class="bloc l-bloc" id="bloc-13">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="text-start offset-lg-1 col-lg-10">
+				<h1 class="mb-4">
+					Introduction
+				</h1>
+				<p class="mb-3 text-justify">
+					Radikant-ADSB-C is IQ source ignorant C library for demodulating and decoding Mode-S and ADS-B messages from raw SDR baseband samples so aircraft can be tracked offline with a laptop and SDR. It features a built-in I/Q demodulator with adaptive signal gating and fully decodes 56/112-bit frames, resolving CPR positions, velocities, and altitudes. Built with the Inversion of Control paradigm, it functions as a deterministic state machine that processes pushed samples synchronously and emits real-time aircraft updates via an event-driven API. In order to test the library a small antenna was build from scraps and tuned to the resonant frequency with a Vector Network Analyzer.<br>
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-start offset-lg-1 col-lg-10">
+				<h1 class="mb-4">
+					Antenna
+				</h1><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/IMG_20260914_161515.webp"><img src="../img/lazyload-ph.png" data-src="../img/IMG_20260914_161515.png" class="img-fluid mx-auto d-block lazyload" alt="FM%20Radio%20Analasysis%20" width="946" height="350"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 1</strong>&nbsp;- Dipole Antenna from Scraps<br>
+				</p>
+				<p class="mb-3 text-justify">
+					ADS-B C operates on 1090 Mhz, I built a dipole antenna using scrap materials I had lying around. At 1090 Mhz, the wavelength (λ) is approximately 27.5 cm.&nbsp;Since a standard dipole is a half-wavelength long, each element needed to be roughly 6.8 cm. I intentionally cut the elements slightly long so I could trim them down later using a VNA to tune the antenna to the exact resonant frequency.
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="text-start offset-lg-1 col-lg-10">
+				<h1 class="mb-4">
+					Vector network Analyzer
+				</h1><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/IMG_20260914_162647.webp"><img src="../img/lazyload-ph.png" data-src="../img/IMG_20260914_162647.jpg" class="img-fluid mx-auto d-block lazyload" alt="FM%20Radio%20Analasysis%20" width="946" height="426"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 2</strong>&nbsp;- Calibrating the VNA<br>
+				</p>
+				<p class="mb-3 text-justify">
+					I set up the Vector Network Analyzer for a 500 MHz to 1.6 GHz sweep, keeping our 1090 MHz target roughly in the center. After also increasing the measurement points to 2004 for higher resolution, the antenna was ready to be tuned.
+				</p><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/IMG_20260914_171424.webp"><img src="../img/lazyload-ph.png" data-src="../img/IMG_20260914_171424.jpg" class="img-fluid mx-auto d-block lazyload" alt="FM%20Radio%20Analasysis%20" width="946" height="426"></picture>
+				<p class="mb-3 p-style text-lg-center">
+					<strong>Figure 4</strong>&nbsp;- Tuning the Antenna<br>
+				</p>
+				<p class="mb-3 text-justify">
+					After trimming the antenna elements one millimeter at a time, I achieved a VSWR of 1.2, making the antenna resonant at 1090 MHz. During testing, I observed that the antenna is highly sensitive to nearby mass. In the worst-case scenario, moving the antenna around caused the VSWR to increase to 1.7. However, this still equates to an efficiency of approximately 93%, which remains entirely acceptable.
+				</p>
+				<h1 class="mb-4">
+					Library
+				</h1>
+				<p class="mb-3 text-justify">
+					After trimming the antenna elements one millimeter at a time, I achieved a VSWR of 1.2, making the antenna resonant at 1090 MHz. During testing, I observed that the antenna is highly sensitive to nearby mass. In the worst-case scenario, moving the antenna around caused the VSWR to increase to 1.7. However, this still equates to an efficiency of approximately 93%, which remains entirely acceptable.
+				</p>
+				<div class=" ">
+					<h2 class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">A mock IDE window showing the final ADS-B main file with aircraft callbacks, in a Monokai theme.</h2>
+<style>
+.ide-window{background-color:#272822;color:#f8f8f2;font-family:-apple-system,"SF Pro Text",sans-serif;border-radius:10px;overflow:hidden;border:1px solid #3c3c3c;width:100%;box-sizing:border-box;margin:0 auto;display:block}
+.ide-titlebar{background:#2d2d2d;padding:6px 12px;display:flex;align-items:center;border-bottom:1px solid #111}
+.traffic-lights{display:flex;gap:6px;margin-right:15px}
+.dot{width:10px;height:10px;border-radius:50%}
+.red{background:#ff5f56;border:0.5px solid #e0443e}.ylw{background:#ffbd2e;border:0.5px solid #dea123}.grn{background:#27c93f;border:0.5px solid #1aab2f}
+.ide-menu{display:flex;gap:12px;font-size:12px;color:#b1b1b1}
+.ide-toolbar{background:#252526;padding:4px 12px;display:flex;align-items:center;gap:15px;border-bottom:1px solid #3c3c3c}
+.controls{display:flex;gap:10px;align-items:center}
+.btn-play{color:#4ade80;font-size:14px}.btn-stop{color:#666;font-size:12px}
+.project-pill{font-size:10px;color:#ddd;background:#3c3c3c;padding:3px 12px;border-radius:4px;border:1px solid #4a4a4a;white-space:nowrap}
+.ide-body{padding:6px 15px;font-family:'SF Mono','Menlo',monospace;font-size:12px;line-height:1.3;background:#272822;overflow-x:auto}
+.code-line{display:block;white-space:pre}
+.type{color:#66d9ef}.kw{color:#f92672}.str{color:#e6db74}.func{color:#a6e22e}.val{color:#ae81ff}.cmt{color:#75715e;font-style:italic}
+.ide-footer{background:#2d2d2d;padding:4px 12px;display:flex;justify-content:space-between;font-size:10px;color:#8a8a8a;border-top:1px solid #3c3c3c}
+.status-actions{display:flex;gap:12px}
+</style>
+<div class="ide-window">
+  <div class="ide-titlebar">
+    <div class="traffic-lights"><div class="dot red"></div><div class="dot ylw"></div><div class="dot grn"></div></div>
+    <div class="ide-menu"><span>File</span><span>Edit</span><span>View</span><span>Project</span></div>
+  </div>
+  <div class="ide-toolbar">
+    <div class="controls"><div class="btn-play">▶</div><div class="btn-stop">■</div></div>
+    <div class="project-pill"><b>adsb_main.c</b> — RTL-SDR capture setup</div>
+  </div>
+  <div class="ide-body">
+<div class="code-line"><span class="kw">static</span> <span class="type">void</span> <span class="func">on_aircraft</span>(<span class="type">void</span> *user, <span class="kw">const</span> <span class="type">adsb_aircraft</span> *aircraft){</div>
+<div class="code-line">    <span class="func">printf</span>(<span class="str">"\n&gt;&gt;&gt;AIRCRAFT DETECTED: %06X &lt;&lt;&lt;\n"</span>, aircraft-&gt;icao);</div>
+<div class="code-line">}</div>
+<div class="code-line"></div>
+<div class="code-line"><span class="kw">static</span> <span class="type">void</span> <span class="func">on_aircraft_update</span>(<span class="type">void</span> *user, <span class="kw">const</span> <span class="type">adsb_aircraft</span> *aircraft, <span class="type">uint32_t</span> changed){</div>
+<div class="code-line">    <span class="func">printf</span>(<span class="str">"AIRCRAFT %06X MOVED: %.4f, %.4f\n"</span>, aircraft-&gt;icao, aircraft-&gt;lat, aircraft-&gt;lon);</div>
+<div class="code-line">}</div>
+<div class="code-line"></div>
+<div class="code-line"><span class="kw">static</span> <span class="type">void</span> <span class="func">on_aircraft_lost</span>(<span class="type">void</span> *user, <span class="type">uint32_t</span> icao){</div>
+<div class="code-line">    <span class="func">printf</span>(<span class="str">"AIRCRAFT LOST: %06X xxx\n"</span>, icao);</div>
+<div class="code-line">}</div>
+<div class="code-line"></div>
+<div class="code-line"><span class="kw">static</span> <span class="type">void</span> <span class="func">on_samples</span>(<span class="type">unsigned char</span> *buf, <span class="type">uint32_t</span> len, <span class="type">void</span> *user){</div>
+<div class="code-line">    <span class="type">adsb_error_t</span> err = <span class="func">adsb_push_samples</span>(g_ctx, buf, len, g_clk.now_ms);</div>
+<div class="code-line">}</div>
+<div class="code-line"></div>
+<div class="code-line"><span class="type">int</span> <span class="func">main</span>(<span class="type">void</span>)</div>
+<div class="code-line">{</div>
+<div class="code-line">    <span class="func">rtlsdr_open</span>(&amp;g_dev, <span class="val">0</span>);</div>
+<div class="code-line">    <span class="func">rtlsdr_set_center_freq</span>(g_dev, ADSB_FREQ_HZ);</div>
+<div class="code-line">    <span class="func">rtlsdr_set_agc_mode</span>(g_dev, <span class="val">0</span>);</div>
+<div class="code-line">    <span class="func">rtlsdr_set_tuner_gain_mode</span>(g_dev, <span class="val">1</span>);</div>
+<div class="code-line"></div>
+<div class="code-line">    <span class="type">adsb_config</span> cfg;</div>
+<div class="code-line">    <span class="func">adsb_config_default</span>(&amp;cfg);</div>
+<div class="code-line">    cfg.max_aircraft            = <span class="val">100</span>;</div>
+<div class="code-line">    cfg.accept_surveillance     = <span class="val">true</span>;</div>
+<div class="code-line">    cfg.sample_rate_hz          = ADSB_SAMPLE_RATE_HZ;</div>
+<div class="code-line">    cfg.format                  = ADSB_FMT_CU8;</div>
+<div class="code-line">    cfg.use_magnitude_table     = <span class="val">true</span>;</div>
+<div class="code-line">    cfg.stale_ms                = ADSB_DEFAULT_STALE_MS;</div>
+<div class="code-line">    cfg.timeout_ms              = <span class="val">30u</span> * <span class="val">60u</span> * <span class="val">1000u</span>;   <span class="cmt">/* 30 minutes */</span></div>
+<div class="code-line">    cfg.max_bit_fixes           = <span class="val">2</span>;</div>
+<div class="code-line"></div>
+<div class="code-line">    <span class="cmt">// Callbacks</span></div>
+<div class="code-line">    <span class="type">adsb_callbacks</span> cb = {<span class="val">0</span>};</div>
+<div class="code-line">    cb.on_new = on_aircraft;</div>
+<div class="code-line">    cb.on_update = on_aircraft_update;</div>
+<div class="code-line">    cb.on_lost = on_aircraft_lost;</div>
+<div class="code-line"></div>
+<div class="code-line">    <span class="type">size_t</span> mem_req = <span class="func">adsb_required_memory</span>(&amp;cfg);</div>
+<div class="code-line">    <span class="type">void</span> *arena = <span class="func">malloc</span>(mem_req);</div>
+<div class="code-line"></div>
+<div class="code-line">    <span class="func">adsb_init</span>(&amp;g_ctx, &amp;cfg, &amp;cb, arena, mem_req);</div>
+<div class="code-line">    <span class="func">rtlsdr_read_async</span>(g_dev, on_samples, <span class="val">NULL</span>, <span class="val">0</span>, RTLSDR_BUF_LEN);</div>
+<div class="code-line"></div>
+<div class="code-line">    <span class="func">rtlsdr_close</span>(g_dev);</div>
+<div class="code-line">    <span class="func">free</span>(arena);</div>
+<div class="code-line">    <span class="kw">return</span> <span class="val">0</span>;</div>
+<div class="code-line">}</div>
+  </div>
+  <div class="ide-footer">
+    <div class="status-left">Build Succeeded</div>
+    <div class="status-actions"><span>Run</span><span>Build</span><span>Debug</span><span style="color:#fff">Ln 50, Col 1</span></div>
+  </div>
+</div>
+					
+				</div>
+				<p class="mb-3 p-style text-lg-center">
+						<strong>Figure 5</strong>&nbsp;- Library Example Truncated<br>
+					</p>
+				<p class="mb-3 text-justify">
+						Notice how the on_sample function callback is RTL-SDR library callback that feeds the statemachine with push_samples. The other callbacks fired if the statemachine makes detections.
+					</p>
+				<div class=" ">
+						<style>
+  .rlog-terminal {
+    background-color: #1e1e1e;
+    color: #cccccc;
+    font-family: 'SF Mono', 'Menlo', 'Monaco', 'Courier New', monospace;
+    font-size: 12px;
+    line-height: 1.35;
+    border-radius: 6px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    overflow: hidden;
+    text-align: left;
+    width: 100%;
+    margin: 20px 0;
+    border: 1px solid #333;
+  }
+
+  /* Mac-style window header */
+  .rlog-header {
+    background-color: #252526;
+    padding: 8px 12px;
+    display: flex;
+    gap: 8px;
+    border-bottom: 1px solid #111;
+  }
+  .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .red-dot { background-color: #ff5f56; }
+  .ylw-dot { background-color: #ffbd2e; }
+  .grn-dot { background-color: #27c93f; }
+
+  /* Log body area */
+  .rlog-body {
+    padding: 12px 15px;
+    overflow-x: auto;
+    white-space: pre;
+    display: block;
+  }
+</style>
+
+<div class="rlog-terminal">
+  <div class="rlog-header">
+    <div class="dot red-dot"></div>
+    <div class="dot ylw-dot"></div>
+    <div class="dot grn-dot"></div>
+  </div>
+
+  <div class="rlog-body">
+Tracking 12 Aircraft
+-----------------------------------------------------------------------------------------------------------
+ICAO     Callsign  Squawk Alt(ft) Spd(kt) Hdg(deg) VR(fpm) Lat          Lon          Msgs  Sig(dBFS) 
+-----------------------------------------------------------------------------------------------------------
+8681BE   SKY009    7371    18075   399.6  285.5   2176    35.61288     139.35579    149   -32  weak
+71BA10   ABL163    3221    27875   408.7  275.2   1088    35.88258     139.42898    261   -32  weak
+71C759   ESR606    3151    23075   394.9  284.7   1536    35.90309     139.66805    400   -31  weak
+782243   CES272    6145    27375   387.2  248.8   1408    35.41415     139.68733    219   -32  weak
+8623D6   ???       1200    2150    ------ ------- ------- ---          ---          617   -27  weak
+8516E9   ???       1200    2250    ------ ------- ------- ---          ---          90    -28  weak
+84B5EE   ???       2107    18575   380.3  272.4   2112    35.49765     139.18224    25    -33  weak
+846BFA   ???       0450    8825    277.2  232.2   2560    35.41187     139.87238    7     -32  weak
+846910   ???       2341    13100   371.3  252.4   2048    35.34530     139.73990    40    -33  weak
+861E92   ???       ----    19575   446.5  9.8     2496    ---          ---          8     -32  weak
+71BF30   ???       ----    ------- ------ ------- ------- ---          ---          1     -31  weak
+861B64   ???       0410    10750   335.4  357.1   1664    ---          ---          7     -32  weak
+-----------------------------------------------------------------------------------------------------------
+
+stats: 
+
+samples=257949696 preambles=1952 frames_ok=962 frames_bad_crc=139 bits_repaired=138 phase_retries=5 
+pos_ok=65 pos_rejected=0 aircraft_created=3 aircraft_expired=0 noise_floor=257
+
+--- AIRCRAFT 71C569 MOVED: 35.8495, 139.6258
+--- AIRCRAFT 71C569 MOVED: 35.8495, 139.6258
+--- AIRCRAFT 71C569 MOVED: 35.8495, 139.6258
+--- RADIKANT ADS-B LIVE FEED (RTL-SDR, 1090 MHz) ---
+  </div>
+</div>
+
+						
+					</div>
+				<p class="mb-3 p-style text-lg-center">
+							<strong>Figure 6</strong>&nbsp;- Library Example Truncated<br>
+						</p>
+				<p class="mb-3 text-justify">
+							A typical terminal output, recordered in Tokyo
+						</p>
+				<h1 class="mb-4">
+							Testing
+						</h1><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/AntennaAction.webp"><img src="../img/lazyload-ph.png" data-src="../img/AntennaAction.jpg" class="img-fluid mx-auto d-block lazyload" alt="FM%20Radio%20Analasysis%20" width="946" height="426"></picture>
+				<p class="mb-3 p-style text-lg-center">
+							<strong>Figure 4</strong>&nbsp;- Tuning the Antenna<br>
+						</p>
+			</div>
+			<div class="col">
+						<div>
+							Custom HTML here.
+							
+						</div>
+					</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-13 END -->
+
+<!-- ScrollToTop Button -->
+<button aria-label="Scroll to top button" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1',this)"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 32 32"><path class="scroll-to-top-btn-icon" d="M30,22.656l-14-13-14,13"/></svg></button>
+<!-- ScrollToTop Button END-->
+
+
+<!-- bloc-30 -->
+<div class="bloc l-bloc" id="bloc-30">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-light row navbar-expand-md flex-column" role="navigation">
+					<div class="container-fluid flex-column">
+						<a class="navbar-brand mx-auto" href="../">Radikant</a>
+						<button id="nav-toggle" type="button" class="ui-navbar-toggler navbar-toggler border-0 p-0" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse" data-bs-target=".navbar-1653">
+							<span class="navbar-toggler-icon"><svg height="32" viewBox="0 0 32 32" width="32"><path class="svg-menu-icon" d="m2 9h28m-28 7h28m-28 7h28"></path></svg></span>
+						</button>
+						<div class="collapse navbar-collapse navbar-45833 navbar-44110 navbar-35368 navbar-46454 navbar-1653">
+								<ul class="site-navigation nav navbar-nav mx-auto justify-content-center">
+									<li class="nav-item">
+										<a href="../" class="nav-link">Home</a>
+									</li>
+									<li class="nav-item">
+										<a href="../libraries/" class="nav-link">Libraries</a>
+									</li>
+									<li class="nav-item">
+										<a href="../engineering/" class="nav-link a-btn">Engineering</a>
+									</li>
+									<li class="nav-item">
+										<a href="../products/" class="nav-link">Products</a>
+									</li>
+									<li class="nav-item">
+										<a href="../electronics/" class="nav-link">Electronics</a>
+									</li>
+									<li class="nav-item">
+										<a href="../about/" class="nav-link">About</a>
+									</li>
+								</ul>
+							</div>
+						<div class="navbar-content-area d-block col-12 col-md-3 col-lg-2">
+								<div class="row">
+									<div class="col text-lg-center mt-lg-2 text-md-center">
+										<a href="https://www.linkedin.com/in/charlie-elbakry-1738681b8/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-linkedin" viewBox="0 0 16 16"><path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"></path></svg></blocsicon></a> <a href="https://github.com/Radikant/" target="_blank"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="16" height="16" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"></path></svg></blocsicon></a><a href="mailto:him@charlie-elbakry.nl"><blocsicon class="svg-icon-style me-lg-2 ms-lg-2"><svg width="512" height="512" viewBox="0 0 512 512"><path d="M424,80H88a56.06,56.06,0,0,0-56,56V376a56.06,56.06,0,0,0,56,56H424a56.06,56.06,0,0,0,56-56V136A56.06,56.06,0,0,0,424,80Zm-14.18,92.63-144,112a16,16,0,0,1-19.64,0l-144-112a16,16,0,1,1,19.64-25.26L256,251.73,390.18,147.37a16,16,0,0,1,19.64,25.26Z"></path></svg></blocsicon></a>
+									</div>
+								</div>
+							</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- bloc-30 END -->
+
+</div>
+<!-- Main container END -->
+    
+
+
+<!-- Additional JS -->
+<script src="../js/bootstrap.bundle.min.js?1449"></script>
+<script src="../js/blocs.min.js?3443"></script>
+<script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
+
+
+</body>
+</html>

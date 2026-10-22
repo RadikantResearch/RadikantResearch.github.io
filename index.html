@@ -17,10 +17,9 @@
 	<meta property="og:url" content="https://radikant.nl/"> 
     <link rel="shortcut icon" type="image/jpeg" href="favicon.jpeg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?4301">
-	<link rel="stylesheet" type="text/css" href="style.css?1228">
-	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?1212">
-	<link rel="stylesheet" type="text/css" href="./css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css?1178">
+	<link rel="stylesheet" type="text/css" href="style.css?593">
+	<link rel="stylesheet" type="text/css" href="./css/animate.min.css?6265">
 	
     <title>Home</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
@@ -87,25 +86,32 @@
 
 <!-- bloc-1 -->
 <div class="bloc l-bloc" id="bloc-1">
-	<div class="container bloc-lg">
+	<div class="container bloc-lg bloc-no-padding-lg">
 		<div class="row">
 			<div class="col-md-6">
-				<div class="mx-auto d-block blocsapp-device blocsapp-device-ipad-pro ipad-pro-portrait ipad-pro-silver">
-					<picture><source type="image/webp" srcset="img/lazyload-ph.png" data-srcset="img/Screenshot%202025-12-02%20at%2004.42.36.webp"><img src="img/lazyload-ph.png" data-src="img/Screenshot%202025-12-02%20at%2004.42.36.png" class="img-fluid lazyload" alt="Device Screen" width="458" height="630"></picture>
+				<div class="mx-auto d-block blocsapp-device blocsapp-device-ipad-pro ipad-pro-landscape ipad-pro-silver">
+					<picture><source type="image/webp" srcset="img/lazyload-ph.png" data-srcset="img/FM%20Radio%20Analasysis%20.webp"><img src="img/lazyload-ph.png" data-src="img/FM%20Radio%20Analasysis%20.png" class="img-fluid lazyload" alt="Device Screen" width="480" height="319"></picture>
 				</div>
 			</div>
 			<div class="align-self-center col-md-6">
-				<h2 class="mb-4">
-					Cradle
+				<h2 class="mb-4 mb-lg-2">
+					SA
 				</h2>
-				<h3 class="mb-3">
-					<br>
-				</h3>
+				<h4 class="mb-3 tc-7048">
+					Spectral Analsysis
+				</h4>
 				<p class="mb-3 text-justify">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				</p><a href="./" class="btn btn-d btn-lg">More Info</a>
+					Radikant-SA-C is a spectral analysis desktop app written in C. SDRs like the RTL-SDR or LibreSDR can be plugged in to provide a convenient way to chase RF signals on the go. It is meant to be used alongside a real SA, functioning like an RF multimeter for quick-and-dirty diagnostics.
+				</p><a href="./sa/" class="btn btn-lg btn-c-4205 btn-style">More Info</a>
 			</div>
 		</div>
+	</div>
+</div>
+<!-- bloc-1 END -->
+
+<!-- bloc-1 -->
+<div class="bloc l-bloc" id="bloc-1">
+	<div class="container bloc-lg bloc-no-padding-lg">
 		<div class="row">
 			<div class="col-md-6 order-md-1">
 				<div class="mx-auto d-block blocsapp-device blocsapp-device-ipad-pro ipad-pro-portrait ipad-pro-silver">
@@ -113,15 +119,33 @@
 				</div>
 			</div>
 			<div class="align-self-center col-md-6">
-				<h2 class="mb-4">
-					(AS) Advance and Secure
+				<h2 class="mb-4 h2-bloc-1-style mb-lg-2">
+					Map
 				</h2>
-				<h3 class="mb-3">
-					A more descriptive sub heading.
-				</h3>
+				<h4 class="mb-3 tc-7048">
+					Vector Map Tile Renderer
+				</h4>
 				<p class="mb-3 text-justify">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				</p><a href="./" class="btn btn-d btn-lg">More Info</a>
+					Radikant-Map-C is Vector Map Tile Renderer. It can fetch from OSM but can easily be adapted to work with other sources as well. It uses Radikant-Renderer-C to draw primitives and can work in tandem with Radikant-MicroUi-C to draw map controls.
+				</p><a href="./map/" class="btn btn-lg btn-c-4205">More Info</a>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="mx-auto d-block blocsapp-device blocsapp-device-ipad-pro ipad-pro-portrait ipad-pro-silver">
+					<picture><source type="image/webp" srcset="img/lazyload-ph.png" data-srcset="img/Screenshot%202026-09-15%20at%2019.07.38.webp"><img src="img/lazyload-ph.png" data-src="img/Screenshot%202026-09-15%20at%2019.07.38.png" class="img-fluid lazyload" alt="Device Screen" width="458" height="655"></picture>
+				</div>
+			</div>
+			<div class="align-self-center col-md-6">
+				<h2 class="mb-4 mb-lg-2">
+					ADS-B
+				</h2>
+				<h4 class="mb-3">
+					Automatic Dependent Surveillance-Broadcast
+				</h4>
+				<p class="mb-3 text-justify">
+					Radikant-DVSB-C takes a stream IQ RF stream from any SDR, demodulates the signal and decodes the data into aircraft information with the Mode-S Format. The user can register callbacks and be notified if any aircraft transmission is detected.&nbsp;
+				</p><a href="./ads-b/" class="btn btn-d btn-lg">More Info</a>
 			</div>
 		</div>
 		<div class="row">
@@ -131,15 +155,15 @@
 				</div>
 			</div>
 			<div class="align-self-center col-md-6">
-				<h2 class="mb-4">
-					Cradle
+				<h2 class="mb-4 mb-lg-2">
+					Crypto
 				</h2>
-				<h3 class="mb-3">
-					<br>
-				</h3>
+				<h4 class="mb-3">
+					Cryprographic Primitives
+				</h4>
 				<p class="mb-3 text-justify">
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
-				</p><a href="./" class="btn btn-d btn-lg">More Info</a>
+					Radikant Crypto is an educational attempt at writing a cryptographic backend in C. It powers many other Radikant projects as a deeply nested dependency. While the general architecture is strictly human-controlled, substantial parts of the codebase were written with the assistance of AI. The bit-correctness of the library is proven and tested using standard test vectors.
+				</p><a href="./crypto/" class="btn btn-d btn-lg">More Info</a>
 			</div>
 		</div>
 	</div>
@@ -205,8 +229,8 @@
 
 
 <!-- Additional JS -->
-<script src="./js/bootstrap.bundle.min.js?1884"></script>
-<script src="./js/blocs.min.js?8045"></script>
+<script src="./js/bootstrap.bundle.min.js?1449"></script>
+<script src="./js/blocs.min.js?3443"></script>
 <script src="./js/lazysizes.min.js" defer></script><!-- Additional JS END -->
 
 
