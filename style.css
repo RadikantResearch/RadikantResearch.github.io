@@ -540,7 +540,7 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 	font-style:italic;
 }
 .p-style{
-	width:100%;
+	width:90.6%;
 	font-size:18px;
 	line-height:30px;
 }
@@ -575,9 +575,6 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .h2-style{
 	width:69.56%;
-}
-.h3-style{
-	width:85.12%;
 }
 .img-style{
 	height:55px;
@@ -767,6 +764,12 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
 }
 .btn-style{
 	text-decoration:none;
+}
+.img-bloc-2-style{
+	height:150px;
+}
+.img-30-style{
+	height:150px;
 }
 
 /* = Colour

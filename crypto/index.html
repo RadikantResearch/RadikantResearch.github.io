@@ -17,9 +17,9 @@
 	<meta property="og:url" content="https://radikant.nl/crypto/"> 
     <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
     
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1178">
-	<link rel="stylesheet" type="text/css" href="../style.css?593">
-	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?6265">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?9312">
+	<link rel="stylesheet" type="text/css" href="../style.css?3945">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?3516">
 	
     <title>Crypto C</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
@@ -121,7 +121,7 @@
 					Introduction
 				</h1>
 				<p class="mb-3 text-justify">
-					Radikant Crypto is a eductional (<i>toy</i>) implementation supporting common primitives. The cryptograhic core is seperated and decoupled. Currently works on arm64 hardware (apple silicon) and in software mode on 64 bit architecture, but can be easliy modified to run on other platforms or architectures aswell. Testing against RFC vectors has proven that the library is capable to produce the correct bit output. It used as dependency inside <a href="../tls/">Radikant TLS</a> , <a href="../noise/">Radikant Noise</a> and many other Radikant Projects. It supported primitives like <a href="../aes/">AES</a> , <a href="../diffie-helman/">Diffie-hellman</a>, <a href="../kdf/">KDF</a><br><br>⚠️ This library is an infamous example of “<i>don’t roll your own crypto</i>” it is incredibly insecure, branchy, leaks memory, information and secrets and is not constant time. It isnt fuzzed against malicious input. Cryptography is incredibly complex and it's suprisingly easy to get wrong, i'm not a Cryptographic expert. There is only handfull of situations where it would be acceptable to use and its not distributed software. In general i highly recommend against it.<br>
+					Radikant Crypto is a (<i>toy</i>) implementation supporting common primitives primitives like AES , Diffie-hellman, KDF. The primitives and algorithms are decoupled. Currently works on arm64 hardware (apple silicon) and in software mode on 64 bit architecture, but can be modified to run on other platforms and or architectures. Testing against RFC vectors proofs that the library is capable of produceing a bit correct output. This library used as a dependency inside <a href="../tls/">Radikant TLS</a> , <a href="../cert/">Radikant Cert</a>, <a href="../noise/">Radikant Noise</a> and other Radikant Projects. <br><br>⚠️ This library is an infamous example of “<i>don’t roll your own crypto</i>” it is incredibly insecure, branchy, leaks memory, information and secrets and is not constant time. It isnt fuzzed against malicious input. Cryptography is incredibly complex and it's suprisingly easy to get wrong, i'm not a Cryptographic expert. There is only handfull of situations where it would be acceptable to use and its not distributed software. In general i highly recommend against it.<br>
 				</p>
 			</div>
 		</div>
@@ -1968,8 +1968,8 @@
 
 
 <!-- Additional JS -->
-<script src="../js/bootstrap.bundle.min.js?1449"></script>
-<script src="../js/blocs.min.js?3443"></script>
+<script src="../js/bootstrap.bundle.min.js?8774"></script>
+<script src="../js/blocs.min.js?4862"></script>
 <script src="../js/lazysizes.min.js" defer></script><!-- Additional JS END -->
 
 

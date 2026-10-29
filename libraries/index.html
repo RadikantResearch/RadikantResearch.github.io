@@ -17,9 +17,9 @@
 	<meta property="og:url" content="https://radikant.nl/libraries/"> 
     <link rel="shortcut icon" type="image/jpeg" href="../favicon.jpeg">
     
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?1178">
-	<link rel="stylesheet" type="text/css" href="../style.css?593">
-	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?6265">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css?9312">
+	<link rel="stylesheet" type="text/css" href="../style.css?3945">
+	<link rel="stylesheet" type="text/css" href="../css/animate.min.css?3516">
 	
     <title>Libraries</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-okaidia.min.css" rel="stylesheet" />
@@ -88,12 +88,12 @@
 <div class="bloc l-bloc" id="bloc-2">
 	<div class="container bloc-lg bloc-md-lg">
 		<div class="row">
-			<div class="col text-start">
+			<div class="col text-start text-lg-start">
 				<h1 class="mb-4 mx-auto d-block scroll-fx-down-in scroll-fx-rotate-in scroll-fx-zoom-push ms-lg-3">
 					Radikant C Libraries
 				</h1>
 				<p class="mb-3 ms-lg-3 text-justify">
-					<strong>Educational</strong>&nbsp;effort to create a simple lightweight <i> <strong>zero dependency</strong></i> C framework: provide an&nbsp;modular set of libraries for common taks with straightforward&nbsp;APIs that are easily understood. This experimental framework is; in part written with the assistance of <strong>AI.</strong>&nbsp;Focus on maintaining top-level control over the API’s , general structure, a high level of decomposition that results in reusabilty, modularity and ease of build.<br>
+					<strong>Educational</strong>&nbsp;effort to create a simple lightweight <i> <strong>zero dependency</strong></i> C framework: provide an&nbsp;modular set of libraries for common taks with straightforward&nbsp;APIs that are easily understood. This experimental framework is; in part written with the assistance of <strong>AI.</strong>&nbsp;Architecture and APIs are human; parts of the implementation are AI-assisted. Focus on maintaining top-level control over the API’s , general structure, a high level of decomposition that results in reusabilty, modularity and ease of build.<br>
 				</p>
 			</div>
 		</div>
@@ -104,18 +104,80 @@
 <!-- bloc-2 -->
 <div class="bloc l-bloc" id="bloc-2">
 	<div class="container bloc-lg bloc-no-padding-lg">
+		<div class="row ms-lg-0 fadeIn none">
+			<div class="col-md-3">
+				<a href="../tls/" target="_blank"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_TLS_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_TLS_small.jpg" class="img-fluid animated pulse-hvr float-lg-end lazyload" alt="placeholder image" width="264" height="148"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_goToTls">
+							TLS
+						</h3>
+						<p class="mb-3 text-lg-start">
+							Mininum implementation of TLS 1.3 server and client, depends on (unsafe) Radikant Crypto.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 pb-sm-0">
+				<a href="../crypto/" target="_blank"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Crypto_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Crypto_small.jpg" class="img-fluid animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToCrypto">
+							Crypto
+						</h3>
+						<p class="mb-3 p-bloc-2-style">
+							Providing Cryptographic primitives, supporting the most common ciphers and hashes. Leaky/Unsafe.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<a href="../noise/" target="_blank"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Noise_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Noise_small.jpeg" class="img-fluid animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3 float-lg-none" data-custom-interaction-click="blocs_goToWebsocket">
+							Noise
+						</h3>
+						<p class="mb-3">
+							Noise Framework Protocol Driver for simplified connections supporting common patterns.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 offset-lg-0">
+				<a href="../cert/" target="_blank"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Cert_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Cert_small.jpeg" class="img-fluid rounded animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="144"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToCert">
+							Cert
+						</h3>
+					</div>
+				</div>
+				<p class="mb-3">
+					Enode and decode, PEM, x509&nbsp;and consorting standards. Extract usefull keys from Certificates.
+				</p>
+			</div>
+		</div>
 		<div class="row ms-lg-0 animated fadeIn none" data-appear-anim-style="fadeIn">
 			<div class="col-md-3">
-				<a href="../socket/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="264" height="116"></picture></a>
+				<a href="../url/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_URL_V3_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_URL_V3_small.jpeg" class="img-fluid animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_goToUrl">
+							URL
+						</h3>
+					</div>
+				</div>
+				<p class="mb-3">
+					Simple https requests mimicking curl &nbsp;using platform API's
+				</p>
+			</div>
+			<div class="col-md-3">
+				<a href="../socket/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_WebSocket_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_WebSocket_small.jpg" class="img-fluid animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3 float-lg-none" data-custom-interaction-click="blocs_goToSocket">
 							Socket
-						</h3>
-					</div>
-					<div class="col pt-lg-0">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToSocket">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -124,52 +186,11 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../tls/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto lazyload" alt="placeholder image" width="264" height="116"></picture></a>
-				<div class="row">
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_goToTls">
-							TLS
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style float-lg-none" data-custom-interaction-click="blocs_goToTls">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3">
-					Mininum implementation of TLS 1.3 server and client, depends on Radikant Crypto.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../crypto/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="264" height="116"></picture></a>
-				<div class="row">
-					<div class="col">
-						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToCrypto">
-							Crypto
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_goToCrypto">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3 p-bloc-2-style">
-					Providing cryptograhic primitives, supporting the most common ciphers and hashes. Leaky/Unsafe.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../websocket/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="264" height="116"></picture></a>
+				<a href="../websocket/" class="float-sm-none"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Socket_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Socket_small.jpg" class="img-fluid animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3 float-lg-none" data-custom-interaction-click="blocs_goToWebsocket">
 							WebSocket
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_goToWebsocket" data-custom-interaction-mouseover="blocs_goToWebsocket">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -177,19 +198,27 @@
 					WebSocket Library Build on top of Socket and TLS.
 				</p>
 			</div>
+			<div class="col-md-3">
+				<a href="../webrtc/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_WebRTC_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_WebRTC_small.jpg" class="img-fluid animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3 float-lg-none" data-custom-interaction-click="blocs_goToUrl">
+							WebRTC
+						</h3>
+					</div>
+				</div>
+				<p class="mb-3">
+					WebRTC library built on top of other Radikant Libraries.
+				</p>
+			</div>
 		</div>
 		<div class="row ms-lg-0 animated fadeIn none" data-appear-anim-style="fadeIn">
 			<div class="col-md-3">
-				<a href="../firebase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block rounded shadow lazyload" alt="placeholder image" width="264" height="116"></picture></a>
+				<a href="../firebase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Firebase_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Firebase_small.jpg" class="img-fluid rounded shadow animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_goToFirebase">
 							Firebase
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style btn-resize-mode" data-custom-interaction-click="blocs_goToFirebase">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -198,34 +227,24 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../pocketbase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid rounded mx-auto d-block lazyload" alt="placeholder image" width="264" height="116"></picture></a>
+				<a href="../pocketbase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_PocketBasee_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_PocketBasee_small.jpeg" class="img-fluid animated pulse-hvr rounded float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_goToPocketbase">
 							Pocketbase
 						</h3>
 					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style float-lg-none" data-custom-interaction-click="blocs_goToPocketbase">
-							&gt;
-						</h3>
-					</div>
 				</div>
 				<p class="mb-3">
-					Implementation of a pocketbase client. Supporths Auth, FileTranser, CRUD and more.
+					Implementation of a pocketbase client. Supporths Auth, FileTranser, CRUD and more.<br>
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../supabase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block rounded lazyload" alt="placeholder image" width="264" height="116"></picture></a>
+				<a href="../supabase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_SupaBasee_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_SupaBasee_small.jpeg" class="img-fluid rounded animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3 float-lg-none" data-custom-interaction-click="blocs_goToSupabase">
 							Supabase
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_goToSupabase">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -234,16 +253,11 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../trailbase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid rounded mx-auto d-block lazyload" alt="placeholder image" width="264" height="116"></picture></a>
+				<a href="../trailbase/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_TrailBase_V2_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_TrailBase_V2_small.jpg" class="img-fluid rounded animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="264" height="148"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToTrailbase">
 							Trailbase
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style float-lg-none" data-custom-interaction-click="blocs_goToTrailbase">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -253,35 +267,92 @@
 			</div>
 		</div>
 		<div class="row animated fadeIn none" data-appear-anim-style="fadeIn">
-			<div class="col-md-3 offset-lg-0">
-				<a href="../cert/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block rounded lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+			<div class="col-md-3">
+				<a href="../mysql/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_MySQL_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_MySQL_small.jpg" class="img-fluid rounded animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
-						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToCert">
-							Cert
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToMysql">
+							mySQL
 						</h3>
+						<p class="mb-3">
+							Minimum implementation of mySql in that can connect and query a mySql Server.
+						</p>
 					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<a href="../postgresql/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_PostRegressSQL_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_PostRegressSQL_small.jpeg" class="img-fluid rounded img-30-style animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="267" height="150"></picture></a>
+				<div class="row">
 					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_goToCert">
-							&gt;
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_gotoPostgresql">
+							PostgreSQL
 						</h3>
 					</div>
 				</div>
 				<p class="mb-3">
-					Enode and decode, PEM, x509&nbsp;and consorting standards.
+					Small PostgreSQL driver protoype to connect to database.
+				</p>
+			</div>
+			<div class="col-md-3">
+				<a href="../sasl/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_SASL_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_SASL_small.jpeg" class="img-fluid img-bloc-2-style animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="267" height="150"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToLog">
+							SASL
+						</h3>
+					</div>
+				</div>
+				<p class="mb-3">
+					Simple Authentication and Security Layer only providing SCRAM<br>
+				</p>
+			</div>
+			<div class="col-md-3">
+				<a href="../sasl/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Channel_V3_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Channel_V3_small.jpg" class="img-fluid img-bloc-2-style animated pulse-hvr float-sm-none lazyload" alt="placeholder image" width="267" height="150"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToLog">
+							Channel
+						</h3>
+					</div>
+				</div>
+				<p class="mb-3">
+					Simple Authentication and Security Layer only providing SCRAM<br>
+				</p>
+			</div>
+		</div>
+		<div class="row animated fadeIn none" data-appear-anim-style="fadeIn">
+			<div class="col-md-3">
+				<a href="../jwt/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_JWT_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_JWT_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToJwt">
+							Jwt
+						</h3>
+					</div>
+				</div>
+				<p class="mb-3">
+					This library can be used to mint, sign and verify JWT (Json Web Tokens).
+				</p>
+			</div>
+			<div class="col-md-3">
+				<a href="../json/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_JSON_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_JSON_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
+				<div class="row">
+					<div class="col" data-custom-interaction-click="blocs_goToJwt">
+						<h3 class="mt-2 mb-3 animated rubberBand-hvr" data-custom-interaction-click="blocs_goToJson">
+							Json
+						</h3>
+					</div>
+				</div>
+				<p class="mb-3">
+					Simple JSON encopding and decoding.
 				</p>
 			</div>
 			<div class="col-md-3 offset-lg-0">
-				<a href="../base64/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block rounded lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../base64/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Base64_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Base64_small.jpeg" class="img-fluid rounded float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToBase64">
 							Base64
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_goToBase64">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -290,34 +361,11 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../event/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
-				<div class="row">
-					<div class="col me-lg-0">
-						<h3 class="mt-2 mb-3 animated pulse-hvr" data-custom-interaction-click="blocs_goToEvent" data-custom-interaction-mouseover="blocs_goToEvent">
-							Event
-						</h3>
-					</div>
-					<div class="col order-lg-1 align-self-start text-lg-end">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_goToEvent">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3">
-					Mutithreaded preemptive task Scheduler in C. Supporting intertask messaging, pub/sub and more.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../asn1/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../asn1/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_ASN1_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_ASN1_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_gotoAsn1">
 							ASN.1
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_gotoAsn1">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -328,70 +376,50 @@
 		</div>
 		<div class="row animated fadeIn none" data-appear-anim-style="fadeIn">
 			<div class="col-md-3">
-				<a href="../jwt/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../queue/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Queue_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Queue_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
-						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToJwt">
-							Jwt
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToPobe">
+							Queue
 						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToJwt">
-							&gt;
-						</h3>
+						<p class="mb-3">
+							A small testing framework for batch testing library internals.&nbsp;
+						</p>
 					</div>
 				</div>
-				<p class="mb-3">
-					This library can be used to mint, sign and verify JWT (Json Web Tokens).
-				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../json/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../event/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Event_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Event_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
-					<div class="col" data-custom-interaction-click="blocs_goToJwt">
-						<h3 class="mt-2 mb-3 animated rubberBand-hvr" data-custom-interaction-click="blocs_goToJson">
-							Json
+					<div class="col me-lg-0">
+						<h3 class="mt-2 mb-3 animated pulse-hvr" data-custom-interaction-click="blocs_goToEvent">
+							Event
 						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mb-3 text-lg-end animated rubberBand-hvr mt-lg-2" data-custom-interaction-click="blocs_goToJson">
-							&gt;
-						</h3>
+						<p class="mb-3">
+							Mutithreaded preemptive task Scheduler in C. Supporting intertask messaging, pub/sub and more.
+						</p>
 					</div>
 				</div>
-				<p class="mb-3">
-					Simple JSON encopding and decoding.
-				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../url/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
-				<div class="row">
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_goToUrl">
-							URL
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToUrl">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3">
-					Simple https requests mimicking curl &nbsp;using platform API's
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../coap/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../coap/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_COAP_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_COAP_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToCoap">
 							CoAP
 						</h3>
 					</div>
-					<div class="col" data-custom-interaction-click="blocs_goToJson">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToCoap">
-							&gt;
+				</div>
+				<p class="mb-3">
+					Coap driver
+				</p>
+			</div>
+			<div class="col-md-3">
+				<a href="../coap/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_RingBuffer_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_RingBuffer_small.jpg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
+				<div class="row">
+					<div class="col">
+						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToCoap">
+							RingBuffer<br>
 						</h3>
 					</div>
 				</div>
@@ -402,16 +430,11 @@
 		</div>
 		<div class="row animated fadeIn none" data-appear-anim-style="fadeIn">
 			<div class="col-md-3">
-				<a href="../ble/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../ble/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_BLE_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_BLE_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3 animated jello-hvr" data-custom-interaction-click="blocs_goBle">
 							BLE
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goBle">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -420,16 +443,11 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../nvs/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../nvs/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_NVS_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_NVS_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToNvs">
 							NVS
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToNvs">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -438,34 +456,24 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../flasher/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../flasher/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Flasher_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Flasher_small.jpeg" class="img-fluid float-sm-none animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-lg-2 mb-3" data-custom-interaction-click="blocs_goToFlasher">
 							Flasher
 						</h3>
 					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToFlasher">
-							&gt;
-						</h3>
-					</div>
 				</div>
 				<p class="mb-3">
-					UART driver for flashing ESP32 family μmicontrollers firmare. Works nicely with NVS.
+					UART driver for flashing ESP32 family μControllers firmare. Works in tandem with the NVS lib.
 				</p>
 			</div>
 			<div class="col-md-3">
-				<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture>
+				<picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Printer_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Printer_small.jpeg" class="img-fluid mx-auto d-block animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture>
 				<div class="row">
 					<div class="col" data-custom-interaction-click="blocs_goToPrinter">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToPrinter">
 							Printer
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToPrinter">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -476,34 +484,11 @@
 		</div>
 		<div class="row animated fadeIn none" data-appear-anim-style="fadeIn">
 			<div class="col-md-3">
-				<a href="../mysql/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block rounded lazyload" alt="placeholder image" width="267" height="117"></picture></a>
-				<div class="row">
-					<div class="col">
-						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToMysql">
-							mySQL
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_goToMysql">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3">
-					Minimum implementation of mySql in that can connect and query a mySql Server.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../log/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../log/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Log_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Log_small.jpeg" class="img-fluid mx-auto d-block animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToLog">
 							Log
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToLog">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -512,16 +497,11 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../probe/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../probe/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Probe_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Probe_small.jpg" class="img-fluid mx-auto d-block animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToPobe">
 							Probe
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToNvs">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -530,16 +510,11 @@
 				</p>
 			</div>
 			<div class="col-md-3">
-				<a href="../serial/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../serial/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_Crypto_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_Crypto_small.jpg" class="img-fluid mx-auto d-block animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col" data-custom-interaction-click="blocs_goToPrinter">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_gotoSerial">
 							Serial
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_gotoSerial">
-							&gt;
 						</h3>
 					</div>
 				</div>
@@ -547,78 +522,17 @@
 					C Serial Port driver&nbsp;
 				</p>
 			</div>
-		</div>
-		<div class="row animated fadeIn none" data-appear-anim-style="fadeIn">
 			<div class="col-md-3">
-				<a href="../postgresql/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block rounded lazyload" alt="placeholder image" width="267" height="117"></picture></a>
-				<div class="row">
-					<div class="col">
-						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_gotoPostgresql">
-							PostgreSQL
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr h3-style" data-custom-interaction-click="blocs_gotoPostgresql">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3">
-					Small PostgreSQL driver protoype to connect to database.
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../sasl/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
-				<div class="row">
-					<div class="col">
-						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToLog">
-							SASL
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToLog">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3">
-					Simple Authentication and Security Layer only providing SCRAM<br>
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../queue/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
-				<div class="row">
-					<div class="col">
-						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_goToPobe">
-							Queue
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_goToNvs">
-							&gt;
-						</h3>
-					</div>
-				</div>
-				<p class="mb-3">
-					A small testing framework for batch testing library internals.&nbsp;
-				</p>
-			</div>
-			<div class="col-md-3">
-				<a href="../noise/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.webp"><img src="../img/lazyload-ph.png" data-src="../img/9963e55f-9f07-41db-881e-1ceeba34fc75_2155221.png" class="img-fluid mx-auto d-block lazyload" alt="placeholder image" width="267" height="117"></picture></a>
+				<a href="../serial/"><picture><source type="image/webp" srcset="../img/lazyload-ph.png" data-srcset="../img/LIB_Banner_URL_V3_small.webp"><img src="../img/lazyload-ph.png" data-src="../img/LIB_Banner_URL_V3_small.jpeg" class="img-fluid mx-auto d-block animated pulse-hvr lazyload" alt="placeholder image" width="267" height="150"></picture></a>
 				<div class="row">
 					<div class="col" data-custom-interaction-click="blocs_goToPrinter">
 						<h3 class="mt-2 mb-3" data-custom-interaction-click="blocs_gotoSerial">
-							Noise
-						</h3>
-					</div>
-					<div class="col">
-						<h3 class="mt-lg-2 mb-3 text-lg-end animated rubberBand-hvr" data-custom-interaction-click="blocs_gotoSerial">
-							&gt;
+							MQTT
 						</h3>
 					</div>
 				</div>
 				<p class="mb-3">
-					Noise Framework Protocol Driver for “secure” connections.
+					C Serial Port driver&nbsp;
 				</p>
 			</div>
 		</div>
@@ -685,10 +599,10 @@
 
 
 <!-- Additional JS -->
-<script src="../js/bootstrap.bundle.min.js?1449"></script>
-<script src="../js/blocs.min.js?3443"></script>
+<script src="../js/bootstrap.bundle.min.js?8774"></script>
+<script src="../js/blocs.min.js?4862"></script>
 <script src="../js/lazysizes.min.js" defer></script>
-<script src="../js/scrollFX.js?1524"></script>
+<script src="../js/scrollFX.js?6"></script>
 <!-- Additional JS END -->
 
 
